@@ -3,6 +3,16 @@ a {
   text-decoration: none;
 }
 
+ul, ol, fieldset, form, label, legend {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+ul, ol {
+  list-style: none;
+}
+
 /* General settings */
 h1, h4 {
   font-family: "Lobster";
@@ -59,6 +69,16 @@ body {
   margin: 0 0 30px;
 }
 
+.navigation {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  padding-bottom: 90px;
+}
+
+.navigation li {
+  padding-bottom: 30px;
+}
+
 .social-media {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -72,5 +92,10 @@ body {
 
 .social-media img {
   height: 38px;
+}
+
+.social-media img:hover {
+  -webkit-filter: drop-shadow(0 5px 5px rgba(34, 34, 34, 0.603));
+  filter: drop-shadow(0 5px 5px rgba(34, 34, 34, 0.603));
 }
 /*# sourceMappingURL=style.css.map */
