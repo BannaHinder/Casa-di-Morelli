@@ -80,10 +80,18 @@ header{
         text-align: center;
         padding: 5px 5px;
         margin: 0;
+        border: 1px solid $dark-red;
     }
+    // kläder på startsidan
 .clothes{
     background: $beige;
-    .clothes1{
+    display: flex;
+    flex-direction: column;
+    .clothes-group{
+        display: flex;
+        justify-content: space-around;
+    
+    .small-image{
         img{
             height:189px;
             width:130px;
@@ -111,6 +119,42 @@ header{
             filter: drop-shadow(0 5px 5px rgba(34, 34, 34, 0.603));  
             position: relative;
             left: 80px;
+            bottom: 50px;
+        }
+    }
+}
+
+   
+    .big-image{
+        align-self: center;
+        img{
+            height:360px;
+            width:262px;
+            margin-top:5px;
+        
+        }
+        p{
+            font-family: "Kodchasan";
+            color: $dark-red;
+            margin: 5px;
+
+        }
+         h5{
+            font-family: "Kodchasan";
+            color: $dark-red;
+            margin: 5px;
+        }
+        button{
+            background: $dark-green;
+            color: white;
+            font-family:"Kodchasan";
+            border-radius: 20px;
+            font-weight: bolder;
+            padding: 10px 10px;
+            border: $dark-green;
+            filter: drop-shadow(0 5px 5px rgba(34, 34, 34, 0.603));  
+            position: relative;
+            left: 200px;
             bottom: 50px;
         }
     }

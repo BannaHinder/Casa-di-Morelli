@@ -104,31 +104,47 @@ header {
   text-align: center;
   padding: 5px 5px;
   margin: 0;
+  border: 1px solid #892300;
 }
 
 .clothes {
   background: #FFE2B2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.clothes .clothes1 img {
+.clothes .clothes-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.clothes .clothes-group .small-image img {
   height: 189px;
   width: 130px;
   margin-top: 5px;
 }
 
-.clothes .clothes1 p {
+.clothes .clothes-group .small-image p {
   font-family: "Kodchasan";
   color: #892300;
   margin: 5px;
 }
 
-.clothes .clothes1 h5 {
+.clothes .clothes-group .small-image h5 {
   font-family: "Kodchasan";
   color: #892300;
   margin: 5px;
 }
 
-.clothes .clothes1 button {
+.clothes .clothes-group .small-image button {
   background: #8A8635;
   color: white;
   font-family: "Kodchasan";
@@ -140,6 +156,45 @@ header {
           filter: drop-shadow(0 5px 5px rgba(34, 34, 34, 0.603));
   position: relative;
   left: 80px;
+  bottom: 50px;
+}
+
+.clothes .big-image {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.clothes .big-image img {
+  height: 360px;
+  width: 262px;
+  margin-top: 5px;
+}
+
+.clothes .big-image p {
+  font-family: "Kodchasan";
+  color: #892300;
+  margin: 5px;
+}
+
+.clothes .big-image h5 {
+  font-family: "Kodchasan";
+  color: #892300;
+  margin: 5px;
+}
+
+.clothes .big-image button {
+  background: #8A8635;
+  color: white;
+  font-family: "Kodchasan";
+  border-radius: 20px;
+  font-weight: bolder;
+  padding: 10px 10px;
+  border: #8A8635;
+  -webkit-filter: drop-shadow(0 5px 5px rgba(34, 34, 34, 0.603));
+          filter: drop-shadow(0 5px 5px rgba(34, 34, 34, 0.603));
+  position: relative;
+  left: 200px;
   bottom: 50px;
 }
 
