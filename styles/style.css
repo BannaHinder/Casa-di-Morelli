@@ -62,10 +62,6 @@ header {
   margin: 5px 0;
 }
 
-.about-70s h2, .about-70s h6 {
-  margin: 5px 0px;
-}
-
 .about-70s h3 {
   opacity: 1.0;
   margin-bottom: 0;
@@ -74,6 +70,17 @@ header {
 .about-70s p {
   opacity: 1.0;
   margin-top: 0;
+}
+
+.about-70s .discount1 {
+  font-size: 40px;
+  font-weight: bolder;
+  margin-bottom: 0;
+}
+
+.about-70s .discount2 {
+  font-weight: bold;
+  font-size: 14px;
 }
 
 .background-div {
