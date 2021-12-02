@@ -1,27 +1,32 @@
 @import "partials/mixins";
 @import "partials/variables";
 
+/* Reset */
+a {
+  text-decoration: none;
+}
+
+/* General settings */
 h1, h4{
-    font-family: "Lobster";
-    color: $beige;
-    
+  font-family: "Lobster";
+  color: $beige;
 }
 h1{
-    text-shadow: 1px 3px rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 3px rgba(0, 0, 0, 0.5);
 }
 h4{
-    text-shadow: 1px 2px rgba(0, 0, 0, 0.5) ;
+  text-shadow: 1px 2px rgba(0, 0, 0, 0.5) ;
 }
 header{
-    background: $dark-red;
+  background: $dark-red;
 }
 a{
-    font-family: "Kodchasan";
-    color: $beige;
+  font-family: "Kodchasan";
+  color: $beige;
 }
 footer{
-    background: $dark-green;
+  background: $dark-green;
 }
 body{
-    background: $beige;
+  background: $beige;
 }
