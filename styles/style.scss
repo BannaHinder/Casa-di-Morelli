@@ -102,12 +102,10 @@ header{
             font-family: "Kodchasan";
             color: $dark-red;
             margin: 5px;
-
         }
-         h5{
-            font-family: "Kodchasan";
-            color: $dark-red;
-            margin: 5px;
+         .price-info{
+            font-weight: bolder;
+            font-size: 14px;
         }
         button{
             background: $dark-green;
@@ -140,10 +138,12 @@ header{
             margin: 5px;
 
         }
-         h5{
+         .price-info{
             font-family: "Kodchasan";
             color: $dark-red;
             margin: 5px;
+            font-weight: bolder;
+            font-size: 14px;
         }
         button{
             background: $dark-green;
