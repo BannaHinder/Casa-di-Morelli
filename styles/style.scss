@@ -21,7 +21,27 @@ header{
   background: $dark-red;
 }
 .about-70s{
+    background-image: url("/Casa-di-Morelli/src/wallpaper2.jpg"); 
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+align-items: center;
+}
+.about-70s h3, .about-70s p{
     font-family: "Kodchasan";
+    color: $dark-red;
+}
+
+.background-div{
+        background: $beige;
+        display: flex;  
+        flex-direction: column;
+        justify-content: center;
+    align-items: center;
+    }
+.about-70s img{
+    height:168px;
+    width:225px;
 }
 a{
   font-family: "Kodchasan";
@@ -30,6 +50,7 @@ a{
 footer{
   background: $dark-green;
 }
+
 body{
   background: $beige;
 }
