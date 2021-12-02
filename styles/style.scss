@@ -18,3 +18,17 @@ footer{
 body{
     background: $theme-color4;
 }
+
+/* Footer */
+.bottom {
+  height: 400px;
+}
+
+.social-media {
+  display: flex;
+  justify-content: space-between;
+
+  img {
+    height: 38px;
+  }
+}

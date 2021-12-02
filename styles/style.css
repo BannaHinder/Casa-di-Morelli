@@ -19,4 +19,22 @@ footer {
 body {
   background: #FFE2B2;
 }
+
+/* Footer */
+.bottom {
+  height: 400px;
+}
+
+.social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.social-media img {
+  height: 38px;
+}
 /*# sourceMappingURL=style.css.map */
