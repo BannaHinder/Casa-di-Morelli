@@ -1,0 +1,6 @@
+@mixin for-desktop {
+    @media (min-width: 550px) {
+      @content  
+    }
+    
+}
