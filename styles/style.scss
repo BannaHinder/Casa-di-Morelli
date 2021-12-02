@@ -5,6 +5,14 @@
 a {
   text-decoration: none;
 }
+ul, ol, fieldset, form, label, legend {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+ul, ol {
+  list-style: none;
+}
 
 /* General settings */
 h1, h4{
@@ -139,18 +147,26 @@ body{
   align-items: center;
   height: 400px;
   padding: 30px 40px;
-
   h4 {
     margin: 0 0 30px;
   }
 }
-
+.navigation {
+  align-self: flex-start;
+  padding-bottom: 90px;
+  li {
+  padding-bottom: 30px;
+  }
+}
 .social-media {
   display: flex;
   justify-content: space-between;
   align-self: stretch;
-
   img {
     height: 38px;
+    &:hover {
+      -webkit-filter: drop-shadow(0 5px 5px rgba(34, 34, 34, 0.603));
+    filter: drop-shadow(0 5px 5px rgba(34, 34, 34, 0.603));  
+    }
   }
 }
