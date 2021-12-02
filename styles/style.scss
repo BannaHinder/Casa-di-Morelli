@@ -165,6 +165,49 @@ body{
     background: $beige;
    
 }
+//Om oss
+h2{
+    font-family: "lobster";
+    color: $dark-red;
+    text-align: center;
+    font-weight: lighter;
+}
+.about-info{
+    font-family: "kodchasan";
+    color: $dark-red;
+    text-align: center;
+    p{
+        font-size: 14px;
+    }
+}
+.staff{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .person{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    .staff-name{
+        font-family: "lobster";
+        color: $dark-red;
+        text-align: center;
+        font-size: 18px;
+    }
+    img{
+        height:144px;
+        width:215px;
+    }
+    p{
+        font-family: "kodchasan";
+        font-size: 14px;
+        text-align: center;
+        color: $dark-red;
+    }
+}
+
+}
 
 /* Footer */
 .bottom {

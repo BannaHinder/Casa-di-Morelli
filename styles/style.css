@@ -204,6 +204,68 @@ body {
   background: #FFE2B2;
 }
 
+h2 {
+  font-family: "lobster";
+  color: #892300;
+  text-align: center;
+  font-weight: lighter;
+}
+
+.about-info {
+  font-family: "kodchasan";
+  color: #892300;
+  text-align: center;
+}
+
+.about-info p {
+  font-size: 14px;
+}
+
+.staff {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.staff .person {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.staff .person .staff-name {
+  font-family: "lobster";
+  color: #892300;
+  text-align: center;
+  font-size: 18px;
+}
+
+.staff .person img {
+  height: 144px;
+  width: 215px;
+}
+
+.staff .person p {
+  font-family: "kodchasan";
+  font-size: 14px;
+  text-align: center;
+  color: #892300;
+}
+
 /* Footer */
 .bottom {
   display: -webkit-box;
