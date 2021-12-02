@@ -18,13 +18,38 @@
                 <a href="recensioner.html">Recensioner</a>
                 <a href="kontakt.html">Kontakt</a>
                 <a href="">Kundkorg</a>
+
+                <a href="" class="menu-lista" onclick=" ">
+                    <img src="src\icons\hamburger-menu.png" class="hamburgare-icon">
+                </a>
+
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">
+                        <img src="src\icons\hamburger-menu.png" class="hamburgare-icon">
+                    </button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="startpage.html">Startsida</a>
+                        <a href="omoss.html">Om oss</a>
+                        <a href="recensioner.html">Recensioner</a>
+                        <a href="kontakt.html">Kontakt</a>
+                        <a href="">Kundkorg</a>
+                    </div>
+                  </div>
+                    
             </div>
         </header>
+        <main>
         <article class="about-70s">
+            <div class="background-div">
         <h3>70-talet var ett magiskt årtionde.</h3>
-        Det var då tjejerna hade stora glasögon, håret var långt och byxorna var utsvängda. Här hittar du ett stort urval av färgglada 70-tals kläder!
+       <p> Det var då tjejerna hade stora glasögon, håret var långt och byxorna var utsvängda. Här hittar du ett stort urval av färgglada 70-tals kläder!</p>
+            </div>
+        <img src="src/50sale.png" alt="discount">
+        <h2>PÅ ALLT*</h2>
+        <h6>*Rabetten avdrages i kassan</h6>
          </article>
-
+         <h3 class="popular">Populärt</h3>
+</main>
       <footer class="bottom">
         <h4>Casa di Morelli</h4>
         <ul class="navigation">
@@ -41,5 +66,27 @@
         </div>
       </footer>
     </div>
+    <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+        </script>
+    
 </body>
 </html>

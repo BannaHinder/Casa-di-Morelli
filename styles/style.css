@@ -32,8 +32,144 @@ header {
   background: #892300;
 }
 
+/* om 70-talet och rabatt */
 .about-70s {
+  background-image: url("/Casa-di-Morelli/src/wallpaper2.jpg");
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 30px;
   font-family: "Kodchasan";
+  color: #892300;
+  border: 2px solid #892300;
+}
+
+.about-70s img {
+  height: 168px;
+  width: 225px;
+  margin: 5px 0;
+}
+
+.about-70s h2, .about-70s h6 {
+  margin: 5px 0px;
+}
+
+.about-70s h3 {
+  opacity: 1.0;
+  margin-bottom: 0;
+}
+
+.about-70s p {
+  opacity: 1.0;
+  margin-top: 0;
+}
+
+.background-div {
+  background: #FFE2B2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 5px 0 5px;
+  padding: 0 5px 0 5px;
+  opacity: 0.8;
+}
+
+.popular {
+  font-family: "Lobster";
+  color: white;
+  text-shadow: 1px 1px #892300;
+  background: #8A8635;
+  text-align: center;
+  padding: 5px 5px;
+  margin: 0;
+}
+
+a {
+  font-family: "Kodchasan";
+  color: #FFE2B2;
+}
+
+footer {
+  background: #8A8635;
+}
+
+body {
+  background: #FFE2B2;
+}
+
+/* Footer */
+.bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 400px;
+  padding: 30px 40px;
+}
+
+.bottom h4 {
+  margin: 0 0 30px;
+}
+
+.social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+}
+
+.social-media img {
+  height: 38px;
+}
+
+.background-div {
+  background: #FFE2B2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 5px 0 5px;
+  padding: 0 5px 0 5px;
+  opacity: 0.8;
 }
 
 a {
