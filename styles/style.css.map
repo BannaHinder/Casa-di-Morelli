@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AAEA,AAAA,EAAE,CAAA;EACE,WAAW,EAAE,SAAS;CACzB",
     "sources": [
         "style.scss",
         "partials/_mixins.scss",
