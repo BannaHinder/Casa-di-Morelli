@@ -31,6 +31,9 @@ h4{
 header{
   background: $dark-red;
 }
+.dropdown{
+    display:none;
+}
 /* om 70-talet och rabatt */
 .about-70s{
     background-image: url("/Casa-di-Morelli/src/wallpaper2.jpg"); 
@@ -170,6 +173,7 @@ header{
 
 body{
     background: $beige;
+    margin:0;
    
 }
 //Om oss
