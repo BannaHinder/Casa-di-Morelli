@@ -1,5 +1,20 @@
 @import "partials/mixins";
 @import "partials/variables";
-h1{
+
+h1, h4{
     font-family: "Lobster";
+    color: $theme-color4;
+}
+header{
+    background: $theme-color1;
+}
+a{
+    font-family: "Kodchasan";
+    color: $theme-color4;
+}
+footer{
+    background: $theme-color3;
+}
+body{
+    background: $theme-color4;
 }

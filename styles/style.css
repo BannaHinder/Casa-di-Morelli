@@ -1,4 +1,22 @@
-h1 {
+h1, h4 {
   font-family: "Lobster";
+  color: #FFE2B2;
+}
+
+header {
+  background: #892300;
+}
+
+a {
+  font-family: "Kodchasan";
+  color: #FFE2B2;
+}
+
+footer {
+  background: #8A8635;
+}
+
+body {
+  background: #FFE2B2;
 }
 /*# sourceMappingURL=style.css.map */
