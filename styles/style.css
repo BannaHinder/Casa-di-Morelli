@@ -139,10 +139,9 @@ header {
   margin: 5px;
 }
 
-.clothes .clothes-group .small-image h5 {
-  font-family: "Kodchasan";
-  color: #892300;
-  margin: 5px;
+.clothes .clothes-group .small-image .price-info {
+  font-weight: bolder;
+  font-size: 14px;
 }
 
 .clothes .clothes-group .small-image button {
@@ -178,10 +177,12 @@ header {
   margin: 5px;
 }
 
-.clothes .big-image h5 {
+.clothes .big-image .price-info {
   font-family: "Kodchasan";
   color: #892300;
   margin: 5px;
+  font-weight: bolder;
+  font-size: 14px;
 }
 
 .clothes .big-image button {
