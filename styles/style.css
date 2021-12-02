@@ -1,6 +1,8 @@
 /* Reset */
 a {
   text-decoration: none;
+  font-family: "Kodchasan";
+  color: #FFE2B2;
 }
 
 ul, ol, fieldset, form, label, legend {
@@ -104,13 +106,41 @@ header {
   margin: 0;
 }
 
-a {
-  font-family: "Kodchasan";
-  color: #FFE2B2;
+.clothes {
+  background: #FFE2B2;
 }
 
-footer {
+.clothes .clothes1 img {
+  height: 189px;
+  width: 130px;
+  margin-top: 5px;
+}
+
+.clothes .clothes1 p {
+  font-family: "Kodchasan";
+  color: #892300;
+  margin: 5px;
+}
+
+.clothes .clothes1 h5 {
+  font-family: "Kodchasan";
+  color: #892300;
+  margin: 5px;
+}
+
+.clothes .clothes1 button {
   background: #8A8635;
+  color: white;
+  font-family: "Kodchasan";
+  border-radius: 20px;
+  font-weight: bolder;
+  padding: 10px 10px;
+  border: #8A8635;
+  -webkit-filter: drop-shadow(0 5px 5px rgba(34, 34, 34, 0.603));
+          filter: drop-shadow(0 5px 5px rgba(34, 34, 34, 0.603));
+  position: relative;
+  left: 80px;
+  bottom: 50px;
 }
 
 body {
