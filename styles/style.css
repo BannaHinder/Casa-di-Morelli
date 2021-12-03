@@ -55,7 +55,7 @@ body {
 
 /* om 70-talet och rabatt */
 .about-70s {
-  background-image: url("/Casa-di-Morelli/src/wallpaper2.jpg");
+  background-image: url("/src/wallpaper2.jpg");
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -376,6 +376,11 @@ h2 {
   background: wheat;
 }
 
+.kontakt-under {
+  text-decoration: underline;
+  font-family: 'lobster';
+}
+
 .p-element {
   background: chartreuse;
   text-decoration: underline;
@@ -385,3 +390,4 @@ h2 {
   text-align: center;
   font-family: 'lobster';
 }
+/*# sourceMappingURL=style.css.map */
