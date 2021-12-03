@@ -100,7 +100,7 @@ body {
 
 /* om 70-talet och rabatt */
 .about-70s {
-  background-image: url("/Casa-di-Morelli/src/wallpaper2.jpg");
+  background-image: url("/src/wallpaper2.jpg");
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -276,6 +276,7 @@ h2 {
   color: #892300;
   text-align: center;
   font-weight: lighter;
+  background: #FFE2B2;
 }
 
 .about-info {
@@ -401,5 +402,32 @@ h2 {
 .social-media img:hover {
   -webkit-filter: drop-shadow(0 5px 5px rgba(34, 34, 34, 0.603));
   filter: drop-shadow(0 5px 5px rgba(34, 34, 34, 0.603));
+}
+
+.hus {
+  width: 140px;
+  height: 100px;
+}
+
+/*kontakt mobile style*/
+.content1 {
+  font-family: 'lobster';
+  text-align: center;
+  background: wheat;
+}
+
+.kontakt-under {
+  text-decoration: underline;
+  font-family: 'lobster';
+}
+
+.p-element {
+  background: chartreuse;
+  text-decoration: underline;
+}
+
+.content2 {
+  text-align: center;
+  font-family: 'lobster';
 }
 /*# sourceMappingURL=style.css.map */

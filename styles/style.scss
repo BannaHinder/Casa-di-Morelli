@@ -80,7 +80,7 @@ body{
 
 /* om 70-talet och rabatt */
 .about-70s{
-    background-image: url("/Casa-di-Morelli/src/wallpaper2.jpg"); 
+    background-image: url("/src/wallpaper2.jpg"); 
     display: flex;  
     flex-direction: column;
     justify-content: center;
@@ -139,7 +139,7 @@ body{
     }
     // kläder på startsidan
 .clothes{
-    background: $beige;
+    background:$beige;
     display: flex;
     flex-direction: column;
     .clothes-group{
@@ -221,6 +221,7 @@ h2{
     color: $dark-red;
     text-align: center;
     font-weight: lighter;
+    background: $beige;
 }
 .about-info{
     font-family: "kodchasan";
@@ -302,3 +303,32 @@ h2{
     }
   }
 }
+
+.hus {
+  width: 140px;
+  height: 100px;
+   
+}
+
+/*kontakt mobile style*/
+.content1 {
+  font-family: 'lobster';
+  text-align: center;
+  background: wheat;
+}
+
+.kontakt-under {
+  text-decoration: underline;
+  font-family: 'lobster';
+}
+
+.p-element {
+  background: chartreuse;
+  text-decoration: underline;
+}
+
+.content2 {
+  text-align: center;
+  font-family: 'lobster';
+}
+ 
