@@ -159,26 +159,97 @@
       </footer>
     </div>
     <script>
-        /* When the user clicks on the button, 
-        toggle between hiding and showing the dropdown content */
-        function myFunction() {
-          document.getElementById("myDropdown").classList.toggle("show");
-        }
         
-        // Close the dropdown if the user clicks outside of it
-        window.onclick = function(event) {
-          if (!event.target.matches('.dropbtn')) {
-            var dropdowns = document.getElementsByClassName("dropdown-content");
-            var i;
-            for (i = 0; i < dropdowns.length; i++) {
-              var openDropdown = dropdowns[i];
-              if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
-              }
+        document.documentElement.className = "js";
+
+        var menu = document.querySelector( '.menu' ),
+            button = document.querySelector('.nav-toggle'),
+            dropdown = document.querySelector('.dropdown');
+
+        button.onclick = function() {
+            classie.toggle( menu, 'menu-active' );
+        };
+
+        // Close menu when clicking outside
+        // See: https://css-tricks.com/dangers-stopping-event-propagation/
+        document.addEventListener('click', function(event) {
+            if (event.target !== dropdown && !dropdown.contains(event.target)) {
+                // hide the menu
+            classie.removeClass(menu, "menu-active");
             }
-          }
+        });
+
+        ( function( window ) {
+
+        'use strict';
+
+        // class helper functions from bonzo https://github.com/ded/bonzo
+
+        function classReg( className ) {
+            return new RegExp("(^|\\s+)" + className + "(\\s+|$)");
         }
-        </script>
+
+        // classList support for class management
+        var hasClass, addClass, removeClass;
+
+        if ( 'classList' in document.documentElement ) {
+            hasClass = function( elem, c ) {
+                return elem.classList.contains( c );
+        };
+        addClass = function( elem, c ) {
+            elem.classList.add( c );
+        };
+        removeClass = function( elem, c ) {
+            elem.classList.remove( c );
+        };
+        }
+        else {
+            hasClass = function( elem, c ) {
+             return classReg( c ).test( elem.className );
+        };
+        addClass = function( elem, c ) {
+            if ( !hasClass( elem, c ) ) {
+            elem.className = elem.className + ' ' + c;
+            }
+        };
+        removeClass = function( elem, c ) {
+            elem.className = elem.className.replace( classReg( c ), ' ' );
+        };
+        }
+
+        function toggleClass( elem, c ) {
+        var fn = hasClass( elem, c ) ? removeClass : addClass;
+        fn( elem, c );
+        }
+
+        var classie = {
+        // full names
+        hasClass: hasClass,
+        addClass: addClass,
+        removeClass: removeClass,
+        toggleClass: toggleClass,
+        // short names
+        has: hasClass,
+        add: addClass,
+        remove: removeClass,
+        toggle: toggleClass
+        };
+
+        // transport
+        if ( typeof define === 'function' && define.amd ) {
+        // AMD
+        define( classie );
+        } else if ( typeof exports === 'object' ) {
+        // CommonJS
+        module.exports = classie;
+        } else {
+        // browser global
+        window.classie = classie;
+        }
+
+        })( window );
+
+    </script>
     
 </body>
 </html>
