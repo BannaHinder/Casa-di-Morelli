@@ -40,6 +40,19 @@ header {
   display: none;
 }
 
+a {
+  font-family: "Kodchasan";
+  color: #FFE2B2;
+}
+
+footer {
+  background: #8A8635;
+}
+
+body {
+  background: #FFE2B2;
+}
+
 /* om 70-talet och rabatt */
 .about-70s {
   background-image: url("/Casa-di-Morelli/src/wallpaper2.jpg");
@@ -281,41 +294,6 @@ h2 {
   color: #892300;
 }
 
-/* Footer */
-.bottom {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 400px;
-  padding: 30px 40px;
-}
-
-.bottom h4 {
-  margin: 0 0 30px;
-}
-
-.social-media {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-item-align: stretch;
-      align-self: stretch;
-}
-
-.social-media img {
-  height: 38px;
-}
-
 .background-div {
   background: #FFE2B2;
   display: -webkit-box;
@@ -334,19 +312,6 @@ h2 {
   margin: 0 5px 0 5px;
   padding: 0 5px 0 5px;
   opacity: 0.8;
-}
-
-a {
-  font-family: "Kodchasan";
-  color: #FFE2B2;
-}
-
-footer {
-  background: #8A8635;
-}
-
-body {
-  background: #FFE2B2;
 }
 
 /* Footer */
@@ -400,12 +365,23 @@ body {
 }
 
 .hus {
-  width: 40px;
-  height: 40px;
+  width: 140px;
+  height: 100px;
 }
 
 /*kontakt mobile style*/
 .content1 {
+  font-family: 'lobster';
   text-align: center;
+  background: wheat;
 }
-/*# sourceMappingURL=style.css.map */
+
+.p-element {
+  background: chartreuse;
+  text-decoration: underline;
+}
+
+.content2 {
+  text-align: center;
+  font-family: 'lobster';
+}
