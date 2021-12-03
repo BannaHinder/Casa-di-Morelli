@@ -301,13 +301,14 @@ body{
 }
 
 .hus {
-  width: 40px;
-  height: 40px;
+  width: 140px;
+  height: 100px;
    
 }
 
 /*kontakt mobile style*/
 .content1 {
+  font-family: 'lobster';
   text-align: center;
   background: wheat;
 }
@@ -321,3 +322,9 @@ body{
   background: chartreuse;
   text-decoration: underline;
 }
+
+.content2 {
+  text-align: center;
+  font-family: 'lobster';
+}
+ 
