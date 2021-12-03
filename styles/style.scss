@@ -6,6 +6,8 @@ a {
   text-decoration: none;
   font-family: "Kodchasan";
   color: $beige;
+  width: 20px;
+  height: 20px;
 }
 ul, ol, fieldset, form, label, legend {
   margin: 0;
@@ -297,92 +299,4 @@ body{
   }
 }
 
-
-/*hamburgare meny*/
-/*
-body {
-  width:15em;
-  margin:5em auto;
-  font:1em sans-serif;
-  background: grey;
-}
-*/
-
-
-.dropdown {
-  padding:1em 1em 1em 1em;
-  background: #892300;;
-  display:block;
-  color: #892300;
-}
-
-.dropdown {
-  position: absolute;
-  top: 40px;
-  right: 0;
-  text-align: center;
-}
-
-.nav-toggle {
-  -webkit-appearance: none;
-  background: #FFE2B2;
-  text-align: center;
-  font-size:1em;
-  padding:.8em;
-  border:none;
-  border-radius: 50%;
-  outline:none;
-  transition: all 0.2s;
-  cursor:pointer;
-}
-
-.nav-toggle:hover {
-  background: #8A8635;
-  color: #FFE2B2;
-}
-
-.nav-toggle:focus, .menu a:focus {
-  outline:1px solid #8A8635;
-}
-
-.nav-toggle svg {
-  width:16px;   
-  height:16px;
-  fill: #892300;
-  vertical-align:top;
-  margin-right:.25em;
-}
-
-.menu {
-  list-style:none;
-  padding:0;
-  margin:1em 0 0 0;
-  transition: all 0.8s cubic-bezier(.15,.7,0,1);
-}
-
-.menu a {
-  display:block;
-  color: #892300;
-  background:#FFE2B2;
-  text-decoration:none;
-  padding:.5em .5em;
-  outline:none;
-  margin-bottom:.2em;
-  transition: all 0.2s;
-}
-
-
-.menu a:hover {
-  background: #8A8635;
-  color:#892300;
-}
-
-.js .menu {
-		overflow: hidden;
-		max-height: 0;
-}
-
-.js .menu-active {
-	max-height:12em;
-  padding-bottom:1em;
 }
