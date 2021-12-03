@@ -39,6 +39,7 @@ footer {
 
 body {
   background: #FFE2B2;
+  margin: 0;
 }
 
 /* Navbar */
@@ -47,7 +48,7 @@ body {
 }
 
 .header h1 {
-  /*     margin: 0; */
+  margin: .5rem;
   font-size: 1.5rem;
 }
 
@@ -66,28 +67,32 @@ body {
   height: 20px;
 }
 
-.menu-button {
+.toggle-button {
   position: absolute;
   top: 1rem;
   right: 1rem;
 }
 
-.menu-list {
-  /*   display: none; */
+.navbar-links {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-color: #D06224;
 }
 
-.menu-list li {
+.navbar-links li {
   padding: 1rem;
   border-bottom: 2px solid #892300;
 }
 
-.menu-list a {
+.navbar-links a {
   font-family: 'Lobster';
   font-size: 24px;
 }
 
-.menu-list .active {
+.active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -264,11 +269,6 @@ body {
   position: relative;
   left: 200px;
   bottom: 50px;
-}
-
-body {
-  background: #FFE2B2;
-  margin: 0;
 }
 
 h2 {

@@ -35,14 +35,15 @@ footer{
 }
 
 body{
-    background: $beige;
+  background: $beige;
+  margin:0;
 }
 
 /* Navbar */
 .header{
   background: $dark-red;
   h1 {
-/*     margin: 0; */
+    margin: .5rem;
     font-size: 1.5rem;
   }
 }
@@ -54,13 +55,14 @@ body{
   width: 20px;
   height: 20px;
 }
-.menu-button {
+.toggle-button {
   position: absolute;
   top: 1rem;
   right: 1rem;
 }
-.menu-list {
-/*   display: none; */
+.navbar-links {
+  display: none;
+  flex-direction: column;
   background-color: $orange;
   li {
     padding: 1rem;
@@ -71,9 +73,9 @@ body{
     font-family: 'Lobster';
     font-size: 24px;
   }
-  .active {
-    display: flex;
-  }
+}
+.active {
+  display: flex;
 }
 
 /* om 70-talet och rabatt */
@@ -213,11 +215,6 @@ body{
     }
 }
 
-body{
-    background: $beige;
-    margin:0;
-   
-}
 //Om oss
 h2{
     font-family: "lobster";
