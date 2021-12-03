@@ -36,6 +36,17 @@ header{
 .dropdown{
     display:none;
 }
+a{
+  font-family: "Kodchasan";
+  color: $beige;
+}
+footer{
+  background: $dark-green;
+}
+
+body{
+    background: $beige;
+}
 /* om 70-talet och rabatt */
 .about-70s{
     background-image: url("/Casa-di-Morelli/src/wallpaper2.jpg"); 
@@ -222,29 +233,6 @@ h2{
 
 }
 
-/* Footer */
-.bottom {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 400px;
-  padding: 30px 40px;
-
-  h4 {
-    margin: 0 0 30px;
-  }
-}
-
-.social-media {
-  display: flex;
-  justify-content: space-between;
-  align-self: stretch;
-
-  img {
-    height: 38px;
-  }
-}
-
 .background-div{
         background: $beige;
         display: flex;  
@@ -256,17 +244,7 @@ h2{
         opacity: 0.8;
     }
 
-a{
-  font-family: "Kodchasan";
-  color: $beige;
-}
-footer{
-  background: $dark-green;
-}
 
-body{
-    background: $beige;
-}
 
 /* Footer */
 .bottom {
