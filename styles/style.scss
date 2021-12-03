@@ -4,10 +4,6 @@
 /* Reset */
 a {
   text-decoration: none;
-  font-family: "Kodchasan";
-  color: $beige;
-  width: 20px;
-  height: 20px;
 }
 ul, ol, fieldset, form, label, legend {
   margin: 0;
@@ -30,12 +26,6 @@ h4{
   font-size: 24px;
   text-shadow: 1px 2px rgba(0, 0, 0, 0.5) ;
 }
-header{
-  background: $dark-red;
-}
-.dropdown{
-    display:none;
-}
 a{
   font-family: "Kodchasan";
   color: $beige;
@@ -47,6 +37,45 @@ footer{
 body{
     background: $beige;
 }
+
+/* Navbar */
+.header{
+  background: $dark-red;
+  h1 {
+/*     margin: 0; */
+    font-size: 1.5rem;
+  }
+}
+.navbar {
+  display: flex;
+  flex-direction: column;
+}
+.hamburgare-icon {
+  width: 20px;
+  height: 20px;
+}
+.menu-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+.menu-list {
+/*   display: none; */
+  background-color: $orange;
+  li {
+    padding: 1rem;
+    border-bottom: 2px solid $dark-red;
+  }
+
+  a {
+    font-family: 'Lobster';
+    font-size: 24px;
+  }
+  .active {
+    display: flex;
+  }
+}
+
 /* om 70-talet och rabatt */
 .about-70s{
     background-image: url("/Casa-di-Morelli/src/wallpaper2.jpg"); 
@@ -275,9 +304,4 @@ h2{
     filter: drop-shadow(0 5px 5px rgba(34, 34, 34, 0.603));  
     }
   }
-}
-
-.hamburgare-icon {
-  width: 20px;
-  height: 20px;
 }

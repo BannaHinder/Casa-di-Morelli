@@ -1,10 +1,6 @@
 /* Reset */
 a {
   text-decoration: none;
-  font-family: "Kodchasan";
-  color: #FFE2B2;
-  width: 20px;
-  height: 20px;
 }
 
 ul, ol, fieldset, form, label, legend {
@@ -32,14 +28,6 @@ h4 {
   text-shadow: 1px 2px rgba(0, 0, 0, 0.5);
 }
 
-header {
-  background: #892300;
-}
-
-.dropdown {
-  display: none;
-}
-
 a {
   font-family: "Kodchasan";
   color: #FFE2B2;
@@ -51,6 +39,58 @@ footer {
 
 body {
   background: #FFE2B2;
+}
+
+/* Navbar */
+.header {
+  background: #892300;
+}
+
+.header h1 {
+  /*     margin: 0; */
+  font-size: 1.5rem;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hamburgare-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.menu-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.menu-list {
+  /*   display: none; */
+  background-color: #D06224;
+}
+
+.menu-list li {
+  padding: 1rem;
+  border-bottom: 2px solid #892300;
+}
+
+.menu-list a {
+  font-family: 'Lobster';
+  font-size: 24px;
+}
+
+.menu-list .active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 /* om 70-talet och rabatt */
@@ -361,10 +401,5 @@ h2 {
 .social-media img:hover {
   -webkit-filter: drop-shadow(0 5px 5px rgba(34, 34, 34, 0.603));
   filter: drop-shadow(0 5px 5px rgba(34, 34, 34, 0.603));
-}
-
-.hamburgare-icon {
-  width: 20px;
-  height: 20px;
 }
 /*# sourceMappingURL=style.css.map */
