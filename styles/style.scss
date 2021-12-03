@@ -97,7 +97,7 @@ header{
     }
     // kläder på startsidan
 .clothes{
-    background: $beige;
+    background:$beige;
     display: flex;
     flex-direction: column;
     .clothes-group{
@@ -184,6 +184,7 @@ h2{
     color: $dark-red;
     text-align: center;
     font-weight: lighter;
+    background: $beige;
 }
 .about-info{
     font-family: "kodchasan";
@@ -299,4 +300,14 @@ body{
   }
 }
 
+.hus {
+  width: 40px;
+  height: 40px;
+   
+}
+
+/*kontakt mobile style*/
+.content1 {
+  text-align: center;
+  background: wheat;
 }
