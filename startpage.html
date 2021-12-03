@@ -16,16 +16,6 @@
         <header class="top">
             <header>
 
-                <nav class="dropdown">
-                  <button class="nav-toggle"><svg viewBox="0 0 16 16"><path d="M8.5 1c-4.142 0-7.5 3.358-7.5 7.5 0 4.143 3.358 7.5 7.5 7.5 4.143 0 7.5-3.357 7.5-7.5 0-4.142-3.357-7.5-7.5-7.5zm4 11h-8c-.276 0-.5-.225-.5-.5s.224-.5.5-.5h8c.275 0 .5.225.5.5s-.225.5-.5.5zm0-3h-8c-.276 0-.5-.225-.5-.5 0-.276.224-.5.5-.5h8c.275 0 .5.224.5.5 0 .275-.225.5-.5.5zm0-3h-8c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h8c.275 0 .5.224.5.5s-.225.5-.5.5z"/></svg></button>
-                  <ul class="menu">
-                    <li><a href="#0">Startsida</a></li>
-                    <li><a href="#0">Om oss</a></li>
-                    <li><a href="#0">Recensioner</a></li>
-                    <li><a href="#0">Kontakt</a></li>
-                    <li><a href="#0">Kundkorg</a></li>
-                  </ul>
-                </nav>
               </header>
         </header>
         <main>
@@ -144,98 +134,8 @@
         </div>
       </footer>
     </div>
-    <script>
         
-        document.documentElement.className = "js";
-
-        var menu = document.querySelector( '.menu' ),
-            button = document.querySelector('.nav-toggle'),
-            dropdown = document.querySelector('.dropdown');
-
-        button.onclick = function() {
-            classie.toggle( menu, 'menu-active' );
-        };
-
-        // Close menu when clicking outside
-        // See: https://css-tricks.com/dangers-stopping-event-propagation/
-        document.addEventListener('click', function(event) {
-            if (event.target !== dropdown && !dropdown.contains(event.target)) {
-                // hide the menu
-            classie.removeClass(menu, "menu-active");
-            }
-        });
-
-        ( function( window ) {
-
-        'use strict';
-
-        // class helper functions from bonzo https://github.com/ded/bonzo
-
-        function classReg( className ) {
-            return new RegExp("(^|\\s+)" + className + "(\\s+|$)");
-        }
-
-        // classList support for class management
-        var hasClass, addClass, removeClass;
-
-        if ( 'classList' in document.documentElement ) {
-            hasClass = function( elem, c ) {
-                return elem.classList.contains( c );
-        };
-        addClass = function( elem, c ) {
-            elem.classList.add( c );
-        };
-        removeClass = function( elem, c ) {
-            elem.classList.remove( c );
-        };
-        }
-        else {
-            hasClass = function( elem, c ) {
-             return classReg( c ).test( elem.className );
-        };
-        addClass = function( elem, c ) {
-            if ( !hasClass( elem, c ) ) {
-            elem.className = elem.className + ' ' + c;
-            }
-        };
-        removeClass = function( elem, c ) {
-            elem.className = elem.className.replace( classReg( c ), ' ' );
-        };
-        }
-
-        function toggleClass( elem, c ) {
-        var fn = hasClass( elem, c ) ? removeClass : addClass;
-        fn( elem, c );
-        }
-
-        var classie = {
-        // full names
-        hasClass: hasClass,
-        addClass: addClass,
-        removeClass: removeClass,
-        toggleClass: toggleClass,
-        // short names
-        has: hasClass,
-        add: addClass,
-        remove: removeClass,
-        toggle: toggleClass
-        };
-
-        // transport
-        if ( typeof define === 'function' && define.amd ) {
-        // AMD
-        define( classie );
-        } else if ( typeof exports === 'object' ) {
-        // CommonJS
-        module.exports = classie;
-        } else {
-        // browser global
-        window.classie = classie;
-        }
-
-        })( window );
-
-    </script>
+        
     
 </body>
 </html>
