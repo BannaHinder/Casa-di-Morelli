@@ -42,7 +42,17 @@ body {
   background: $beige;
   margin: 0;
 }
-
+button{
+    background: $dark-green;
+    color: white;
+    font-family: "Kodchasan";
+    border-radius: 20px;
+    font-weight: bolder;
+    padding: 10px 10px;
+    border: $dark-green;
+    filter: drop-shadow(0 5px 5px rgba(34, 34, 34, 0.603));
+    position: relative;
+}
 /* Navbar */
 .header {
   background: $dark-red;
@@ -171,15 +181,6 @@ body {
         font-size: 14px;
       }
       button {
-        background: $dark-green;
-        color: white;
-        font-family: "Kodchasan";
-        border-radius: 20px;
-        font-weight: bolder;
-        padding: 10px 10px;
-        border: $dark-green;
-        filter: drop-shadow(0 5px 5px rgba(34, 34, 34, 0.603));
-        position: relative;
         left: 80px;
         bottom: 50px;
       }
@@ -206,15 +207,6 @@ body {
       font-size: 14px;
     }
     button {
-      background: $dark-green;
-      color: white;
-      font-family: "Kodchasan";
-      border-radius: 20px;
-      font-weight: bolder;
-      padding: 10px 10px;
-      border: $dark-green;
-      filter: drop-shadow(0 5px 5px rgba(34, 34, 34, 0.603));
-      position: relative;
       left: 200px;
       bottom: 50px;
     }
@@ -340,30 +332,61 @@ h2 {
     margin: 20px;
     background-color: $orange;
     color: $beige;
-
     box-shadow: 4px 4px 5px 0px rgba(34, 34, 34, 0.7);
     -webkit-box-shadow: 4px 4px 5px 0px rgba(34, 34, 34, 0.7);
     -moz-box-shadow: 4px 4px 5px 0px rgba(34, 34, 34, 0.7);
     display: flex;
     .customer {
-        @include flex-column-center;
-        margin: 15px;
+      @include flex-column-center;
+      margin: 15px;
       .iconify {
         font-size: 50px;
       }
+      h5 {
+        font-family: "Kodchasan";
+      }
     }
     .rating {
-      margin:15px;
-      .fa-star{
-        color:$dark-red;
+      margin: 15px;
+      .fa-star {
+        color: $dark-red;
       }
-      .checked{
-          color:$beige;
+      .checked {
+        color: $beige;
       }
       p {
-          margin:0px;
+        margin: 0px;
         font-family: "kodchasan";
         font-size: 14px;
+      }
+    }
+  }
+  .skriv-recension {
+    height: 350px;
+    flex-direction: column;
+    h3 {
+      font-family: "lobster";
+    }
+    .input-container {
+      // @include flex-column-center;
+      input {
+        background: $beige;
+        color: $dark-red;
+        border: none;
+        margin: 10px;
+        font-family: "kodchasan";
+        ::-webkit-input-placeholder {
+          color: $dark-red;
+        }
+        :-ms-input-placeholder {
+          color: $dark-red;
+        }
+        ::placeholder {
+          color: $dark-red;
+        }
+        input[name="recension"]{
+            height:100px;
+        }
       }
     }
   }
