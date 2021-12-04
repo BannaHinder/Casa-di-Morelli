@@ -42,16 +42,16 @@ body {
   background: $beige;
   margin: 0;
 }
-button{
-    background: $dark-green;
-    color: white;
-    font-family: "Kodchasan";
-    border-radius: 20px;
-    font-weight: bolder;
-    padding: 10px 10px;
-    border: $dark-green;
-    filter: drop-shadow(0 5px 5px rgba(34, 34, 34, 0.603));
-    position: relative;
+button {
+  background: $dark-green;
+  color: white;
+  font-family: "Kodchasan";
+  border-radius: 20px;
+  font-weight: bolder;
+  padding: 10px 10px;
+  border: $dark-green;
+  filter: drop-shadow(0 5px 5px rgba(34, 34, 34, 0.603));
+  position: relative;
 }
 /* Navbar */
 .header {
@@ -363,31 +363,51 @@ h2 {
   }
   .skriv-recension {
     height: 350px;
-    flex-direction: column;
+    @include flex-column-center;
+    padding: 15px;
     h3 {
       font-family: "lobster";
     }
+    .iconify{
+        align-self: flex-end;
+    }
     .input-container {
-      // @include flex-column-center;
       input {
         background: $beige;
         color: $dark-red;
         border: none;
         margin: 10px;
+        padding: 5px;
+        width: 90%;
+        border-radius: 5px;
         font-family: "kodchasan";
-        ::-webkit-input-placeholder {
-          color: $dark-red;
-        }
-        :-ms-input-placeholder {
-          color: $dark-red;
-        }
-        ::placeholder {
-          color: $dark-red;
-        }
-        input[name="recension"]{
-            height:100px;
-        }
       }
     }
+  }
+}
+
+div.stars-rating {
+    margin-bottom: 20px;
+    margin-top: 20px;
+  input.star { display: none; }
+  label.star {
+      float:right;
+    padding: 10px;
+    font-size: 30px;
+    color: $dark-red;
+    transition: all .2s;
+  }
+  input.star:checked ~ label.star:before {
+    content: '\f005';
+    color: $beige;
+    transition: all .25s;
+  }
+  input.star-5:checked ~ label.star:before {
+    color: $beige;
+    text-shadow: 0 0 20px $dark-red;
+  }
+  label.star:before {
+    content: '\f006';
+    font-family: FontAwesome;
   }
 }
