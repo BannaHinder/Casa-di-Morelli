@@ -45,6 +45,19 @@ body {
   margin: 0;
 }
 
+button {
+  background: #8A8635;
+  color: white;
+  font-family: "Kodchasan";
+  border-radius: 20px;
+  font-weight: bolder;
+  padding: 10px 10px;
+  border: #8A8635;
+  -webkit-filter: drop-shadow(0 5px 5px rgba(34, 34, 34, 0.603));
+          filter: drop-shadow(0 5px 5px rgba(34, 34, 34, 0.603));
+  position: relative;
+}
+
 /* Navbar */
 .header {
   background: #892300;
@@ -221,16 +234,6 @@ body {
 }
 
 .clothes .clothes-group .small-image button {
-  background: #8A8635;
-  color: white;
-  font-family: "Kodchasan";
-  border-radius: 20px;
-  font-weight: bolder;
-  padding: 10px 10px;
-  border: #8A8635;
-  -webkit-filter: drop-shadow(0 5px 5px rgba(34, 34, 34, 0.603));
-          filter: drop-shadow(0 5px 5px rgba(34, 34, 34, 0.603));
-  position: relative;
   left: 80px;
   bottom: 50px;
 }
@@ -262,16 +265,6 @@ body {
 }
 
 .clothes .big-image button {
-  background: #8A8635;
-  color: white;
-  font-family: "Kodchasan";
-  border-radius: 20px;
-  font-weight: bolder;
-  padding: 10px 10px;
-  border: #8A8635;
-  -webkit-filter: drop-shadow(0 5px 5px rgba(34, 34, 34, 0.603));
-          filter: drop-shadow(0 5px 5px rgba(34, 34, 34, 0.603));
-  position: relative;
   left: 200px;
   bottom: 50px;
 }
@@ -472,6 +465,10 @@ h2 {
   font-size: 50px;
 }
 
+.recension-wrapper .recension .customer h5 {
+  font-family: "Kodchasan";
+}
+
 .recension-wrapper .recension .rating {
   margin: 15px;
 }
@@ -488,5 +485,45 @@ h2 {
   margin: 0px;
   font-family: "kodchasan";
   font-size: 14px;
+}
+
+.recension-wrapper .skriv-recension {
+  height: 350px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.recension-wrapper .skriv-recension h3 {
+  font-family: "lobster";
+}
+
+.recension-wrapper .skriv-recension .input-container input {
+  background: #FFE2B2;
+  color: #892300;
+  border: none;
+  margin: 10px;
+  font-family: "kodchasan";
+}
+
+.recension-wrapper .skriv-recension .input-container input ::-webkit-input-placeholder {
+  color: #892300;
+}
+
+.recension-wrapper .skriv-recension .input-container input :-ms-input-placeholder {
+  color: #892300;
+}
+
+.recension-wrapper .skriv-recension .input-container input ::-ms-input-placeholder {
+  color: #892300;
+}
+
+.recension-wrapper .skriv-recension .input-container input ::placeholder {
+  color: #892300;
+}
+
+.recension-wrapper .skriv-recension .input-container input input[name="recension"] {
+  height: 100px;
 }
 /*# sourceMappingURL=style.css.map */
