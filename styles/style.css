@@ -3,18 +3,25 @@ a {
   text-decoration: none;
 }
 
-ul, ol, fieldset, form, label, legend {
+ul,
+ol,
+fieldset,
+form,
+label,
+legend {
   margin: 0;
   padding: 0;
   border: 0;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 
 /* General settings */
-h1, h4 {
+h1,
+h4 {
   font-family: "Lobster";
   color: #FFE2B2;
 }
@@ -52,7 +59,7 @@ body {
 }
 
 .navbar {
-  padding-top: .7rem;
+  padding-top: 0.7rem;
 }
 
 .hamburgare-icon {
@@ -84,7 +91,7 @@ body {
 }
 
 .navbar-links a {
-  font-family: 'Lobster';
+  font-family: "Lobster";
   font-size: 24px;
   text-shadow: 0 0 2px #892300;
   color: white;
@@ -125,12 +132,12 @@ body {
 }
 
 .about-70s h3 {
-  opacity: 1.0;
+  opacity: 1;
   margin-bottom: 0;
 }
 
 .about-70s p {
-  opacity: 1.0;
+  opacity: 1;
   margin-top: 0;
 }
 
@@ -332,26 +339,6 @@ h2 {
   color: #892300;
 }
 
-.background-div {
-  background: #FFE2B2;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 0 5px 0 5px;
-  padding: 0 5px 0 5px;
-  opacity: 0.8;
-}
-
 /* Footer */
 .bottom {
   display: -webkit-box;
@@ -409,14 +396,14 @@ h2 {
 
 /*kontakt mobile style*/
 .content1 {
-  font-family: 'lobster';
+  font-family: "lobster";
   text-align: center;
   background: wheat;
 }
 
 .kontakt-under {
   text-decoration: underline;
-  font-family: 'lobster';
+  font-family: "lobster";
 }
 
 .p-element {
@@ -426,6 +413,8 @@ h2 {
 
 .content2 {
   text-align: center;
-  font-family: 'lobster';
+  font-family: "lobster";
 }
+
+/*recensioner- mobile*/
 /*# sourceMappingURL=style.css.map */
