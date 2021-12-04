@@ -13,6 +13,9 @@
     <link rel="shortcut icon" href="src/icons/flower icon.svg" image="x-icon" />
     <script src="scripts/script.js"></script>
     <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+    <!-- ------------------star rating stylesheet ------------------------- -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <!-- --------------------------------css for people icons----------------------------------- -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -38,7 +41,7 @@
     <!-----------------------------------main---------------------------------------->
     <main class="recension-wrapper">
       <h2>Recensioner</h2>
-      <article >
+      <article>
         <section class="recension">
           <div class="customer">
             <span
@@ -56,7 +59,8 @@
               <span class="fa fa-star"></span>
             </div>
             <p>
-              Одежда, которую вы можете найти здесь, действительно единственная в своем роде.
+              Одежда, которую вы можете найти здесь, действительно единственная
+              в своем роде.
             </p>
           </div>
         </section>
@@ -71,13 +75,16 @@
           <div class="rating">
             <div class="stars">
               <span class="fa fa-star checked"></span>
-              <span class="fa fa-star "></span>
-              <span class="fa fa-star "></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
               <span class="fa fa-star"></span>
               <span class="fa fa-star"></span>
             </div>
             <p>
-              Har köpt flera gånger från dem och det har gått bra, men sista gången försvann returen på vägen tillbaka till UK, så fick aldrig någon återbetalning på över 10.000 kr(!) Handlar INTE igen! Avrådes! Om det gick att ge 0 stjärnor hade jag gett det!!!!
+              Har köpt flera gånger från dem och det har gått bra, men sista
+              gången försvann returen på vägen tillbaka till UK, så fick aldrig
+              någon återbetalning på över 10.000 kr(!) Handlar INTE igen!
+              Avrådes! Om det gick att ge 0 stjärnor hade jag gett det!!!!
             </p>
           </div>
         </section>
@@ -105,16 +112,46 @@
         </section>
       </article>
       <article class="skriv-recension recension">
-        <span class="iconify" data-icon="bi:patch-question" style="color: #ffe2b2; font-size: 25px;"></span>
+        <span
+          class="iconify"
+          data-icon="bi:patch-question"
+          style="color: #ffe2b2; font-size: 25px"
+        ></span>
         <h3>Skriv din egen recension</h3>
         <section class="input-container">
-          <div >
-          <input type="text" name="name" id="name-input" placeholder="Namn:">
-          <input type="text" name="recension" id="recension-input" placeholder="Skriv din text här...">
-          <button>Skicka!</button>
-        </div>
-        </section>
+          <div>
+            <input
+              type="text"
+              name="name"
+              id="name-input"
+              placeholder="Namn:"
+            />
+            <input
+              type="text"
+              name="recension"
+              id="recension-input"
+              placeholder="Skriv din text här..."
+            />
+            </div>
+            </section>
+            <div class="stars-rating">
+              <form action="">
+                <input class="star star-5" id="star-5" type="radio" name="star"/>
+                <label class="star star-5" for="star-5"></label>
+                <input class="star star-4" id="star-4" type="radio" name="star"/>
+                <label class="star star-4" for="star-4"></label>
+                <input class="star star-3" id="star-3" type="radio" name="star"/>
+                <label class="star star-3" for="star-3"></label>
+                <input class="star star-2" id="star-2" type="radio" name="star"/>
+                <label class="star star-2" for="star-2"></label>
+                <input class="star star-1" id="star-1" type="radio" name="star"/>
+                <label class="star star-1" for="star-1"></label>
+              </form>
+            </div>
 
+            <button>Skicka!</button>
+          </div>
+  
       </article>
     </main>
     <!-- Add finished footer here -->

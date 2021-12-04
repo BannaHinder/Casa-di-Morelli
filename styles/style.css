@@ -489,14 +489,26 @@ h2 {
 
 .recension-wrapper .skriv-recension {
   height: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px;
 }
 
 .recension-wrapper .skriv-recension h3 {
   font-family: "lobster";
+}
+
+.recension-wrapper .skriv-recension .iconify {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 .recension-wrapper .skriv-recension .input-container input {
@@ -504,26 +516,44 @@ h2 {
   color: #892300;
   border: none;
   margin: 10px;
+  padding: 5px;
+  width: 90%;
+  border-radius: 5px;
   font-family: "kodchasan";
 }
 
-.recension-wrapper .skriv-recension .input-container input ::-webkit-input-placeholder {
-  color: #892300;
+div.stars-rating {
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
-.recension-wrapper .skriv-recension .input-container input :-ms-input-placeholder {
-  color: #892300;
+div.stars-rating input.star {
+  display: none;
 }
 
-.recension-wrapper .skriv-recension .input-container input ::-ms-input-placeholder {
+div.stars-rating label.star {
+  float: right;
+  padding: 10px;
+  font-size: 30px;
   color: #892300;
+  -webkit-transition: all .2s;
+  transition: all .2s;
 }
 
-.recension-wrapper .skriv-recension .input-container input ::placeholder {
-  color: #892300;
+div.stars-rating input.star:checked ~ label.star:before {
+  content: '\f005';
+  color: #FFE2B2;
+  -webkit-transition: all .25s;
+  transition: all .25s;
 }
 
-.recension-wrapper .skriv-recension .input-container input input[name="recension"] {
-  height: 100px;
+div.stars-rating input.star-5:checked ~ label.star:before {
+  color: #FFE2B2;
+  text-shadow: 0 0 20px #892300;
+}
+
+div.stars-rating label.star:before {
+  content: '\f006';
+  font-family: FontAwesome;
 }
 /*# sourceMappingURL=style.css.map */
