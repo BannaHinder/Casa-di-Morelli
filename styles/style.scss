@@ -362,7 +362,7 @@ h2 {
     }
   }
   .skriv-recension {
-    height: 350px;
+    height: 450px;
     @include flex-column-center;
     padding: 15px;
     h3 {
@@ -381,6 +381,15 @@ h2 {
         width: 90%;
         border-radius: 5px;
         font-family: "kodchasan";
+        font-size: 14px;
+        font-weight: bold;
+        &::placeholder{
+            color:$dark-red;
+            position: fixed;
+        }
+        &[name="recension"]{
+            height: 130px;
+        }
       }
     }
   }
