@@ -331,7 +331,7 @@ h2 {
 .recension-wrapper {
   @include flex-column-center;
   h2 {
-    padding: 5px 40px 5px 40px;
+    padding: 0px 40px 0px 40px;
     background: $beige;
     border: solid 2px $dark-red;
     border-radius: 3px;
@@ -340,13 +340,28 @@ h2 {
     margin: 20px;
     background-color: $orange;
     color: $beige;
+
     box-shadow: 4px 4px 5px 0px rgba(34, 34, 34, 0.7);
     -webkit-box-shadow: 4px 4px 5px 0px rgba(34, 34, 34, 0.7);
     -moz-box-shadow: 4px 4px 5px 0px rgba(34, 34, 34, 0.7);
     display: flex;
-    .rating {
+    .customer {
         @include flex-column-center;
+        margin: 15px;
+      .iconify {
+        font-size: 50px;
+      }
+    }
+    .rating {
+      margin:15px;
+      .fa-star{
+        color:$dark-red;
+      }
+      .checked{
+          color:$beige;
+      }
       p {
+          margin:0px;
         font-family: "kodchasan";
         font-size: 14px;
       }

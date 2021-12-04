@@ -436,7 +436,7 @@ h2 {
 }
 
 .recension-wrapper h2 {
-  padding: 5px 40px 5px 40px;
+  padding: 0px 40px 0px 40px;
   background: #FFE2B2;
   border: solid 2px #892300;
   border-radius: 3px;
@@ -454,7 +454,7 @@ h2 {
   display: flex;
 }
 
-.recension-wrapper .recension .rating {
+.recension-wrapper .recension .customer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -465,9 +465,27 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 15px;
+}
+
+.recension-wrapper .recension .customer .iconify {
+  font-size: 50px;
+}
+
+.recension-wrapper .recension .rating {
+  margin: 15px;
+}
+
+.recension-wrapper .recension .rating .fa-star {
+  color: #892300;
+}
+
+.recension-wrapper .recension .rating .checked {
+  color: #FFE2B2;
 }
 
 .recension-wrapper .recension .rating p {
+  margin: 0px;
   font-family: "kodchasan";
   font-size: 14px;
 }
