@@ -324,7 +324,32 @@ h2 {
 }
 
 /*recensioner- mobile*/
-.recension{
-    margin:20px;
+.wallpaper {
+  background-image: url("/src/wallpaper.jpg");
+  background-size: cover;
+}
+.recension-wrapper {
+  @include flex-column-center;
+  h2 {
+    padding: 5px 40px 5px 40px;
+    background: $beige;
+    border: solid 2px $dark-red;
+    border-radius: 3px;
+  }
+  .recension {
+    margin: 20px;
     background-color: $orange;
+    color: $beige;
+    box-shadow: 4px 4px 5px 0px rgba(34, 34, 34, 0.7);
+    -webkit-box-shadow: 4px 4px 5px 0px rgba(34, 34, 34, 0.7);
+    -moz-box-shadow: 4px 4px 5px 0px rgba(34, 34, 34, 0.7);
+    display: flex;
+    .rating {
+        @include flex-column-center;
+      p {
+        font-family: "kodchasan";
+        font-size: 14px;
+      }
+    }
+  }
 }
