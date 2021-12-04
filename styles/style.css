@@ -504,6 +504,7 @@ h2 {
 
 .recension-wrapper .skriv-recension h3 {
   font-family: "lobster";
+  text-shadow: 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .recension-wrapper .skriv-recension .iconify {
@@ -511,7 +512,7 @@ h2 {
       align-self: flex-end;
 }
 
-.recension-wrapper .skriv-recension .input-container input {
+.recension-wrapper .skriv-recension .input-container input, .recension-wrapper .skriv-recension .input-container textarea {
   background: #FFE2B2;
   color: #892300;
   border: none;
@@ -524,28 +525,20 @@ h2 {
   font-weight: bold;
 }
 
-.recension-wrapper .skriv-recension .input-container input::-webkit-input-placeholder {
+.recension-wrapper .skriv-recension .input-container input::-webkit-input-placeholder, .recension-wrapper .skriv-recension .input-container textarea::-webkit-input-placeholder {
   color: #892300;
-  position: fixed;
 }
 
-.recension-wrapper .skriv-recension .input-container input:-ms-input-placeholder {
+.recension-wrapper .skriv-recension .input-container input:-ms-input-placeholder, .recension-wrapper .skriv-recension .input-container textarea:-ms-input-placeholder {
   color: #892300;
-  position: fixed;
 }
 
-.recension-wrapper .skriv-recension .input-container input::-ms-input-placeholder {
+.recension-wrapper .skriv-recension .input-container input::-ms-input-placeholder, .recension-wrapper .skriv-recension .input-container textarea::-ms-input-placeholder {
   color: #892300;
-  position: fixed;
 }
 
-.recension-wrapper .skriv-recension .input-container input::placeholder {
+.recension-wrapper .skriv-recension .input-container input::placeholder, .recension-wrapper .skriv-recension .input-container textarea::placeholder {
   color: #892300;
-  position: fixed;
-}
-
-.recension-wrapper .skriv-recension .input-container input[name="recension"] {
-  height: 130px;
 }
 
 div.stars-rating {
