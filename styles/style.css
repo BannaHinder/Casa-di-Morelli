@@ -417,8 +417,58 @@ h2 {
 }
 
 /*recensioner- mobile*/
-.recension {
+.wallpaper {
+  background-image: url("/src/wallpaper.jpg");
+  background-size: cover;
+}
+
+.recension-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.recension-wrapper h2 {
+  padding: 5px 40px 5px 40px;
+  background: #FFE2B2;
+  border: solid 2px #892300;
+  border-radius: 3px;
+}
+
+.recension-wrapper .recension {
   margin: 20px;
   background-color: #D06224;
+  color: #FFE2B2;
+  box-shadow: 4px 4px 5px 0px rgba(34, 34, 34, 0.7);
+  -webkit-box-shadow: 4px 4px 5px 0px rgba(34, 34, 34, 0.7);
+  -moz-box-shadow: 4px 4px 5px 0px rgba(34, 34, 34, 0.7);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.recension-wrapper .recension .rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.recension-wrapper .recension .rating p {
+  font-family: "kodchasan";
+  font-size: 14px;
 }
 /*# sourceMappingURL=style.css.map */
