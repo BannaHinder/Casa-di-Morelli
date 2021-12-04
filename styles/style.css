@@ -488,7 +488,7 @@ h2 {
 }
 
 .recension-wrapper .skriv-recension {
-  height: 350px;
+  height: 450px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -520,6 +520,32 @@ h2 {
   width: 90%;
   border-radius: 5px;
   font-family: "kodchasan";
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.recension-wrapper .skriv-recension .input-container input::-webkit-input-placeholder {
+  color: #892300;
+  position: fixed;
+}
+
+.recension-wrapper .skriv-recension .input-container input:-ms-input-placeholder {
+  color: #892300;
+  position: fixed;
+}
+
+.recension-wrapper .skriv-recension .input-container input::-ms-input-placeholder {
+  color: #892300;
+  position: fixed;
+}
+
+.recension-wrapper .skriv-recension .input-container input::placeholder {
+  color: #892300;
+  position: fixed;
+}
+
+.recension-wrapper .skriv-recension .input-container input[name="recension"] {
+  height: 130px;
 }
 
 div.stars-rating {
