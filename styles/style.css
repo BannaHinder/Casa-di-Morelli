@@ -388,9 +388,14 @@ h2 {
   height: 100px;
 }
 
-.map-img {
+.kontakt-img {
   width: 50px;
   /*fixa funkar ej*/
+  height: 50px;
+}
+
+.map-img {
+  width: 60px;
   height: 50px;
 }
 
@@ -398,7 +403,7 @@ h2 {
 .content1 {
   font-family: "lobster";
   text-align: center;
-  height: 500px;
+  height: 700px;
   background: #D06224;
   border-radius: 0px;
   position: relative;
@@ -406,6 +411,7 @@ h2 {
   box-shadow: 4px 4px 5px 0px rgba(34, 34, 34, 0.7);
   -webkit-box-shadow: 4px 4px 5px 0px rgba(34, 34, 34, 0.7);
   -moz-box-shadow: 4px 4px 5px 0px rgba(34, 34, 34, 0.7);
+  line-height: normal;
 }
 
 .kontakt-under {
@@ -419,8 +425,8 @@ h2 {
 
 /*square 2*/
 .content2 {
-  text-align: center;
   font-family: "lobster";
+  text-align: center;
   height: 400px;
   background: #D06224;
   border-radius: 0;
