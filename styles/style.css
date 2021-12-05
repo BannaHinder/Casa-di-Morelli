@@ -399,6 +399,13 @@ h2 {
   height: 50px;
 }
 
+.kontakt-oss {
+  border: 2px solid #892300;
+  border-radius: 3px;
+  padding: 0px 40px 0px 40px;
+  display: block;
+}
+
 /*square 1*/
 .content1 {
   font-family: "lobster";
@@ -408,6 +415,7 @@ h2 {
   border-radius: 0px;
   position: relative;
   margin: 20px;
+  padding: 20px;
   box-shadow: 4px 4px 5px 0px rgba(34, 34, 34, 0.7);
   -webkit-box-shadow: 4px 4px 5px 0px rgba(34, 34, 34, 0.7);
   -moz-box-shadow: 4px 4px 5px 0px rgba(34, 34, 34, 0.7);
