@@ -383,7 +383,6 @@ h2 {
 }
 
 /*kontakt mobile style*/
-/*image, map icon*/
 .hus {
   width: 140px;
   height: 100px;
@@ -439,8 +438,21 @@ h2 {
 #choose-question, #name-input, #text-input {
   font-family: 'lobster';
   border-radius: 5px;
-  margin-top: 5px;
+  margin-top: 10px;
+  margin: 5px;
+  padding: 10px;
   background: #FFE2B2;
+  color: #892300;
+  border: none;
+  border-radius: 5px;
+  width: 90%;
+  font-family: 'lobster';
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#choose-question {
+  margin-top: 25px;
 }
 
 /*recensioner- mobile*/
