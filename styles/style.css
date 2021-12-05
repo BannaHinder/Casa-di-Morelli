@@ -403,7 +403,7 @@ h2 {
 .content1 {
   font-family: "lobster";
   text-align: center;
-  height: 700px;
+  height: 600px;
   background: #D06224;
   border-radius: 0px;
   position: relative;
@@ -411,7 +411,7 @@ h2 {
   box-shadow: 4px 4px 5px 0px rgba(34, 34, 34, 0.7);
   -webkit-box-shadow: 4px 4px 5px 0px rgba(34, 34, 34, 0.7);
   -moz-box-shadow: 4px 4px 5px 0px rgba(34, 34, 34, 0.7);
-  line-height: normal;
+  line-height: 80%;
 }
 
 .kontakt-under {
