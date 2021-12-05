@@ -421,7 +421,7 @@ h2 {
 .content2 {
   text-align: center;
   font-family: "lobster";
-  height: 300px;
+  height: 400px;
   background: #D06224;
   border-radius: 0;
   position: relative;
@@ -435,7 +435,23 @@ h2 {
   font-family: 'lobster';
 }
 
-#choose-question, #name-input, #text-input {
+::-webkit-input-placeholder {
+  color: #D06224;
+}
+
+:-ms-input-placeholder {
+  color: #D06224;
+}
+
+::-ms-input-placeholder {
+  color: #D06224;
+}
+
+::placeholder {
+  color: #D06224;
+}
+
+#choose-question, #name-input, #email-input, #text-input {
   font-family: 'lobster';
   border-radius: 5px;
   margin-top: 10px;
