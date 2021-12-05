@@ -302,6 +302,15 @@ h2 {
   width: 60px;
   height: 50px;
 }
+
+.kontakt-oss {
+  border: 2px solid $dark-red;
+  border-radius: 3px;
+  padding: 0px 40px 0px 40px;
+  display: inline-block;
+  align-self: center;
+  -webkit-box-direction: normal;
+}
 /*square 1*/
 .content1 {
   font-family: "lobster";
@@ -311,11 +320,11 @@ h2 {
   border-radius: 0px;
   position: relative;
   margin: 20px;
+  padding: 20px;
   box-shadow: 4px 4px 5px 0px rgba(34, 34, 34, 0.7);
   -webkit-box-shadow: 4px 4px 5px 0px rgba(34, 34, 34, 0.7);
   -moz-box-shadow: 4px 4px 5px 0px rgba(34, 34, 34, 0.7);
   line-height: 80%;
-
 }
 
 
