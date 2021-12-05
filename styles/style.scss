@@ -310,7 +310,7 @@ h2 {
   box-shadow: 4px 4px 5px 0px rgba(34, 34, 34, 0.7);
   -webkit-box-shadow: 4px 4px 5px 0px rgba(34, 34, 34, 0.7);
   -moz-box-shadow: 4px 4px 5px 0px rgba(34, 34, 34, 0.7);
-  
+
 }
 
 
@@ -326,7 +326,7 @@ h2 {
 .content2 {
   text-align: center;
   font-family: "lobster";
-  height: 300px;
+  height: 400px;
   background: #D06224;
   border-radius: 0;
   position: relative;
@@ -338,8 +338,11 @@ h2 {
 .user-input {
   font-family: 'lobster';
 }
+::placeholder {
+  color: #D06224;
+}
 
-#choose-question, #name-input, #text-input {
+#choose-question, #name-input, #email-input, #text-input {
   font-family: 'lobster';
   border-radius: 5px;
   margin-top: 10px;
