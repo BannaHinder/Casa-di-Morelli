@@ -403,7 +403,11 @@ h2 {
   border: 2px solid #892300;
   border-radius: 3px;
   padding: 0px 40px 0px 40px;
-  display: block;
+  display: inline-block;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-box-direction: normal;
 }
 
 /*square 1*/
