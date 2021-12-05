@@ -382,6 +382,8 @@ h2 {
   filter: drop-shadow(0 5px 5px rgba(34, 34, 34, 0.603));
 }
 
+/*kontakt mobile style*/
+/*image, map icon*/
 .hus {
   width: 140px;
   height: 100px;
@@ -389,10 +391,11 @@ h2 {
 
 .map-img {
   width: 50px;
+  /*fixa funkar ej*/
   height: 50px;
 }
 
-/*kontakt mobile style*/
+/*square 1*/
 .content1 {
   font-family: "lobster";
   text-align: center;
@@ -415,6 +418,7 @@ h2 {
   text-decoration: underline;
 }
 
+/*square 2*/
 .content2 {
   text-align: center;
   font-family: "lobster";
@@ -426,6 +430,17 @@ h2 {
   box-shadow: 4px 4px 5px 0px rgba(34, 34, 34, 0.7);
   -webkit-box-shadow: 4px 4px 5px 0px rgba(34, 34, 34, 0.7);
   -moz-box-shadow: 4px 4px 5px 0px rgba(34, 34, 34, 0.7);
+}
+
+.user-input {
+  font-family: 'lobster';
+}
+
+#choose-question, #name-input, #text-input {
+  font-family: 'lobster';
+  border-radius: 5px;
+  margin-top: 5px;
+  background: #FFE2B2;
 }
 
 /*recensioner- mobile*/
