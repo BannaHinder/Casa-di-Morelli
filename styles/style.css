@@ -400,17 +400,15 @@ h2 {
 }
 
 .kontakt-oss {
+  text-align: center;
   border: 2px solid #892300;
   border-radius: 3px;
-  padding: 0px 40px 0px 40px;
-  display: inline-block;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  -webkit-box-direction: normal;
+  padding: 0px 50px 0px 50px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
-/*square 1*/
 .content1 {
   font-family: "lobster";
   text-align: center;
@@ -433,6 +431,7 @@ h2 {
 
 .p-element {
   text-decoration: underline;
+  font-weight: bold;
 }
 
 /*square 2*/
