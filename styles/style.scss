@@ -297,7 +297,18 @@ h2 {
 .content1 {
   font-family: "lobster";
   text-align: center;
-  background: wheat;
+  height: 300px;
+  background: #D06224;
+  border-radius: 5px;
+  position: relative;
+  margin: 20px;
+}
+.text-kontakt {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .kontakt-under {
@@ -306,14 +317,19 @@ h2 {
 }
 
 .p-element {
-  background: chartreuse;
   text-decoration: underline;
 }
 
 .content2 {
   text-align: center;
   font-family: "lobster";
+  height: 300px;
+  background: #D06224;
+  border-radius: 5px;
+  position: relative;
+  margin: 20px;
 }
+
 
 /*recensioner- mobile*/
 .wallpaper {
