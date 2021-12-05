@@ -399,16 +399,6 @@ h2 {
   height: 50px;
 }
 
-.kontakt-oss {
-  text-align: center;
-  border: 2px solid #892300;
-  border-radius: 3px;
-  padding: 0px 50px 0px 50px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-
 .content1 {
   font-family: "lobster";
   text-align: center;
@@ -418,9 +408,9 @@ h2 {
   position: relative;
   margin: 20px;
   padding: 20px;
-  box-shadow: 4px 4px 5px 0px rgba(34, 34, 34, 0.7);
-  -webkit-box-shadow: 4px 4px 5px 0px rgba(34, 34, 34, 0.7);
-  -moz-box-shadow: 4px 4px 5px 0px rgba(34, 34, 34, 0.7);
+  box-shadow: 5px 5px 5px 0px rgba(35, 35, 35, 0.7);
+  -webkit-box-shadow: 4px 4px 5px 0px rgba(35, 35, 35, 0.7);
+  -moz-box-shadow: 4px 4px 5px 0px rgba(35, 35, 35, 0.7);
   line-height: 80%;
 }
 
