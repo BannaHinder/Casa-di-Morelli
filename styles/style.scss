@@ -446,10 +446,13 @@ h2 {
   margin-top: 25px;
 }
 
-/*recensioner- mobile*/
+/*recensioner- */
 .wallpaper {
   background-image: url("/src/wallpaper.jpg");
   background-size: cover;
+  @include for-desktop{
+    background-size: contain;
+  }
 }
 .recension-wrapper {
   @include flex-column-center;
@@ -467,6 +470,7 @@ h2 {
     -webkit-box-shadow: 4px 4px 5px 0px rgba(34, 34, 34, 0.7);
     -moz-box-shadow: 4px 4px 5px 0px rgba(34, 34, 34, 0.7);
     display: flex;
+    max-width: 500px;
     .customer {
       @include flex-column-center;
       margin: 15px;
@@ -524,7 +528,16 @@ h2 {
     }
   }
 }
-
+/* desktop */
+.recensioner{
+    @include for-desktop{
+        display:flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: center;
+        
+    }
+}
 /* star rating user input */
 
 div.stars-rating {
