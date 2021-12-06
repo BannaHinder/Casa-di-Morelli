@@ -382,25 +382,10 @@ button {
   margin-top: 5px;
 }
 
-@media (min-width: 550px) {
-  .clothes .clothes-group .small-image img {
-    width: 398px;
-    height: 522px;
-    margin: 20px;
-  }
-}
-
 .clothes .clothes-group .small-image p {
   font-family: "Kodchasan";
   color: #892300;
   margin: 5px;
-}
-
-@media (min-width: 550px) {
-  .clothes .clothes-group .small-image p {
-    font-weight: bold;
-    padding-left: 20px;
-  }
 }
 
 .clothes .clothes-group .small-image .price-info {
@@ -408,28 +393,9 @@ button {
   font-size: 14px;
 }
 
-@media (min-width: 550px) {
-  .clothes .clothes-group .small-image .price-info {
-    position: relative;
-    left: 200px;
-    bottom: 35px;
-    font-size: 22px;
-    display: inline;
-  }
-}
-
 .clothes .clothes-group .small-image button.buy-btn {
   left: 80px;
   bottom: 50px;
-}
-
-@media (min-width: 550px) {
-  .clothes .clothes-group .small-image button.buy-btn {
-    border-radius: 30px;
-    padding: 15px 30px;
-    left: 200px;
-    bottom: 40px;
-  }
 }
 
 .clothes .big-image {
@@ -440,8 +406,6 @@ button {
 
 @media (min-width: 550px) {
   .clothes .big-image {
-    -ms-flex-preferred-size: auto;
-        flex-basis: auto;
     display: none;
   }
 }
@@ -452,25 +416,10 @@ button {
   margin-top: 5px;
 }
 
-@media (min-width: 550px) {
-  .clothes .big-image img {
-    width: 398px;
-    height: 522px;
-    margin: 20px;
-  }
-}
-
 .clothes .big-image p {
   font-family: "Kodchasan";
   color: #892300;
   margin: 5px;
-}
-
-@media (min-width: 550px) {
-  .clothes .big-image p {
-    font-weight: bold;
-    padding-left: 20px;
-  }
 }
 
 .clothes .big-image .price-info {
@@ -481,35 +430,13 @@ button {
   font-size: 14px;
 }
 
-@media (min-width: 550px) {
-  .clothes .big-image .price-info {
-    position: relative;
-    left: 200px;
-    bottom: 35px;
-    font-size: 22px;
-    display: inline;
-  }
-}
-
 .clothes .big-image button.buy-btn {
   left: 200px;
   bottom: 50px;
 }
 
-@media (min-width: 550px) {
-  .clothes .big-image button.buy-btn {
-    border-radius: 30px;
-    padding: 15px 30px;
-    left: 200px;
-    bottom: 40px;
-  }
-}
-
 .small-image-desktop {
   display: none;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
 }
 
 @media (min-width: 550px) {
@@ -520,12 +447,6 @@ button {
   }
 }
 
-.small-image-desktop img {
-  height: 189px;
-  width: 130px;
-  margin-top: 5px;
-}
-
 @media (min-width: 550px) {
   .small-image-desktop img {
     width: 398px;
@@ -534,37 +455,26 @@ button {
   }
 }
 
-.small-image-desktop p {
-  font-family: "Kodchasan";
-  color: #892300;
-  margin: 5px;
-}
-
 @media (min-width: 550px) {
   .small-image-desktop p {
+    font-family: "Kodchasan";
+    color: #892300;
+    margin: 5px;
     font-weight: bold;
     padding-left: 20px;
   }
 }
 
-.small-image-desktop .price-info {
-  font-weight: bolder;
-  font-size: 14px;
-}
-
 @media (min-width: 550px) {
   .small-image-desktop .price-info {
+    font-weight: bolder;
+    font-size: 14px;
     position: relative;
     left: 200px;
     bottom: 35px;
     font-size: 22px;
     display: inline;
   }
-}
-
-.small-image-desktop button.buy-btn {
-  left: 80px;
-  bottom: 50px;
 }
 
 @media (min-width: 550px) {
@@ -577,24 +487,13 @@ button {
 }
 
 .big-image-desktop {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
   display: none;
 }
 
 @media (min-width: 550px) {
   .big-image-desktop {
-    -ms-flex-preferred-size: auto;
-        flex-basis: auto;
     display: block;
   }
-}
-
-.big-image-desktop img {
-  height: 360px;
-  width: 262px;
-  margin-top: 5px;
 }
 
 @media (min-width: 550px) {
@@ -605,25 +504,14 @@ button {
   }
 }
 
-.big-image-desktop p {
-  font-family: "Kodchasan";
-  color: #892300;
-  margin: 5px;
-}
-
 @media (min-width: 550px) {
   .big-image-desktop p {
     font-weight: bold;
     padding-left: 20px;
+    font-family: "Kodchasan";
+    color: #892300;
+    margin: 5px;
   }
-}
-
-.big-image-desktop .price-info {
-  font-family: "Kodchasan";
-  color: #892300;
-  margin: 5px;
-  font-weight: bolder;
-  font-size: 14px;
 }
 
 @media (min-width: 550px) {
@@ -633,6 +521,10 @@ button {
     bottom: 35px;
     font-size: 22px;
     display: inline;
+    font-family: "Kodchasan";
+    color: #892300;
+    margin: 5px;
+    font-weight: bolder;
   }
 }
 
@@ -1005,6 +897,7 @@ h2 {
 }
 
 .recension-wrapper {
+  margin-top: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
