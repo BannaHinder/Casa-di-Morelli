@@ -194,18 +194,23 @@ button {
   display: flex;
 }
 
-/* om 70-talet och rabatt */
-.startpage-main {
-  /*   Push down so navbar doesn't cover it */
+/*   Push down so navbar doesn't cover it */
+main {
   margin-top: 50px;
 }
 
+@media (min-width: 550px) {
+  main {
+    margin-top: 75px;
+  }
+}
+
+/* om 70-talet och rabatt */
 @media (min-width: 550px) {
   .startpage-main {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-top: 75px;
   }
 }
 
@@ -668,14 +673,40 @@ h2 {
   padding: 30px 40px;
 }
 
+@media (min-width: 550px) {
+  .bottom {
+    padding-top: 60px;
+    height: 60px;
+  }
+}
+
 .bottom h4 {
   margin: 0 0 30px;
+}
+
+@media (min-width: 550px) {
+  .bottom h4 {
+    margin-bottom: -20px;
+  }
 }
 
 .navigation {
   -ms-flex-item-align: start;
       align-self: flex-start;
   padding-bottom: 90px;
+}
+
+@media (min-width: 550px) {
+  .navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 40%;
+    padding-bottom: 0px;
+  }
 }
 
 .navigation li {
@@ -691,6 +722,15 @@ h2 {
           justify-content: space-between;
   -ms-flex-item-align: stretch;
       align-self: stretch;
+}
+
+@media (min-width: 550px) {
+  .social-media {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    width: 40%;
+    margin-top: -60px;
+  }
 }
 
 .social-media img {
@@ -723,7 +763,7 @@ h2 {
   font-family: "lobster";
   text-align: center;
   height: 600px;
-  background: #D06224;
+  background: #d06224;
   border-radius: 0px;
   position: relative;
   margin: 20px;
@@ -749,7 +789,7 @@ h2 {
   font-family: "lobster";
   text-align: center;
   height: 400px;
-  background: #D06224;
+  background: #d06224;
   border-radius: 0;
   position: relative;
   margin: 20px;
@@ -759,27 +799,30 @@ h2 {
 }
 
 .user-input {
-  font-family: 'lobster';
+  font-family: "lobster";
 }
 
 ::-webkit-input-placeholder {
-  color: #D06224;
+  color: #d06224;
 }
 
 :-ms-input-placeholder {
-  color: #D06224;
+  color: #d06224;
 }
 
 ::-ms-input-placeholder {
-  color: #D06224;
+  color: #d06224;
 }
 
 ::placeholder {
-  color: #D06224;
+  color: #d06224;
 }
 
-#choose-question, #name-input, #email-input, #text-input {
-  font-family: 'lobster';
+#choose-question,
+#name-input,
+#email-input,
+#text-input {
+  font-family: "lobster";
   border-radius: 5px;
   margin-top: 10px;
   margin: 5px;
@@ -789,7 +832,7 @@ h2 {
   border: none;
   border-radius: 5px;
   width: 90%;
-  font-family: 'lobster';
+  font-family: "lobster";
   font-size: 14px;
   font-weight: bold;
 }
@@ -910,7 +953,8 @@ h2 {
       align-self: flex-end;
 }
 
-.recension-wrapper .skriv-recension .input-container input, .recension-wrapper .skriv-recension .input-container textarea {
+.recension-wrapper .skriv-recension .input-container input,
+.recension-wrapper .skriv-recension .input-container textarea {
   background: #FFE2B2;
   color: #892300;
   border: none;
@@ -923,22 +967,26 @@ h2 {
   font-weight: bold;
 }
 
-.recension-wrapper .skriv-recension .input-container input::-webkit-input-placeholder, .recension-wrapper .skriv-recension .input-container textarea::-webkit-input-placeholder {
+.recension-wrapper .skriv-recension .input-container input::-webkit-input-placeholder,
+.recension-wrapper .skriv-recension .input-container textarea::-webkit-input-placeholder {
   color: #892300;
   font-family: "lobster";
 }
 
-.recension-wrapper .skriv-recension .input-container input:-ms-input-placeholder, .recension-wrapper .skriv-recension .input-container textarea:-ms-input-placeholder {
+.recension-wrapper .skriv-recension .input-container input:-ms-input-placeholder,
+.recension-wrapper .skriv-recension .input-container textarea:-ms-input-placeholder {
   color: #892300;
   font-family: "lobster";
 }
 
-.recension-wrapper .skriv-recension .input-container input::-ms-input-placeholder, .recension-wrapper .skriv-recension .input-container textarea::-ms-input-placeholder {
+.recension-wrapper .skriv-recension .input-container input::-ms-input-placeholder,
+.recension-wrapper .skriv-recension .input-container textarea::-ms-input-placeholder {
   color: #892300;
   font-family: "lobster";
 }
 
-.recension-wrapper .skriv-recension .input-container input::placeholder, .recension-wrapper .skriv-recension .input-container textarea::placeholder {
+.recension-wrapper .skriv-recension .input-container input::placeholder,
+.recension-wrapper .skriv-recension .input-container textarea::placeholder {
   color: #892300;
   font-family: "lobster";
 }
@@ -975,15 +1023,15 @@ div.stars-rating label.star {
   padding: 10px;
   font-size: 30px;
   color: #892300;
-  -webkit-transition: all .2s;
-  transition: all .2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 div.stars-rating input.star:checked ~ label.star:before {
-  content: '\f005';
+  content: "\f005";
   color: #FFE2B2;
-  -webkit-transition: all .25s;
-  transition: all .25s;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
 }
 
 div.stars-rating input.star-5:checked ~ label.star:before {
@@ -992,7 +1040,7 @@ div.stars-rating input.star-5:checked ~ label.star:before {
 }
 
 div.stars-rating label.star:before {
-  content: '\f006';
+  content: "\f006";
   font-family: FontAwesome;
 }
 /*# sourceMappingURL=style.css.map */
