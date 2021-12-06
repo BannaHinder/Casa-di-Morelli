@@ -163,6 +163,14 @@ button {
 }
 
 /* om 70-talet och rabatt */
+@media (min-width: 550px) {
+  .startpage-main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .about-70s {
   background-image: url("/src/wallpaper2.jpg");
   display: -webkit-box;
@@ -184,7 +192,23 @@ button {
   border: 2px solid #892300;
 }
 
-.about-70s img {
+@media (min-width: 550px) {
+  .about-70s {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: 30%;
+  }
+}
+
+.about-70s .discount-image {
   height: 168px;
   width: 225px;
   margin: 5px 0;
@@ -243,6 +267,12 @@ button {
   border: 1px solid #892300;
 }
 
+@media (min-width: 550px) {
+  .popular {
+    margin: 20px;
+  }
+}
+
 .clothes {
   background: #FFE2B2;
   display: -webkit-box;
@@ -252,6 +282,18 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media (min-width: 550px) {
+  .clothes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .clothes .clothes-group {
@@ -266,6 +308,14 @@ button {
   height: 189px;
   width: 130px;
   margin-top: 5px;
+}
+
+@media (min-width: 550px) {
+  .clothes .clothes-group .small-image img {
+    width: 398px;
+    height: 522px;
+    margin: 20px;
+  }
 }
 
 .clothes .clothes-group .small-image p {
@@ -294,6 +344,13 @@ button {
   height: 360px;
   width: 262px;
   margin-top: 5px;
+}
+
+@media (min-width: 550px) {
+  .clothes .big-image img {
+    width: 398px;
+    height: 522px;
+  }
 }
 
 .clothes .big-image p {
