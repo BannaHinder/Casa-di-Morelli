@@ -234,7 +234,6 @@ button {
   border: 1px solid $dark-red;
   @include for-desktop{
     margin: 20px;
-   
   }
 }
 // kläder på startsidan
@@ -254,13 +253,12 @@ button {
   .clothes-group {
     display: flex;
     justify-content: space-around;
-    
+    @include for-desktop{
+      display: none;
+    }
 
     .small-image {
       align-self: center;
-      @include for-desktop{
-        display: none;
-      }
       img {
         height: 189px;
         width: 130px;
@@ -287,8 +285,7 @@ button {
 
   .big-image {
     align-self: center;
-  
-    
+
     @include for-desktop{
     
       display: none;
@@ -318,9 +315,6 @@ button {
     }
   }
 }
-
-
-  
 
   .small-image-desktop {
     display: none;

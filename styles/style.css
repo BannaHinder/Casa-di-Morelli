@@ -364,16 +364,16 @@ button {
       justify-content: space-around;
 }
 
+@media (min-width: 550px) {
+  .clothes .clothes-group {
+    display: none;
+  }
+}
+
 .clothes .clothes-group .small-image {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-}
-
-@media (min-width: 550px) {
-  .clothes .clothes-group .small-image {
-    display: none;
-  }
 }
 
 .clothes .clothes-group .small-image img {
