@@ -389,26 +389,26 @@ main {
   }
 }
 
-.clothes .small-image p {
+.clothes p {
   font-family: "Kodchasan";
   color: #892300;
   margin: 5px;
 }
 
 @media (min-width: 550px) {
-  .clothes .small-image p {
+  .clothes p {
     font-weight: bold;
     padding-left: 20px;
   }
 }
 
-.clothes .small-image .price-info {
+.clothes .price-info {
   font-weight: bolder;
   font-size: 14px;
 }
 
 @media (min-width: 550px) {
-  .clothes .small-image .price-info {
+  .clothes .price-info {
     position: relative;
     left: 200px;
     bottom: 35px;
@@ -417,13 +417,13 @@ main {
   }
 }
 
-.clothes .small-image button.buy-btn {
+.clothes button.buy-btn {
   left: 80px;
   bottom: 50px;
 }
 
 @media (min-width: 550px) {
-  .clothes .small-image button.buy-btn {
+  .clothes button.buy-btn {
     border-radius: 30px;
     padding: 15px 30px;
     left: 200px;
@@ -431,47 +431,47 @@ main {
   }
 }
 
-.clothes .big-image {
+.big-image {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
 }
 
 @media (min-width: 550px) {
-  .clothes .big-image {
+  .big-image {
     -ms-flex-preferred-size: auto;
         flex-basis: auto;
   }
 }
 
-.clothes .big-image img {
+.big-image img {
   height: 360px;
   width: 262px;
   margin-top: 5px;
 }
 
 @media (min-width: 550px) {
-  .clothes .big-image img {
+  .big-image img {
     width: 398px;
     height: 522px;
     margin: 20px;
   }
 }
 
-.clothes .big-image p {
+.big-image p {
   font-family: "Kodchasan";
   color: #892300;
   margin: 5px;
 }
 
 @media (min-width: 550px) {
-  .clothes .big-image p {
+  .big-image p {
     font-weight: bold;
     padding-left: 20px;
   }
 }
 
-.clothes .big-image .price-info {
+.big-image .price-info {
   font-family: "Kodchasan";
   color: #892300;
   margin: 5px;
@@ -480,7 +480,7 @@ main {
 }
 
 @media (min-width: 550px) {
-  .clothes .big-image .price-info {
+  .big-image .price-info {
     position: relative;
     left: 200px;
     bottom: 35px;
@@ -489,13 +489,13 @@ main {
   }
 }
 
-.clothes .big-image button.buy-btn {
+.big-image button.buy-btn {
   left: 200px;
   bottom: 50px;
 }
 
 @media (min-width: 550px) {
-  .clothes .big-image button.buy-btn {
+  .big-image button.buy-btn {
     border-radius: 30px;
     padding: 15px 30px;
     left: 200px;
