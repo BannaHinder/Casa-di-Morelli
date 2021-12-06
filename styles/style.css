@@ -723,8 +723,7 @@ h2 {
 
 @media (min-width: 550px) {
   .wallpaper {
-    background-size: contain;
-    background: contain url("/src/wallpaper.jpg") no-repeat fixed top;
+    background: url("/src/wallpaper.jpg") no-repeat fixed top;
   }
 }
 
