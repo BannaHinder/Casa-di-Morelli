@@ -105,6 +105,11 @@ button {
     }
   }
 }
+.shopping-cart {
+  img {
+    display: none;
+  }
+}
 .active {
   display: flex;
 }
