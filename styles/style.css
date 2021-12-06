@@ -392,6 +392,18 @@ button {
   }
 }
 
+@media (min-width: 550px) {
+  .about-background {
+    background-image: url("/src/wallpaper.jpg");
+  }
+}
+
+@media (min-width: 550px) {
+  .about-h2 {
+    display: none;
+  }
+}
+
 h2 {
   font-family: "lobster";
   color: #892300;
@@ -400,14 +412,52 @@ h2 {
   background: #FFE2B2;
 }
 
+@media (min-width: 550px) {
+  h2 {
+    font-size: 36px;
+  }
+}
+
 .about-info {
   font-family: "kodchasan";
   color: #892300;
   text-align: center;
 }
 
+@media (min-width: 550px) {
+  .about-info {
+    background: #FFE2B2;
+    border: 2px solid #D06224;
+    margin: 40px 41px 22px 41px;
+    -webkit-box-shadow: 4px 4px 5px 0px rgba(35, 35, 35, 0.7);
+  }
+}
+
+@media (min-width: 550px) {
+  .about-info h3 {
+    font-family: "lobster";
+    font-size: 36px;
+    font-weight: lighter;
+  }
+}
+
 .about-info p {
   font-size: 14px;
+}
+
+@media (min-width: 550px) {
+  .about-info p {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 550px) {
+  .about-article-background {
+    background: #FFE2B2;
+    border: 2px solid #D06224;
+    margin: 40px 41px 22px 41px;
+    -webkit-box-shadow: 4px 4px 5px 0px rgba(35, 35, 35, 0.7);
+  }
 }
 
 .staff {
@@ -423,6 +473,20 @@ h2 {
           align-items: center;
 }
 
+@media (min-width: 550px) {
+  .staff {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
 .staff .person {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -434,6 +498,14 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 220px;
+}
+
+@media (min-width: 550px) {
+  .staff .person {
+    width: 280px;
+    margin: 10px 30px;
+  }
 }
 
 .staff .person .staff-name {
@@ -443,9 +515,22 @@ h2 {
   font-size: 18px;
 }
 
+@media (min-width: 550px) {
+  .staff .person .staff-name {
+    font-size: 24px;
+  }
+}
+
 .staff .person img {
   height: 144px;
   width: 215px;
+}
+
+@media (min-width: 550px) {
+  .staff .person img {
+    height: 187px;
+    width: 279px;
+  }
 }
 
 .staff .person p {
@@ -453,6 +538,12 @@ h2 {
   font-size: 14px;
   text-align: center;
   color: #892300;
+}
+
+@media (min-width: 550px) {
+  .staff .person p {
+    font-size: 18px;
+  }
 }
 
 /* Footer */
