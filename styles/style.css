@@ -194,23 +194,18 @@ button {
   display: flex;
 }
 
-/*   Push down so navbar doesn't cover it */
-main {
+/* om 70-talet och rabatt */
+.startpage-main {
+  /*   Push down so navbar doesn't cover it */
   margin-top: 50px;
 }
 
-@media (min-width: 550px) {
-  main {
-    margin-top: 75px;
-  }
-}
-
-/* om 70-talet och rabatt */
 @media (min-width: 550px) {
   .startpage-main {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-top: 75px;
   }
 }
 
@@ -337,12 +332,10 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
@@ -358,57 +351,66 @@ main {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -ms-flex-line-pack: center;
-        align-content: center;
+    -ms-flex-line-pack: distribute;
+        align-content: space-around;
   }
 }
 
-.clothes .small-image {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
+.clothes .clothes-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.clothes .clothes-group .small-image {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 @media (min-width: 550px) {
-  .clothes .small-image {
+  .clothes .clothes-group .small-image {
     -ms-flex-preferred-size: auto;
         flex-basis: auto;
   }
 }
 
-.clothes .small-image img {
+.clothes .clothes-group .small-image img {
   height: 189px;
   width: 130px;
   margin-top: 5px;
 }
 
 @media (min-width: 550px) {
-  .clothes .small-image img {
+  .clothes .clothes-group .small-image img {
     width: 398px;
     height: 522px;
     margin: 20px;
   }
 }
 
-.clothes p {
+.clothes .clothes-group .small-image p {
   font-family: "Kodchasan";
   color: #892300;
   margin: 5px;
 }
 
 @media (min-width: 550px) {
-  .clothes p {
+  .clothes .clothes-group .small-image p {
     font-weight: bold;
     padding-left: 20px;
   }
 }
 
-.clothes .price-info {
+.clothes .clothes-group .small-image .price-info {
   font-weight: bolder;
   font-size: 14px;
 }
 
 @media (min-width: 550px) {
-  .clothes .price-info {
+  .clothes .clothes-group .small-image .price-info {
     position: relative;
     left: 200px;
     bottom: 35px;
@@ -417,13 +419,13 @@ main {
   }
 }
 
-.clothes button.buy-btn {
+.clothes .clothes-group .small-image button.buy-btn {
   left: 80px;
   bottom: 50px;
 }
 
 @media (min-width: 550px) {
-  .clothes button.buy-btn {
+  .clothes .clothes-group .small-image button.buy-btn {
     border-radius: 30px;
     padding: 15px 30px;
     left: 200px;
@@ -431,47 +433,47 @@ main {
   }
 }
 
-.big-image {
+.clothes .big-image {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
 }
 
 @media (min-width: 550px) {
-  .big-image {
+  .clothes .big-image {
     -ms-flex-preferred-size: auto;
         flex-basis: auto;
   }
 }
 
-.big-image img {
+.clothes .big-image img {
   height: 360px;
   width: 262px;
   margin-top: 5px;
 }
 
 @media (min-width: 550px) {
-  .big-image img {
+  .clothes .big-image img {
     width: 398px;
     height: 522px;
     margin: 20px;
   }
 }
 
-.big-image p {
+.clothes .big-image p {
   font-family: "Kodchasan";
   color: #892300;
   margin: 5px;
 }
 
 @media (min-width: 550px) {
-  .big-image p {
+  .clothes .big-image p {
     font-weight: bold;
     padding-left: 20px;
   }
 }
 
-.big-image .price-info {
+.clothes .big-image .price-info {
   font-family: "Kodchasan";
   color: #892300;
   margin: 5px;
@@ -480,7 +482,7 @@ main {
 }
 
 @media (min-width: 550px) {
-  .big-image .price-info {
+  .clothes .big-image .price-info {
     position: relative;
     left: 200px;
     bottom: 35px;
@@ -489,13 +491,13 @@ main {
   }
 }
 
-.big-image button.buy-btn {
+.clothes .big-image button.buy-btn {
   left: 200px;
   bottom: 50px;
 }
 
 @media (min-width: 550px) {
-  .big-image button.buy-btn {
+  .clothes .big-image button.buy-btn {
     border-radius: 30px;
     padding: 15px 30px;
     left: 200px;
@@ -540,7 +542,7 @@ h2 {
     background: #FFE2B2;
     border: 2px solid #D06224;
     margin: 40px 41px 22px 41px;
-    box-shadow: 4px 4px 5px 0px rgba(35, 35, 35, 0.7);
+    -webkit-box-shadow: 4px 4px 5px 0px rgba(35, 35, 35, 0.7);
   }
 }
 
@@ -567,7 +569,7 @@ h2 {
     background: #FFE2B2;
     border: 2px solid #D06224;
     margin: 40px 41px 22px 41px;
-    box-shadow: 4px 4px 5px 0px rgba(35, 35, 35, 0.7);
+    -webkit-box-shadow: 4px 4px 5px 0px rgba(35, 35, 35, 0.7);
   }
 }
 
@@ -673,21 +675,8 @@ h2 {
   padding: 30px 40px;
 }
 
-@media (min-width: 550px) {
-  .bottom {
-    padding-top: 60px;
-    height: 60px;
-  }
-}
-
 .bottom h4 {
   margin: 0 0 30px;
-}
-
-@media (min-width: 550px) {
-  .bottom h4 {
-    margin-bottom: -20px;
-  }
 }
 
 .navigation {
@@ -696,26 +685,8 @@ h2 {
   padding-bottom: 90px;
 }
 
-@media (min-width: 550px) {
-  .navigation {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    width: 40%;
-    padding-bottom: 0px;
-  }
-}
-
 .navigation li {
   padding-bottom: 30px;
-}
-
-.navigation li:hover {
-  -webkit-filter: drop-shadow(0 5px 5px rgba(34, 34, 34, 0.603));
-  filter: drop-shadow(0 5px 5px rgba(34, 34, 34, 0.603));
-  font-weight: bold;
 }
 
 .social-media {
@@ -727,17 +698,6 @@ h2 {
           justify-content: space-between;
   -ms-flex-item-align: stretch;
       align-self: stretch;
-}
-
-@media (min-width: 550px) {
-  .social-media {
-    -ms-flex-item-align: end;
-        align-self: flex-end;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    width: 40%;
-    margin-top: -60px;
-  }
 }
 
 .social-media img {
@@ -770,7 +730,7 @@ h2 {
   font-family: "lobster";
   text-align: center;
   height: 600px;
-  background: #d06224;
+  background: #D06224;
   border-radius: 0px;
   position: relative;
   margin: 20px;
@@ -796,7 +756,7 @@ h2 {
   font-family: "lobster";
   text-align: center;
   height: 400px;
-  background: #d06224;
+  background: #D06224;
   border-radius: 0;
   position: relative;
   margin: 20px;
@@ -806,30 +766,27 @@ h2 {
 }
 
 .user-input {
-  font-family: "lobster";
+  font-family: 'lobster';
 }
 
 ::-webkit-input-placeholder {
-  color: #d06224;
+  color: #D06224;
 }
 
 :-ms-input-placeholder {
-  color: #d06224;
+  color: #D06224;
 }
 
 ::-ms-input-placeholder {
-  color: #d06224;
+  color: #D06224;
 }
 
 ::placeholder {
-  color: #d06224;
+  color: #D06224;
 }
 
-#choose-question,
-#name-input,
-#email-input,
-#text-input {
-  font-family: "lobster";
+#choose-question, #name-input, #email-input, #text-input {
+  font-family: 'lobster';
   border-radius: 5px;
   margin-top: 10px;
   margin: 5px;
@@ -839,7 +796,7 @@ h2 {
   border: none;
   border-radius: 5px;
   width: 90%;
-  font-family: "lobster";
+  font-family: 'lobster';
   font-size: 14px;
   font-weight: bold;
 }
@@ -960,8 +917,7 @@ h2 {
       align-self: flex-end;
 }
 
-.recension-wrapper .skriv-recension .input-container input,
-.recension-wrapper .skriv-recension .input-container textarea {
+.recension-wrapper .skriv-recension .input-container input, .recension-wrapper .skriv-recension .input-container textarea {
   background: #FFE2B2;
   color: #892300;
   border: none;
@@ -974,26 +930,22 @@ h2 {
   font-weight: bold;
 }
 
-.recension-wrapper .skriv-recension .input-container input::-webkit-input-placeholder,
-.recension-wrapper .skriv-recension .input-container textarea::-webkit-input-placeholder {
+.recension-wrapper .skriv-recension .input-container input::-webkit-input-placeholder, .recension-wrapper .skriv-recension .input-container textarea::-webkit-input-placeholder {
   color: #892300;
   font-family: "lobster";
 }
 
-.recension-wrapper .skriv-recension .input-container input:-ms-input-placeholder,
-.recension-wrapper .skriv-recension .input-container textarea:-ms-input-placeholder {
+.recension-wrapper .skriv-recension .input-container input:-ms-input-placeholder, .recension-wrapper .skriv-recension .input-container textarea:-ms-input-placeholder {
   color: #892300;
   font-family: "lobster";
 }
 
-.recension-wrapper .skriv-recension .input-container input::-ms-input-placeholder,
-.recension-wrapper .skriv-recension .input-container textarea::-ms-input-placeholder {
+.recension-wrapper .skriv-recension .input-container input::-ms-input-placeholder, .recension-wrapper .skriv-recension .input-container textarea::-ms-input-placeholder {
   color: #892300;
   font-family: "lobster";
 }
 
-.recension-wrapper .skriv-recension .input-container input::placeholder,
-.recension-wrapper .skriv-recension .input-container textarea::placeholder {
+.recension-wrapper .skriv-recension .input-container input::placeholder, .recension-wrapper .skriv-recension .input-container textarea::placeholder {
   color: #892300;
   font-family: "lobster";
 }
@@ -1030,15 +982,15 @@ div.stars-rating label.star {
   padding: 10px;
   font-size: 30px;
   color: #892300;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
+  -webkit-transition: all .2s;
+  transition: all .2s;
 }
 
 div.stars-rating input.star:checked ~ label.star:before {
-  content: "\f005";
+  content: '\f005';
   color: #FFE2B2;
-  -webkit-transition: all 0.25s;
-  transition: all 0.25s;
+  -webkit-transition: all .25s;
+  transition: all .25s;
 }
 
 div.stars-rating input.star-5:checked ~ label.star:before {
@@ -1047,7 +999,7 @@ div.stars-rating input.star-5:checked ~ label.star:before {
 }
 
 div.stars-rating label.star:before {
-  content: "\f006";
+  content: '\f006';
   font-family: FontAwesome;
 }
 /*# sourceMappingURL=style.css.map */
