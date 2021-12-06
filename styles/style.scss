@@ -56,16 +56,24 @@ button {
 /* Navbar */
 .header {
   background: $dark-red;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
   h1 {
     margin: 0;
     padding-bottom: 0.7rem;
     font-size: 1.5rem;
     text-align: center;
     text-shadow: 0 4px 3px rgba(0, 0, 0, 0.5);
+    @include for-desktop {
+      padding: 0;
+    }
   }
 }
 .navbar {
   padding-top: 0.7rem;
+  position: relative;
 }
 .hamburgare-icon {
   width: 20px;
@@ -75,6 +83,9 @@ button {
   position: absolute;
   top: 1rem;
   right: 1rem;
+  @include for-desktop {
+    display: none;
+  }
 }
 .navbar-links {
   display: none;
@@ -83,25 +94,69 @@ button {
   width: 100%;
   z-index: 1;
   background-color: $orange;
+  @include for-desktop {
+    display: flex;
+    flex-direction: row;
+    background-color: $dark-red;
+  }
   li {
     padding: 1rem;
     border-bottom: 2px solid $dark-red;
+    @include for-desktop {
+      padding: 0 10px 8px 10px;
+    }
   }
   a {
     font-family: "Lobster";
-    font-size: 24px;
+    font-size: 1.3rem;
     text-shadow: 0 0 2px $dark-red;
     color: white;
+    @include for-desktop {
+      color: $beige;
+    }
+    &.active {
+      background: $dark-green;
+      border-radius: 30px;
+      padding: 2px 10px;
+      margin: 0 5px 0 5px;
+      box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+      text-shadow: none;
+    }
+  }
+  li:nth-of-type(3){
+    @include for-desktop {
+      margin-left: auto;
+    }
   }
 }
-.active {
+.shopping-cart {
+  img {
+    display: none;
+    @include for-desktop {
+      display: block;
+      position: absolute;
+      top: -40px;
+      right: 15px;
+      height: 30px;
+    }
+  }
+  span {
+    @include for-desktop {
+      display: none;
+    }
+  }
+}
+.active-toggle {
   display: flex;
 }
 
 /* om 70-talet och rabatt */
 .startpage-main{
+/*   Push down so navbar doesn't cover it */
+  margin-top: 50px;
   @include for-desktop{
     display: flex;
+    margin-top: 75px;
   }
 }
 .about-70s {
@@ -423,9 +478,6 @@ display: none;
     }
   }
 }
-
-
-
 //Om oss
 .about-background{
   @include for-desktop{
@@ -453,7 +505,7 @@ h2 {
   @include for-desktop{
     background: $beige;
     border: 2px solid $orange;
-    margin: 40px 41px 22px 41px;
+    margin: 100px 41px 22px 41px;
     -webkit-box-shadow: 4px 4px 5px 0px rgba(35, 35, 35, 0.7);
   }
   font-family: "kodchasan";
@@ -532,33 +584,94 @@ h2 {
 
 /* Footer */
 .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 400px;
   padding: 30px 40px;
-  h4 {
-    margin: 0 0 30px;
+}
+
+@media (min-width: 550px) {
+  .bottom {
+    padding-top: 60px;
+    height: 60px;
   }
 }
+
+.bottom h4 {
+  margin: 0 0 30px;
+}
+
+@media (min-width: 550px) {
+  .bottom h4 {
+    margin-bottom: -20px;
+  }
+}
+
 .navigation {
-  align-self: flex-start;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
   padding-bottom: 90px;
-  li {
-    padding-bottom: 30px;
+}
+
+@media (min-width: 550px) {
+  .navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 40%;
+    padding-bottom: 0px;
   }
 }
+
+.navigation li {
+  padding-bottom: 30px;
+}
+
+.navigation li:hover {
+  -webkit-filter: drop-shadow(0 5px 5px rgba(34, 34, 34, 0.603));
+  filter: drop-shadow(0 5px 5px rgba(34, 34, 34, 0.603));
+  font-weight: bold;
+}
+
 .social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-self: stretch;
-  img {
-    height: 38px;
-    &:hover {
-      -webkit-filter: drop-shadow(0 5px 5px rgba(34, 34, 34, 0.603));
-      filter: drop-shadow(0 5px 5px rgba(34, 34, 34, 0.603));
-    }
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+}
+
+@media (min-width: 550px) {
+  .social-media {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 40%;
+    margin-top: -60px;
   }
+}
+
+.social-media img {
+  height: 38px;
+}
+
+.social-media img:hover {
+  -webkit-filter: drop-shadow(0 5px 5px rgba(34, 34, 34, 0.603));
+  filter: drop-shadow(0 5px 5px rgba(34, 34, 34, 0.603));
 }
 
 /*kontakt mobile style*/
@@ -646,8 +759,7 @@ h2 {
   background-image: url("/src/wallpaper.jpg");
   background-size: cover;
   @include for-desktop{
-    background-size: contain;
-    background: contain url("/src/wallpaper.jpg") no-repeat fixed top;
+    background: url("/src/wallpaper.jpg") no-repeat fixed top;
   }
 }
 .recension-wrapper {
@@ -762,3 +874,4 @@ div.stars-rating {
     font-family: FontAwesome;
   }
 }
+
