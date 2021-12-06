@@ -150,13 +150,19 @@ button {
   display: flex;
 }
 
+/*   Push down so navbar doesn't cover it */
+main {
+  margin-top: 50px;
+  @include for-desktop {
+    margin-top: 75px;
+  }
+}
+
 /* om 70-talet och rabatt */
 .startpage-main{
-/*   Push down so navbar doesn't cover it */
-  margin-top: 50px;
+
   @include for-desktop{
     display: flex;
-    margin-top: 75px;
   }
 }
 .about-70s {

@@ -194,18 +194,23 @@ button {
   display: flex;
 }
 
-/* om 70-talet och rabatt */
-.startpage-main {
-  /*   Push down so navbar doesn't cover it */
+/*   Push down so navbar doesn't cover it */
+main {
   margin-top: 50px;
 }
 
+@media (min-width: 550px) {
+  main {
+    margin-top: 75px;
+  }
+}
+
+/* om 70-talet och rabatt */
 @media (min-width: 550px) {
   .startpage-main {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-top: 75px;
   }
 }
 
