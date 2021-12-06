@@ -265,47 +265,22 @@ button {
         height: 189px;
         width: 130px;
         margin-top: 5px;
-        @include for-desktop{
-          width: 398px;
-          height: 522px;
-          margin: 20px;
-        }
       }
       p {
         font-family: "Kodchasan";
         color: $dark-red;
         margin: 5px;
-        @include for-desktop{
-         font-weight: bold;
-         padding-left: 20px;
-       
-        }
       }
       .price-info {
         font-weight: bolder;
         font-size: 14px;
-        @include for-desktop{
-          position: relative;
-          left: 200px;
-         bottom: 35px;
-         font-size:22px;
-         display: inline;
-       
-        }
       }
       button.buy-btn {
         left: 80px;
         bottom: 50px;
-        @include for-desktop{
-          border-radius: 30px;
-          padding: 15px 30px;
-          left:200px;
-          bottom: 40px;
-        }
       }
       
      }
-  
     
   }
 
@@ -315,27 +290,19 @@ button {
   
     
     @include for-desktop{
-      flex-basis: auto;
+    
       display: none;
     }
     img {
       height: 360px;
       width: 262px;
       margin-top: 5px;
-      @include for-desktop{
-        width: 398px;
-        height: 522px;
-        margin: 20px;
-      }
     }
     p {
       font-family: "Kodchasan";
       color: $dark-red;
       margin: 5px;
-      @include for-desktop{
-        font-weight: bold;
-        padding-left: 20px;
-       }
+     
     }
     .price-info {
       font-family: "Kodchasan";
@@ -343,24 +310,11 @@ button {
       margin: 5px;
       font-weight: bolder;
       font-size: 14px;
-      @include for-desktop{
-        position: relative;
-        left: 200px;
-       bottom: 35px;
-       font-size:22px;
-       display: inline;
-     
-      }
     }
     button.buy-btn {
       left: 200px;
       bottom: 50px;
-      @include for-desktop{
-        border-radius: 30px;
-        padding: 15px 30px;
-        left:200px;
-        bottom: 40px;
-      }
+     
     }
   }
 }
@@ -370,16 +324,12 @@ button {
 
   .small-image-desktop {
     display: none;
-    align-self: center;
     @include for-desktop{
       display: block;
       flex-basis: auto;
      
     }
     img {
-      height: 189px;
-      width: 130px;
-      margin-top: 5px;
       @include for-desktop{
         width: 398px;
         height: 522px;
@@ -387,19 +337,19 @@ button {
       }
     }
     p {
-      font-family: "Kodchasan";
-      color: $dark-red;
-      margin: 5px;
       @include for-desktop{
+        font-family: "Kodchasan";
+        color: $dark-red;
+        margin: 5px;
        font-weight: bold;
        padding-left: 20px;
      
       }
     }
     .price-info {
-      font-weight: bolder;
-      font-size: 14px;
       @include for-desktop{
+        font-weight: bolder;
+        font-size: 14px;
         position: relative;
         left: 200px;
        bottom: 35px;
@@ -409,8 +359,6 @@ button {
       }
     }
     button.buy-btn {
-      left: 80px;
-      bottom: 50px;
       @include for-desktop{
         border-radius: 30px;
         padding: 15px 30px;
@@ -421,22 +369,14 @@ button {
     
    }
 
-  
-
-
-
 .big-image-desktop {
-  align-self: center;
+
 display: none;
   
   @include for-desktop{
-    flex-basis: auto;
    display: block;
   }
   img {
-    height: 360px;
-    width: 262px;
-    margin-top: 5px;
     @include for-desktop{
       width: 398px;
       height: 522px;
@@ -444,26 +384,26 @@ display: none;
     }
   }
   p {
-    font-family: "Kodchasan";
-    color: $dark-red;
-    margin: 5px;
     @include for-desktop{
       font-weight: bold;
       padding-left: 20px;
+      font-family: "Kodchasan";
+      color: $dark-red;
+      margin: 5px;
      }
   }
   .price-info {
-    font-family: "Kodchasan";
-    color: $dark-red;
-    margin: 5px;
-    font-weight: bolder;
-    font-size: 14px;
+
     @include for-desktop{
       position: relative;
       left: 200px;
      bottom: 35px;
      font-size:22px;
      display: inline;
+     font-family: "Kodchasan";
+     color: $dark-red;
+     margin: 5px;
+     font-weight: bolder;
    
     }
   }
