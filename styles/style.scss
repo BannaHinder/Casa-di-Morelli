@@ -56,12 +56,19 @@ button {
 /* Navbar */
 .header {
   background: $dark-red;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
   h1 {
     margin: 0;
     padding-bottom: 0.7rem;
     font-size: 1.5rem;
     text-align: center;
     text-shadow: 0 4px 3px rgba(0, 0, 0, 0.5);
+    @include for-desktop {
+      padding: 0;
+    }
   }
 }
 .navbar {
@@ -95,6 +102,9 @@ button {
   li {
     padding: 1rem;
     border-bottom: 2px solid $dark-red;
+    @include for-desktop {
+      padding: 0 10px 8px 10px;
+    }
   }
   a {
     font-family: "Lobster";
@@ -130,13 +140,11 @@ button {
       height: 30px;
     }
   }
-
   span {
     @include for-desktop {
       display: none;
     }
   }
-  
 }
 .active-toggle {
   display: flex;
@@ -144,8 +152,11 @@ button {
 
 /* om 70-talet och rabatt */
 .startpage-main{
+/*   Push down so navbar doesn't cover it */
+  margin-top: 50px;
   @include for-desktop{
     display: flex;
+    margin-top: 75px;
   }
 }
 .about-70s {

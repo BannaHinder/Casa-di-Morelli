@@ -61,6 +61,10 @@ button {
 /* Navbar */
 .header {
   background: #892300;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
 }
 
 .header h1 {
@@ -69,6 +73,12 @@ button {
   font-size: 1.5rem;
   text-align: center;
   text-shadow: 0 4px 3px rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 550px) {
+  .header h1 {
+    padding: 0;
+  }
 }
 
 .navbar {
@@ -121,6 +131,12 @@ button {
 .navbar-links li {
   padding: 1rem;
   border-bottom: 2px solid #892300;
+}
+
+@media (min-width: 550px) {
+  .navbar-links li {
+    padding: 0 10px 8px 10px;
+  }
 }
 
 .navbar-links a {
@@ -179,11 +195,17 @@ button {
 }
 
 /* om 70-talet och rabatt */
+.startpage-main {
+  /*   Push down so navbar doesn't cover it */
+  margin-top: 50px;
+}
+
 @media (min-width: 550px) {
   .startpage-main {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-top: 75px;
   }
 }
 
