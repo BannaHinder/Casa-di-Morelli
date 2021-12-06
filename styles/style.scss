@@ -99,7 +99,18 @@ button {
 }
 
 /* om 70-talet och rabatt */
+.startpage-main{
+  @include for-desktop{
+    display: flex;
+  }
+}
 .about-70s {
+  @include for-desktop{
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   width: 30%;
+  }
   background-image: url("/src/wallpaper2.jpg");
   display: flex;
   flex-direction: column;
@@ -110,10 +121,13 @@ button {
   color: $dark-red;
   border: 2px solid $dark-red;
 
-  img {
+  .discount-image {
     height: 168px;
     width: 225px;
     margin: 5px 0;
+    @include for-desktop{
+
+    }
   }
 
   h3 {
@@ -155,9 +169,17 @@ button {
   padding: 5px 5px;
   margin: 0;
   border: 1px solid $dark-red;
+  @include for-desktop{
+    margin: 20px;
+   
+  }
 }
 // kläder på startsidan
 .clothes {
+  @include for-desktop{
+   display: flex;
+   flex-direction: column;
+  }
   background: $beige;
   display: flex;
   flex-direction: column;
@@ -170,6 +192,11 @@ button {
         height: 189px;
         width: 130px;
         margin-top: 5px;
+        @include for-desktop{
+          width: 398px;
+          height: 522px;
+          margin: 20px;
+        }
       }
       p {
         font-family: "Kodchasan";
@@ -193,6 +220,10 @@ button {
       height: 360px;
       width: 262px;
       margin-top: 5px;
+      @include for-desktop{
+        width: 398px;
+        height: 522px;
+      }
     }
     p {
       font-family: "Kodchasan";
