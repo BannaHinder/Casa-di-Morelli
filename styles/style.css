@@ -248,10 +248,15 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 @media (min-width: 550px) {
@@ -259,80 +264,96 @@ button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
-.clothes .clothes-group {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+.clothes .small-image {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
 }
 
-.clothes .clothes-group .small-image img {
+@media (min-width: 550px) {
+  .clothes .small-image {
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+  }
+}
+
+.clothes .small-image img {
   height: 189px;
   width: 130px;
   margin-top: 5px;
 }
 
 @media (min-width: 550px) {
-  .clothes .clothes-group .small-image img {
+  .clothes .small-image img {
     width: 398px;
     height: 522px;
     margin: 20px;
   }
 }
 
-.clothes .clothes-group .small-image p {
+.clothes .small-image p {
   font-family: "Kodchasan";
   color: #892300;
   margin: 5px;
 }
 
 @media (min-width: 550px) {
-  .clothes .clothes-group .small-image p {
+  .clothes .small-image p {
     font-weight: bold;
     padding-left: 20px;
   }
 }
 
-.clothes .clothes-group .small-image .price-info {
+.clothes .small-image .price-info {
   font-weight: bolder;
   font-size: 14px;
 }
 
 @media (min-width: 550px) {
-  .clothes .clothes-group .small-image .price-info {
+  .clothes .small-image .price-info {
     position: relative;
     left: 200px;
-    bottom: 30px;
+    bottom: 35px;
     font-size: 22px;
+    display: inline;
   }
 }
 
-.clothes .clothes-group .small-image button.buy-btn {
+.clothes .small-image button.buy-btn {
   left: 80px;
   bottom: 50px;
 }
 
 @media (min-width: 550px) {
-  .clothes .clothes-group .small-image button.buy-btn {
+  .clothes .small-image button.buy-btn {
     border-radius: 30px;
     padding: 15px 30px;
-    left: 320px;
-    bottom: 75px;
+    left: 200px;
+    bottom: 40px;
   }
 }
 
 .clothes .big-image {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+@media (min-width: 550px) {
+  .clothes .big-image {
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+  }
 }
 
 .clothes .big-image img {
@@ -345,6 +366,7 @@ button {
   .clothes .big-image img {
     width: 398px;
     height: 522px;
+    margin: 20px;
   }
 }
 
@@ -356,8 +378,8 @@ button {
 
 @media (min-width: 550px) {
   .clothes .big-image p {
-    padding-top: 15px;
     font-weight: bold;
+    padding-left: 20px;
   }
 }
 
@@ -373,8 +395,9 @@ button {
   .clothes .big-image .price-info {
     position: relative;
     left: 200px;
-    bottom: 45px;
+    bottom: 35px;
     font-size: 22px;
+    display: inline;
   }
 }
 
@@ -387,8 +410,8 @@ button {
   .clothes .big-image button.buy-btn {
     border-radius: 30px;
     padding: 15px 30px;
-    left: 300px;
-    bottom: 85px;
+    left: 200px;
+    bottom: 40px;
   }
 }
 

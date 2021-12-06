@@ -184,19 +184,28 @@ button {
 }
 // kläder på startsidan
 .clothes {
-  @include for-desktop{
-   display: flex;
-   flex-direction: column;
-  }
   background: $beige;
   display: flex;
-  flex-direction: column;
-  .clothes-group {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  @include for-desktop{
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+   }
+  
+  // .clothes-group {
+  //   display: flex;
+  //   justify-content: space-around;
     
 
     .small-image {
+      align-self: center;
+      flex-basis: 50%;
+      @include for-desktop{
+        flex-basis: auto;
+      }
       img {
         height: 189px;
         width: 130px;
@@ -223,8 +232,9 @@ button {
         @include for-desktop{
           position: relative;
           left: 200px;
-         bottom: 30px;
+         bottom: 35px;
          font-size:22px;
+         display: inline;
        
         }
       }
@@ -234,16 +244,23 @@ button {
         @include for-desktop{
           border-radius: 30px;
           padding: 15px 30px;
-          left:320px;
-          bottom: 75px;
+          left:200px;
+          bottom: 40px;
         }
       }
-    }
+      
+     }
+  
     
-  }
+  // }
+
 
   .big-image {
-    align-self: center;
+    // align-self: center;
+    flex-basis: 100%;
+    @include for-desktop{
+      flex-basis: auto;
+    }
     img {
       height: 360px;
       width: 262px;
@@ -251,6 +268,7 @@ button {
       @include for-desktop{
         width: 398px;
         height: 522px;
+        margin: 20px;
       }
     }
     p {
@@ -258,10 +276,8 @@ button {
       color: $dark-red;
       margin: 5px;
       @include for-desktop{
-        padding-top: 15px;
         font-weight: bold;
-    
-      
+        padding-left: 20px;
        }
     }
     .price-info {
@@ -273,8 +289,9 @@ button {
       @include for-desktop{
         position: relative;
         left: 200px;
-       bottom: 45px;
+       bottom: 35px;
        font-size:22px;
+       display: inline;
      
       }
     }
@@ -283,9 +300,9 @@ button {
       bottom: 50px;
       @include for-desktop{
         border-radius: 30px;
-          padding: 15px 30px;
-          left:300px;
-          bottom: 85px;
+        padding: 15px 30px;
+        left:200px;
+        bottom: 40px;
       }
     }
   }
