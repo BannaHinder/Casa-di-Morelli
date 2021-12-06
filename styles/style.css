@@ -702,9 +702,8 @@ h2 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     width: 40%;
     padding-bottom: 0px;
   }
@@ -712,6 +711,12 @@ h2 {
 
 .navigation li {
   padding-bottom: 30px;
+}
+
+.navigation li:hover {
+  -webkit-filter: drop-shadow(0 5px 5px rgba(34, 34, 34, 0.603));
+  filter: drop-shadow(0 5px 5px rgba(34, 34, 34, 0.603));
+  font-weight: bold;
 }
 
 .social-media {
@@ -729,6 +734,8 @@ h2 {
   .social-media {
     -ms-flex-item-align: end;
         align-self: flex-end;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     width: 40%;
     margin-top: -60px;
   }

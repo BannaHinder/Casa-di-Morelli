@@ -483,12 +483,17 @@ h2 {
   padding-bottom: 90px;
   @include for-desktop {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 40%;
     padding-bottom: 0px;
   }
   li {
     padding-bottom: 30px;
+    &:hover {
+        -webkit-filter: drop-shadow(0 5px 5px rgba(34, 34, 34, 0.603));
+        filter: drop-shadow(0 5px 5px rgba(34, 34, 34, 0.603));
+        font-weight: bold;
+      }
   }
 }
 .social-media {
@@ -497,6 +502,7 @@ h2 {
   align-self: stretch;
   @include for-desktop {
     align-self: flex-end;
+    justify-content: space-around;
     width: 40%;
     margin-top: -60px;
   }
