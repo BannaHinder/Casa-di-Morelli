@@ -165,12 +165,8 @@ main {
   }
 }
 .about-70s {
-  @include for-desktop {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    width: 30%;
-  }
+
+
   background-image: url("/src/wallpaper2.jpg");
   display: flex;
   flex-direction: column;
@@ -180,6 +176,12 @@ main {
   font-family: "Kodchasan";
   color: $dark-red;
   border: 2px solid $dark-red;
+  @include for-desktop{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 30%;
+   }
 
   .discount-image {
     height: 168px;
@@ -246,31 +248,38 @@ main {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  @include for-desktop {
+
+  justify-content: space-around;
+
+  @include for-desktop{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-  }
+    align-content: center;
+   }
+  
 
   // .clothes-group {
   //   display: flex;
   //   justify-content: space-around;
 
-  .small-image {
-    align-self: center;
-    flex-basis: 50%;
-    @include for-desktop {
-      flex-basis: auto;
-    }
-    img {
-      height: 189px;
-      width: 130px;
-      margin-top: 5px;
-      @include for-desktop {
-        width: 398px;
-        height: 522px;
-        margin: 20px;
+
+    .small-image {
+      flex-basis: 50%;
+    
+      @include for-desktop{
+        flex-basis: auto;
+      }
+      img {
+        height: 189px;
+        width: 130px;
+        margin-top: 5px;
+        @include for-desktop{
+          width: 398px;
+          height: 522px;
+          margin: 20px;
+        }
+
       }
     }
     p {
@@ -308,9 +317,12 @@ main {
   // }
 
   .big-image {
-    // align-self: center;
-    flex-basis: 100%;
-    @include for-desktop {
+
+    align-self: center;
+  
+    
+    @include for-desktop{
+
       flex-basis: auto;
     }
     img {
@@ -416,8 +428,10 @@ h2 {
 .staff {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  @include for-desktop {
+
+  align-items: flex-start;
+  @include for-desktop{
+
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
