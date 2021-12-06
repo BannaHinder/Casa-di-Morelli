@@ -66,6 +66,7 @@ button {
 }
 .navbar {
   padding-top: 0.7rem;
+  position: relative;
 }
 .hamburgare-icon {
   width: 20px;
@@ -108,7 +109,15 @@ button {
 .shopping-cart {
   img {
     display: none;
+    @include for-desktop {
+      display: block;
+      position: absolute;
+      top: -40px;
+      right: 15px;
+      height: 30px;
+    }
   }
+  
 }
 .active {
   display: flex;

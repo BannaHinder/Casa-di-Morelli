@@ -73,6 +73,7 @@ button {
 
 .navbar {
   padding-top: 0.7rem;
+  position: relative;
 }
 
 .hamburgare-icon {
@@ -137,6 +138,16 @@ button {
 
 .shopping-cart img {
   display: none;
+}
+
+@media (min-width: 550px) {
+  .shopping-cart img {
+    display: block;
+    position: absolute;
+    top: -40px;
+    right: 15px;
+    height: 30px;
+  }
 }
 
 .active {
