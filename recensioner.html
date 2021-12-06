@@ -10,11 +10,14 @@
       href="https://fonts.googleapis.com/css2?family=Kodchasan:wght@200&family=Lobster&display=swap"
       rel="stylesheet"
     />
-    <link rel="shortcut icon" href="src/icons/flower icon.svg" image="x-icon" />
+    <link rel="shortcut icon" href="src/icons/flower-icon.svg" />
     <script src="scripts/script.js"></script>
     <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
     <!-- ------------------star rating stylesheet ------------------------- -->
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+    />
     <!-- --------------------------------css for people icons----------------------------------- -->
     <link
       rel="stylesheet"
@@ -27,14 +30,28 @@
       <nav class="navbar">
         <h1>Casa di Morelli</h1>
         <a href="#" onclick="toggle()" class="toggle-button">
-          <img src="src\icons\hamburger-menu.png" class="hamburgare-icon">
+          <img
+            rel="hamburger icon"
+            src="src/icons/hamburger-menu.png"
+            class="hamburgare-icon"
+            alt="hamburger icon"
+          />
         </a>
         <ul class="navbar-links">
           <li><a class="navbar-link" href="startpage.html">Startsida</a></li>
           <li><a class="navbar-link" href="omoss.html">Om oss</a></li>
-          <li><a class="navbar-link" href="recensioner.html">Recensioner</a></li>
+          <li>
+            <a class="navbar-link" href="recensioner.html">Recensioner</a>
+          </li>
           <li><a class="navbar-link" href="kontakt.html">Kontakt</a></li>
-          <li class="shopping-cart"><a href=""><span>Kundkorg</span><img src="src/icons/fa-solid_shopping-basketshopping-cart-icon.png" alt=""></a></li>
+          <li class="shopping-cart">
+            <a href=""
+              ><span>Kundkorg</span
+              ><img
+                src="src/icons/fa-solid_shopping-basketshopping-cart-icon.png"
+                alt="kundkorg"
+            /></a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -127,7 +144,8 @@
               <span class="fa fa-star"></span>
             </div>
             <p>
-              No me gustó para nada el vestido que pedí. Los detalles son de muy mala calidad. ¡No compres aquí! 
+              No me gustó para nada el vestido que pedí. Los detalles son de muy
+              mala calidad. ¡No compres aquí!
             </p>
           </div>
         </section>
@@ -148,7 +166,9 @@
               <span class="fa fa-star checked"></span>
             </div>
             <p>
-              Beställde kläder till min gamla mamma (en jumper, en kofta och ett par byxor) och hoppades på det bästa.Det blev jättebra! Hon tyckte om det jag valt, det passade både till färg, form och storlek!
+              Beställde kläder till min gamla mamma (en jumper, en kofta och ett
+              par byxor) och hoppades på det bästa.Det blev jättebra! Hon tyckte
+              om det jag valt, det passade både till färg, form och storlek!
             </p>
           </div>
         </section>
@@ -167,10 +187,8 @@
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
-            </div> 
-            <p>
-              彼女はよくこのサイトの服を購入します。相変わらず一流。
-            </p>
+            </div>
+            <p>彼女はよくこのサイトの服を購入します。相変わらず一流。</p>
           </div>
         </section>
       </article>
@@ -185,34 +203,36 @@
         ></span>
         <h3>Skriv din egen recension</h3>
         <section class="input-container">
-          <div>
-            <input
-              type="text"
-              name="name"
-              id="name-input-recension"
-              placeholder="Namn:"
-            />
-            <textarea name="recension" id="recension-input" cols="30" rows="7" placeholder="Skriv din text här..."></textarea>
-            </div>
-            </section>
-            <div class="stars-rating">
-              <form action="">
-                <input class="star star-5" id="star-5" type="radio" name="star"/>
-                <label class="star star-5" for="star-5"></label>
-                <input class="star star-4" id="star-4" type="radio" name="star"/>
-                <label class="star star-4" for="star-4"></label>
-                <input class="star star-3" id="star-3" type="radio" name="star"/>
-                <label class="star star-3" for="star-3"></label>
-                <input class="star star-2" id="star-2" type="radio" name="star"/>
-                <label class="star star-2" for="star-2"></label>
-                <input class="star star-1" id="star-1" type="radio" name="star"/>
-                <label class="star star-1" for="star-1"></label>
-              </form>
-            </div>
+          <input
+            type="text"
+            name="name"
+            id="name-input-recension"
+            placeholder="Namn:"
+          />
+          <textarea
+            name="recension"
+            id="recension-input"
+            cols="30"
+            rows="7"
+            placeholder="Skriv din text här..."
+          ></textarea>
+        </section>
+        <div class="stars-rating">
+          <form > 
+            <input class="star star-5" id="star-5" type="radio" name="star" />
+            <label class="star star-5" for="star-5"></label>
+            <input class="star star-4" id="star-4" type="radio" name="star" />
+            <label class="star star-4" for="star-4"></label>
+            <input class="star star-3" id="star-3" type="radio" name="star" />
+            <label class="star star-3" for="star-3"></label>
+            <input class="star star-2" id="star-2" type="radio" name="star" />
+            <label class="star star-2" for="star-2"></label>
+            <input class="star star-1" id="star-1" type="radio" name="star" />
+            <label class="star star-1" for="star-1"></label>
+          </form>
+        </div>
 
-            <button>Skicka!</button>
-          </div>
-  
+        <button>Skicka!</button>
       </article>
     </main>
     <!-- Add finished footer here -->
