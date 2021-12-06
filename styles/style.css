@@ -244,9 +244,25 @@ button {
   margin-bottom: 0;
 }
 
+@media (min-width: 550px) {
+  .about-70s .discount1 {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    margin-right: 20px;
+  }
+}
+
 .about-70s .discount2 {
   font-weight: bold;
   font-size: 14px;
+}
+
+@media (min-width: 550px) {
+  .about-70s .discount2 {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    margin-right: 20px;
+  }
 }
 
 .background-div {
@@ -292,10 +308,15 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 @media (min-width: 550px) {
@@ -303,55 +324,96 @@ button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
-.clothes .clothes-group {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+.clothes .small-image {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
 }
 
-.clothes .clothes-group .small-image img {
+@media (min-width: 550px) {
+  .clothes .small-image {
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+  }
+}
+
+.clothes .small-image img {
   height: 189px;
   width: 130px;
   margin-top: 5px;
 }
 
 @media (min-width: 550px) {
-  .clothes .clothes-group .small-image img {
+  .clothes .small-image img {
     width: 398px;
     height: 522px;
     margin: 20px;
   }
 }
 
-.clothes .clothes-group .small-image p {
+.clothes .small-image p {
   font-family: "Kodchasan";
   color: #892300;
   margin: 5px;
 }
 
-.clothes .clothes-group .small-image .price-info {
+@media (min-width: 550px) {
+  .clothes .small-image p {
+    font-weight: bold;
+    padding-left: 20px;
+  }
+}
+
+.clothes .small-image .price-info {
   font-weight: bolder;
   font-size: 14px;
 }
 
-.clothes .clothes-group .small-image button {
+@media (min-width: 550px) {
+  .clothes .small-image .price-info {
+    position: relative;
+    left: 200px;
+    bottom: 35px;
+    font-size: 22px;
+    display: inline;
+  }
+}
+
+.clothes .small-image button.buy-btn {
   left: 80px;
   bottom: 50px;
 }
 
+@media (min-width: 550px) {
+  .clothes .small-image button.buy-btn {
+    border-radius: 30px;
+    padding: 15px 30px;
+    left: 200px;
+    bottom: 40px;
+  }
+}
+
 .clothes .big-image {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+@media (min-width: 550px) {
+  .clothes .big-image {
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+  }
 }
 
 .clothes .big-image img {
@@ -364,6 +426,7 @@ button {
   .clothes .big-image img {
     width: 398px;
     height: 522px;
+    margin: 20px;
   }
 }
 
@@ -371,6 +434,13 @@ button {
   font-family: "Kodchasan";
   color: #892300;
   margin: 5px;
+}
+
+@media (min-width: 550px) {
+  .clothes .big-image p {
+    font-weight: bold;
+    padding-left: 20px;
+  }
 }
 
 .clothes .big-image .price-info {
@@ -381,9 +451,40 @@ button {
   font-size: 14px;
 }
 
-.clothes .big-image button {
+@media (min-width: 550px) {
+  .clothes .big-image .price-info {
+    position: relative;
+    left: 200px;
+    bottom: 35px;
+    font-size: 22px;
+    display: inline;
+  }
+}
+
+.clothes .big-image button.buy-btn {
   left: 200px;
   bottom: 50px;
+}
+
+@media (min-width: 550px) {
+  .clothes .big-image button.buy-btn {
+    border-radius: 30px;
+    padding: 15px 30px;
+    left: 200px;
+    bottom: 40px;
+  }
+}
+
+@media (min-width: 550px) {
+  .about-background {
+    background-image: url("/src/wallpaper.jpg");
+  }
+}
+
+@media (min-width: 550px) {
+  .about-h2 {
+    display: none;
+  }
 }
 
 h2 {
@@ -394,14 +495,52 @@ h2 {
   background: #FFE2B2;
 }
 
+@media (min-width: 550px) {
+  h2 {
+    font-size: 36px;
+  }
+}
+
 .about-info {
   font-family: "kodchasan";
   color: #892300;
   text-align: center;
 }
 
+@media (min-width: 550px) {
+  .about-info {
+    background: #FFE2B2;
+    border: 2px solid #D06224;
+    margin: 40px 41px 22px 41px;
+    -webkit-box-shadow: 4px 4px 5px 0px rgba(35, 35, 35, 0.7);
+  }
+}
+
+@media (min-width: 550px) {
+  .about-info h3 {
+    font-family: "lobster";
+    font-size: 36px;
+    font-weight: lighter;
+  }
+}
+
 .about-info p {
   font-size: 14px;
+}
+
+@media (min-width: 550px) {
+  .about-info p {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 550px) {
+  .about-article-background {
+    background: #FFE2B2;
+    border: 2px solid #D06224;
+    margin: 40px 41px 22px 41px;
+    -webkit-box-shadow: 4px 4px 5px 0px rgba(35, 35, 35, 0.7);
+  }
 }
 
 .staff {
@@ -417,6 +556,20 @@ h2 {
           align-items: center;
 }
 
+@media (min-width: 550px) {
+  .staff {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
 .staff .person {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -428,6 +581,14 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 220px;
+}
+
+@media (min-width: 550px) {
+  .staff .person {
+    width: 280px;
+    margin: 10px 30px;
+  }
 }
 
 .staff .person .staff-name {
@@ -437,9 +598,22 @@ h2 {
   font-size: 18px;
 }
 
+@media (min-width: 550px) {
+  .staff .person .staff-name {
+    font-size: 24px;
+  }
+}
+
 .staff .person img {
   height: 144px;
   width: 215px;
+}
+
+@media (min-width: 550px) {
+  .staff .person img {
+    height: 187px;
+    width: 279px;
+  }
 }
 
 .staff .person p {
@@ -447,6 +621,12 @@ h2 {
   font-size: 14px;
   text-align: center;
   color: #892300;
+}
+
+@media (min-width: 550px) {
+  .staff .person p {
+    font-size: 18px;
+  }
 }
 
 /* Footer */
@@ -595,10 +775,17 @@ h2 {
   margin-top: 25px;
 }
 
-/*recensioner- mobile*/
+/*recensioner- */
 .wallpaper {
   background-image: url("/src/wallpaper.jpg");
   background-size: cover;
+}
+
+@media (min-width: 550px) {
+  .wallpaper {
+    background-size: contain;
+    background: contain url("/src/wallpaper.jpg") no-repeat fixed top;
+  }
 }
 
 .recension-wrapper {
@@ -631,6 +818,7 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  max-width: 500px;
 }
 
 .recension-wrapper .recension .customer {
@@ -653,6 +841,7 @@ h2 {
 
 .recension-wrapper .recension .customer h5 {
   font-family: "Kodchasan";
+  text-align: center;
 }
 
 .recension-wrapper .recension .rating {
@@ -668,7 +857,7 @@ h2 {
 }
 
 .recension-wrapper .recension .rating p {
-  margin: 0px;
+  margin-top: 5px;
   font-family: "kodchasan";
   font-size: 14px;
 }
@@ -730,6 +919,23 @@ h2 {
 .recension-wrapper .skriv-recension .input-container input::placeholder, .recension-wrapper .skriv-recension .input-container textarea::placeholder {
   color: #892300;
   font-family: "lobster";
+}
+
+/* desktop */
+@media (min-width: 550px) {
+  .recensioner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 /* star rating user input */
