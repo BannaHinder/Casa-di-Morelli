@@ -392,7 +392,7 @@ h2 {
   @include for-desktop{
     background: $beige;
     border: 2px solid $orange;
-    margin: 40px 41px 22px 41px;
+    margin: 100px 41px 22px 41px;
     -webkit-box-shadow: 4px 4px 5px 0px rgba(35, 35, 35, 0.7);
   }
   font-family: "kodchasan";
@@ -498,7 +498,61 @@ h2 {
       filter: drop-shadow(0 5px 5px rgba(34, 34, 34, 0.603));
     }
   }
+}/* Footer */
+.bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 400px;
+  padding: 30px 40px;
+  @include for-desktop {
+    padding-top: 60px;
+    height: 60px;
+  }
+  h4 {
+    margin: 0 0 30px;
+    @include for-desktop{
+        margin-bottom: -20px;
+    }
+  }
 }
+.navigation {
+  align-self: flex-start;
+  padding-bottom: 90px;
+  @include for-desktop {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    padding-bottom: 0px;
+  }
+  li {
+    padding-bottom: 30px;
+    &:hover {
+        -webkit-filter: drop-shadow(0 5px 5px rgba(34, 34, 34, 0.603));
+        filter: drop-shadow(0 5px 5px rgba(34, 34, 34, 0.603));
+        font-weight: bold;
+      }
+  }
+}
+.social-media {
+  display: flex;
+  justify-content: space-between;
+  align-self: stretch;
+  @include for-desktop {
+    align-self: flex-end;
+    justify-content: space-around;
+    width: 40%;
+    margin-top: -60px;
+  }
+  img {
+    height: 38px;
+    &:hover {
+      -webkit-filter: drop-shadow(0 5px 5px rgba(34, 34, 34, 0.603));
+      filter: drop-shadow(0 5px 5px rgba(34, 34, 34, 0.603));
+    }
+  }
+}
+
 
 /*kontakt mobile style*/
 
