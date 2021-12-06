@@ -610,6 +610,7 @@ h2 {
 @media (min-width: 550px) {
   .wallpaper {
     background-size: contain;
+    background: contain url("/src/wallpaper.jpg") no-repeat fixed top;
   }
 }
 
@@ -666,6 +667,7 @@ h2 {
 
 .recension-wrapper .recension .customer h5 {
   font-family: "Kodchasan";
+  text-align: center;
 }
 
 .recension-wrapper .recension .rating {
@@ -681,7 +683,7 @@ h2 {
 }
 
 .recension-wrapper .recension .rating p {
-  margin: 0px;
+  margin-top: 5px;
   font-family: "kodchasan";
   font-size: 14px;
 }

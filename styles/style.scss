@@ -452,6 +452,7 @@ h2 {
   background-size: cover;
   @include for-desktop{
     background-size: contain;
+    background: contain url("/src/wallpaper.jpg") no-repeat fixed top;
   }
 }
 .recension-wrapper {
@@ -479,6 +480,7 @@ h2 {
       }
       h5 {
         font-family: "Kodchasan";
+        text-align: center;
       }
     }
     .rating {
@@ -490,7 +492,7 @@ h2 {
         color: $beige;
       }
       p {
-        margin: 0px;
+        margin-top: 5px;
         font-family: "kodchasan";
         font-size: 14px;
       }
