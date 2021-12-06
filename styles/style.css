@@ -541,7 +541,7 @@ h2 {
   .about-info {
     background: #FFE2B2;
     border: 2px solid #D06224;
-    margin: 40px 41px 22px 41px;
+    margin: 100px 41px 22px 41px;
     -webkit-box-shadow: 4px 4px 5px 0px rgba(35, 35, 35, 0.7);
   }
 }
@@ -698,6 +698,98 @@ h2 {
           justify-content: space-between;
   -ms-flex-item-align: stretch;
       align-self: stretch;
+}
+
+.social-media img {
+  height: 38px;
+}
+
+.social-media img:hover {
+  -webkit-filter: drop-shadow(0 5px 5px rgba(34, 34, 34, 0.603));
+  filter: drop-shadow(0 5px 5px rgba(34, 34, 34, 0.603));
+}
+
+/* Footer */
+.bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 400px;
+  padding: 30px 40px;
+}
+
+@media (min-width: 550px) {
+  .bottom {
+    padding-top: 60px;
+    height: 60px;
+  }
+}
+
+.bottom h4 {
+  margin: 0 0 30px;
+}
+
+@media (min-width: 550px) {
+  .bottom h4 {
+    margin-bottom: -20px;
+  }
+}
+
+.navigation {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  padding-bottom: 90px;
+}
+
+@media (min-width: 550px) {
+  .navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 40%;
+    padding-bottom: 0px;
+  }
+}
+
+.navigation li {
+  padding-bottom: 30px;
+}
+
+.navigation li:hover {
+  -webkit-filter: drop-shadow(0 5px 5px rgba(34, 34, 34, 0.603));
+  filter: drop-shadow(0 5px 5px rgba(34, 34, 34, 0.603));
+  font-weight: bold;
+}
+
+.social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+}
+
+@media (min-width: 550px) {
+  .social-media {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 40%;
+    margin-top: -60px;
+  }
 }
 
 .social-media img {
