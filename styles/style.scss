@@ -166,6 +166,7 @@ main {
 }
 .about-70s {
 <<<<<<< HEAD
+<<<<<<< HEAD
  
 =======
   @include for-desktop {
@@ -175,6 +176,10 @@ main {
     width: 30%;
   }
 >>>>>>> d798701a40b1045e326c996179da56e4c23f6520
+=======
+
+
+>>>>>>> cc2a1155e91fbdb593dbfcebd27052311ed155fc
   background-image: url("/src/wallpaper2.jpg");
   display: flex;
   flex-direction: column;
@@ -257,6 +262,10 @@ main {
   flex-direction: row;
   flex-wrap: wrap;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> cc2a1155e91fbdb593dbfcebd27052311ed155fc
   justify-content: space-around;
 
   @include for-desktop{
@@ -266,6 +275,7 @@ main {
     align-content: center;
    }
   
+<<<<<<< HEAD
 =======
   justify-content: space-evenly;
   @include for-desktop {
@@ -275,11 +285,18 @@ main {
   }
 
 >>>>>>> d798701a40b1045e326c996179da56e4c23f6520
+=======
+
+>>>>>>> cc2a1155e91fbdb593dbfcebd27052311ed155fc
   // .clothes-group {
   //   display: flex;
   //   justify-content: space-around;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> cc2a1155e91fbdb593dbfcebd27052311ed155fc
     .small-image {
       flex-basis: 50%;
     
@@ -295,6 +312,7 @@ main {
           height: 522px;
           margin: 20px;
         }
+<<<<<<< HEAD
 =======
   .small-image {
     align-self: center;
@@ -311,6 +329,9 @@ main {
         height: 522px;
         margin: 20px;
 >>>>>>> d798701a40b1045e326c996179da56e4c23f6520
+=======
+
+>>>>>>> cc2a1155e91fbdb593dbfcebd27052311ed155fc
       }
     }
     p {
@@ -349,15 +370,23 @@ main {
 
   .big-image {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> cc2a1155e91fbdb593dbfcebd27052311ed155fc
     align-self: center;
   
     
     @include for-desktop{
+<<<<<<< HEAD
 =======
     // align-self: center;
     flex-basis: 100%;
     @include for-desktop {
 >>>>>>> d798701a40b1045e326c996179da56e4c23f6520
+=======
+
+>>>>>>> cc2a1155e91fbdb593dbfcebd27052311ed155fc
       flex-basis: auto;
     }
     img {
@@ -464,12 +493,19 @@ h2 {
   display: flex;
   flex-direction: column;
 <<<<<<< HEAD
+<<<<<<< HEAD
   align-items: flex-start;
   @include for-desktop{
 =======
   align-items: center;
   @include for-desktop {
 >>>>>>> d798701a40b1045e326c996179da56e4c23f6520
+=======
+
+  align-items: flex-start;
+  @include for-desktop{
+
+>>>>>>> cc2a1155e91fbdb593dbfcebd27052311ed155fc
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -535,12 +571,17 @@ h2 {
   padding-bottom: 90px;
   @include for-desktop {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 40%;
     padding-bottom: 0px;
   }
   li {
     padding-bottom: 30px;
+    &:hover {
+        -webkit-filter: drop-shadow(0 5px 5px rgba(34, 34, 34, 0.603));
+        filter: drop-shadow(0 5px 5px rgba(34, 34, 34, 0.603));
+        font-weight: bold;
+      }
   }
 }
 .social-media {
@@ -549,6 +590,7 @@ h2 {
   align-self: stretch;
   @include for-desktop {
     align-self: flex-end;
+    justify-content: space-around;
     width: 40%;
     margin-top: -60px;
   }
