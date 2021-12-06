@@ -136,6 +136,12 @@ button {
   }
 }
 
+@media (min-width: 550px) {
+  .navbar-links li:nth-of-type(3) {
+    margin-left: auto;
+  }
+}
+
 .shopping-cart img {
   display: none;
 }
@@ -672,6 +678,7 @@ h2 {
       -ms-flex-align: center;
           align-items: center;
   padding: 15px;
+  margin-bottom: 80px;
 }
 
 .recension-wrapper .skriv-recension h3 {
@@ -699,20 +706,25 @@ h2 {
 
 .recension-wrapper .skriv-recension .input-container input::-webkit-input-placeholder, .recension-wrapper .skriv-recension .input-container textarea::-webkit-input-placeholder {
   color: #892300;
+  font-family: "lobster";
 }
 
 .recension-wrapper .skriv-recension .input-container input:-ms-input-placeholder, .recension-wrapper .skriv-recension .input-container textarea:-ms-input-placeholder {
   color: #892300;
+  font-family: "lobster";
 }
 
 .recension-wrapper .skriv-recension .input-container input::-ms-input-placeholder, .recension-wrapper .skriv-recension .input-container textarea::-ms-input-placeholder {
   color: #892300;
+  font-family: "lobster";
 }
 
 .recension-wrapper .skriv-recension .input-container input::placeholder, .recension-wrapper .skriv-recension .input-container textarea::placeholder {
   color: #892300;
+  font-family: "lobster";
 }
 
+/* star rating user input */
 div.stars-rating {
   margin-bottom: 20px;
   margin-top: 20px;
