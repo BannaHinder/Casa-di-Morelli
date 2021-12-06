@@ -165,8 +165,21 @@ main {
   }
 }
 .about-70s {
+<<<<<<< HEAD
+<<<<<<< HEAD
+ 
+=======
+  @include for-desktop {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 30%;
+  }
+>>>>>>> d798701a40b1045e326c996179da56e4c23f6520
+=======
 
 
+>>>>>>> cc2a1155e91fbdb593dbfcebd27052311ed155fc
   background-image: url("/src/wallpaper2.jpg");
   display: flex;
   flex-direction: column;
@@ -248,7 +261,11 @@ main {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
 
+>>>>>>> cc2a1155e91fbdb593dbfcebd27052311ed155fc
   justify-content: space-around;
 
   @include for-desktop{
@@ -258,12 +275,28 @@ main {
     align-content: center;
    }
   
+<<<<<<< HEAD
+=======
+  justify-content: space-evenly;
+  @include for-desktop {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 
+>>>>>>> d798701a40b1045e326c996179da56e4c23f6520
+=======
+
+>>>>>>> cc2a1155e91fbdb593dbfcebd27052311ed155fc
   // .clothes-group {
   //   display: flex;
   //   justify-content: space-around;
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
 
+>>>>>>> cc2a1155e91fbdb593dbfcebd27052311ed155fc
     .small-image {
       flex-basis: 50%;
     
@@ -279,7 +312,26 @@ main {
           height: 522px;
           margin: 20px;
         }
+<<<<<<< HEAD
+=======
+  .small-image {
+    align-self: center;
+    flex-basis: 50%;
+    @include for-desktop {
+      flex-basis: auto;
+    }
+    img {
+      height: 189px;
+      width: 130px;
+      margin-top: 5px;
+      @include for-desktop {
+        width: 398px;
+        height: 522px;
+        margin: 20px;
+>>>>>>> d798701a40b1045e326c996179da56e4c23f6520
+=======
 
+>>>>>>> cc2a1155e91fbdb593dbfcebd27052311ed155fc
       }
     }
     p {
@@ -317,12 +369,24 @@ main {
   // }
 
   .big-image {
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
 
+>>>>>>> cc2a1155e91fbdb593dbfcebd27052311ed155fc
     align-self: center;
   
     
     @include for-desktop{
+<<<<<<< HEAD
+=======
+    // align-self: center;
+    flex-basis: 100%;
+    @include for-desktop {
+>>>>>>> d798701a40b1045e326c996179da56e4c23f6520
+=======
 
+>>>>>>> cc2a1155e91fbdb593dbfcebd27052311ed155fc
       flex-basis: auto;
     }
     img {
@@ -428,10 +492,20 @@ h2 {
 .staff {
   display: flex;
   flex-direction: column;
+<<<<<<< HEAD
+<<<<<<< HEAD
+  align-items: flex-start;
+  @include for-desktop{
+=======
+  align-items: center;
+  @include for-desktop {
+>>>>>>> d798701a40b1045e326c996179da56e4c23f6520
+=======
 
   align-items: flex-start;
   @include for-desktop{
 
+>>>>>>> cc2a1155e91fbdb593dbfcebd27052311ed155fc
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;

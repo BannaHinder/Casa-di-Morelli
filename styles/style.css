@@ -540,7 +540,7 @@ h2 {
     background: #FFE2B2;
     border: 2px solid #D06224;
     margin: 40px 41px 22px 41px;
-    -webkit-box-shadow: 4px 4px 5px 0px rgba(35, 35, 35, 0.7);
+    box-shadow: 4px 4px 5px 0px rgba(35, 35, 35, 0.7);
   }
 }
 
@@ -567,7 +567,7 @@ h2 {
     background: #FFE2B2;
     border: 2px solid #D06224;
     margin: 40px 41px 22px 41px;
-    -webkit-box-shadow: 4px 4px 5px 0px rgba(35, 35, 35, 0.7);
+    box-shadow: 4px 4px 5px 0px rgba(35, 35, 35, 0.7);
   }
 }
 
