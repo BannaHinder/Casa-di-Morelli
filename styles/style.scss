@@ -123,7 +123,7 @@ button {
       text-shadow: none;
     }
   }
-  li:nth-of-type(3){
+  li:nth-of-type(3) {
     @include for-desktop {
       margin-left: auto;
     }
@@ -150,17 +150,31 @@ button {
   display: flex;
 }
 
-/* om 70-talet och rabatt */
-.startpage-main{
 /*   Push down so navbar doesn't cover it */
+main {
   margin-top: 50px;
-  @include for-desktop{
-    display: flex;
+  @include for-desktop {
     margin-top: 75px;
   }
 }
+
+/* om 70-talet och rabatt */
+.startpage-main {
+  @include for-desktop {
+    display: flex;
+  }
+}
 .about-70s {
+<<<<<<< HEAD
  
+=======
+  @include for-desktop {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 30%;
+  }
+>>>>>>> d798701a40b1045e326c996179da56e4c23f6520
   background-image: url("/src/wallpaper2.jpg");
   display: flex;
   flex-direction: column;
@@ -181,8 +195,7 @@ button {
     height: 168px;
     width: 225px;
     margin: 5px 0;
-    @include for-desktop{
-
+    @include for-desktop {
     }
   }
 
@@ -198,15 +211,15 @@ button {
     font-size: 40px;
     font-weight: bolder;
     margin-bottom: 0;
-   @include for-desktop{
-     align-self: flex-end;
-     margin-right: 20px;
-   }
+    @include for-desktop {
+      align-self: flex-end;
+      margin-right: 20px;
+    }
   }
   .discount2 {
     font-weight: bold;
     font-size: 14px;
-    @include for-desktop{
+    @include for-desktop {
       align-self: flex-end;
       margin-right: 20px;
     }
@@ -233,9 +246,8 @@ button {
   padding: 5px 5px;
   margin: 0;
   border: 1px solid $dark-red;
-  @include for-desktop{
+  @include for-desktop {
     margin: 20px;
-   
   }
 }
 // kläder på startsidan
@@ -244,6 +256,7 @@ button {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+<<<<<<< HEAD
   justify-content: space-around;
 
   @include for-desktop{
@@ -253,11 +266,20 @@ button {
     align-content: center;
    }
   
+=======
+  justify-content: space-evenly;
+  @include for-desktop {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+>>>>>>> d798701a40b1045e326c996179da56e4c23f6520
   // .clothes-group {
   //   display: flex;
   //   justify-content: space-around;
-    
 
+<<<<<<< HEAD
     .small-image {
       flex-basis: 50%;
     
@@ -273,58 +295,76 @@ button {
           height: 522px;
           margin: 20px;
         }
+=======
+  .small-image {
+    align-self: center;
+    flex-basis: 50%;
+    @include for-desktop {
+      flex-basis: auto;
+    }
+    img {
+      height: 189px;
+      width: 130px;
+      margin-top: 5px;
+      @include for-desktop {
+        width: 398px;
+        height: 522px;
+        margin: 20px;
+>>>>>>> d798701a40b1045e326c996179da56e4c23f6520
       }
-      p {
-        font-family: "Kodchasan";
-        color: $dark-red;
-        margin: 5px;
-        @include for-desktop{
-         font-weight: bold;
-         padding-left: 20px;
-       
-        }
+    }
+    p {
+      font-family: "Kodchasan";
+      color: $dark-red;
+      margin: 5px;
+      @include for-desktop {
+        font-weight: bold;
+        padding-left: 20px;
       }
-      .price-info {
-        font-weight: bolder;
-        font-size: 14px;
-        @include for-desktop{
-          position: relative;
-          left: 200px;
-         bottom: 35px;
-         font-size:22px;
-         display: inline;
-       
-        }
+    }
+    .price-info {
+      font-weight: bolder;
+      font-size: 14px;
+      @include for-desktop {
+        position: relative;
+        left: 200px;
+        bottom: 35px;
+        font-size: 22px;
+        display: inline;
       }
-      button.buy-btn {
-        left: 80px;
-        bottom: 50px;
-        @include for-desktop{
-          border-radius: 30px;
-          padding: 15px 30px;
-          left:200px;
-          bottom: 40px;
-        }
+    }
+    button.buy-btn {
+      left: 80px;
+      bottom: 50px;
+      @include for-desktop {
+        border-radius: 30px;
+        padding: 15px 30px;
+        left: 200px;
+        bottom: 40px;
       }
-      
-     }
-  
-    
+    }
+  }
+
   // }
 
-
   .big-image {
+<<<<<<< HEAD
     align-self: center;
   
     
     @include for-desktop{
+=======
+    // align-self: center;
+    flex-basis: 100%;
+    @include for-desktop {
+>>>>>>> d798701a40b1045e326c996179da56e4c23f6520
       flex-basis: auto;
     }
     img {
       height: 360px;
       width: 262px;
       margin-top: 5px;
-      @include for-desktop{
+      @include for-desktop {
         width: 398px;
         height: 522px;
         margin: 20px;
@@ -334,10 +374,10 @@ button {
       font-family: "Kodchasan";
       color: $dark-red;
       margin: 5px;
-      @include for-desktop{
+      @include for-desktop {
         font-weight: bold;
         padding-left: 20px;
-       }
+      }
     }
     .price-info {
       font-family: "Kodchasan";
@@ -345,22 +385,21 @@ button {
       margin: 5px;
       font-weight: bolder;
       font-size: 14px;
-      @include for-desktop{
+      @include for-desktop {
         position: relative;
         left: 200px;
-       bottom: 35px;
-       font-size:22px;
-       display: inline;
-     
+        bottom: 35px;
+        font-size: 22px;
+        display: inline;
       }
     }
     button.buy-btn {
       left: 200px;
       bottom: 50px;
-      @include for-desktop{
+      @include for-desktop {
         border-radius: 30px;
         padding: 15px 30px;
-        left:200px;
+        left: 200px;
         bottom: 40px;
       }
     }
@@ -368,13 +407,13 @@ button {
 }
 
 //Om oss
-.about-background{
-  @include for-desktop{
+.about-background {
+  @include for-desktop {
     background-image: url("/src/wallpaper.jpg");
   }
 }
-.about-h2{
-  @include for-desktop{
+.about-h2 {
+  @include for-desktop {
     display: none;
   }
 }
@@ -384,14 +423,13 @@ h2 {
   text-align: center;
   font-weight: lighter;
   background: $beige;
- @include for-desktop{
-   font-size: 36px;
-
- }
+  @include for-desktop {
+    font-size: 36px;
+  }
 }
 
 .about-info {
-  @include for-desktop{
+  @include for-desktop {
     background: $beige;
     border: 2px solid $orange;
     margin: 40px 41px 22px 41px;
@@ -400,8 +438,8 @@ h2 {
   font-family: "kodchasan";
   color: $dark-red;
   text-align: center;
-  h3{
-    @include for-desktop{
+  h3 {
+    @include for-desktop {
       font-family: "lobster";
       font-size: 36px;
       font-weight: lighter;
@@ -409,14 +447,13 @@ h2 {
   }
   p {
     font-size: 14px;
-    @include for-desktop{
+    @include for-desktop {
       font-size: 18px;
     }
   }
-
 }
-.about-article-background{
-  @include for-desktop{
+.about-article-background {
+  @include for-desktop {
     background: $beige;
     border: 2px solid $orange;
     margin: 40px 41px 22px 41px;
@@ -426,8 +463,13 @@ h2 {
 .staff {
   display: flex;
   flex-direction: column;
+<<<<<<< HEAD
   align-items: flex-start;
   @include for-desktop{
+=======
+  align-items: center;
+  @include for-desktop {
+>>>>>>> d798701a40b1045e326c996179da56e4c23f6520
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -437,26 +479,25 @@ h2 {
     flex-direction: column;
     align-items: center;
     width: 220px;
-    @include for-desktop{
-    width: 280px; 
-    margin:10px 30px;
+    @include for-desktop {
+      width: 280px;
+      margin: 10px 30px;
     }
     .staff-name {
       font-family: "lobster";
       color: $dark-red;
       text-align: center;
       font-size: 18px;
-      @include for-desktop{
+      @include for-desktop {
         font-size: 24px;
       }
     }
     img {
       height: 144px;
       width: 215px;
-      @include for-desktop{
+      @include for-desktop {
         height: 187px;
         width: 279px;
-        
       }
     }
     p {
@@ -464,7 +505,7 @@ h2 {
       font-size: 14px;
       text-align: center;
       color: $dark-red;
-      @include for-desktop{
+      @include for-desktop {
         font-size: 18px;
       }
     }
@@ -478,13 +519,26 @@ h2 {
   align-items: center;
   height: 400px;
   padding: 30px 40px;
+  @include for-desktop {
+    padding-top: 60px;
+    height: 60px;
+  }
   h4 {
     margin: 0 0 30px;
+    @include for-desktop{
+        margin-bottom: -20px;
+    }
   }
 }
 .navigation {
   align-self: flex-start;
   padding-bottom: 90px;
+  @include for-desktop {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    padding-bottom: 0px;
+  }
   li {
     padding-bottom: 30px;
   }
@@ -493,6 +547,11 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-self: stretch;
+  @include for-desktop {
+    align-self: flex-end;
+    width: 40%;
+    margin-top: -60px;
+  }
   img {
     height: 38px;
     &:hover {
@@ -521,7 +580,7 @@ h2 {
   font-family: "lobster";
   text-align: center;
   height: 600px;
-  background: #D06224;
+  background: #d06224;
   border-radius: 0px;
   position: relative;
   margin: 20px;
@@ -531,7 +590,6 @@ h2 {
   -moz-box-shadow: 4px 4px 5px 0px rgba(35, 35, 35, 0.7);
   line-height: 80%;
 }
-
 
 .kontakt-under {
   text-decoration: underline;
@@ -547,23 +605,26 @@ h2 {
   font-family: "lobster";
   text-align: center;
   height: 400px;
-  background: #D06224;
+  background: #d06224;
   border-radius: 0;
   position: relative;
   margin: 20px;
   box-shadow: 4px 4px 5px 0px rgba(34, 34, 34, 0.7);
-    -webkit-box-shadow: 4px 4px 5px 0px rgba(34, 34, 34, 0.7);
-    -moz-box-shadow: 4px 4px 5px 0px rgba(34, 34, 34, 0.7);
+  -webkit-box-shadow: 4px 4px 5px 0px rgba(34, 34, 34, 0.7);
+  -moz-box-shadow: 4px 4px 5px 0px rgba(34, 34, 34, 0.7);
 }
 .user-input {
-  font-family: 'lobster';
+  font-family: "lobster";
 }
 ::placeholder {
-  color: #D06224;
+  color: #d06224;
 }
 
-#choose-question, #name-input, #email-input, #text-input {
-  font-family: 'lobster';
+#choose-question,
+#name-input,
+#email-input,
+#text-input {
+  font-family: "lobster";
   border-radius: 5px;
   margin-top: 10px;
   margin: 5px;
@@ -573,9 +634,9 @@ h2 {
   border: none;
   border-radius: 5px;
   width: 90%;
-  font-family: 'lobster';
+  font-family: "lobster";
   font-size: 14px;
-  font-weight: bold; 
+  font-weight: bold;
 }
 
 #choose-question {
@@ -586,7 +647,7 @@ h2 {
 .wallpaper {
   background-image: url("/src/wallpaper.jpg");
   background-size: cover;
-  @include for-desktop{
+  @include for-desktop {
     background: url("/src/wallpaper.jpg") no-repeat fixed top;
   }
 }
@@ -642,11 +703,12 @@ h2 {
       font-family: "lobster";
       text-shadow: 1px 2px rgba(0, 0, 0, 0.5);
     }
-    .iconify{
-        align-self: flex-end;
+    .iconify {
+      align-self: flex-end;
     }
     .input-container {
-      input, textarea {
+      input,
+      textarea {
         background: $beige;
         color: $dark-red;
         border: none;
@@ -656,49 +718,50 @@ h2 {
         border-radius: 5px;
         font-family: "kodchasan";
         font-size: 14px;
-        font-weight: bold;        
-        &::placeholder{
-            color:$dark-red;
-            font-family: "lobster";
+        font-weight: bold;
+        &::placeholder {
+          color: $dark-red;
+          font-family: "lobster";
         }
       }
     }
   }
 }
 /* desktop */
-.recensioner{
-    @include for-desktop{
-        display:flex;
-        flex-wrap: wrap;
-        align-items: flex-start;
-        justify-content: center;
-        
-    }
+.recensioner {
+  @include for-desktop {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+  }
 }
 /* star rating user input */
 
 div.stars-rating {
-    margin-bottom: 20px;
-    margin-top: 20px;
-  input.star { display: none; }
+  margin-bottom: 20px;
+  margin-top: 20px;
+  input.star {
+    display: none;
+  }
   label.star {
-      float:right;
+    float: right;
     padding: 10px;
     font-size: 30px;
     color: $dark-red;
-    transition: all .2s;
+    transition: all 0.2s;
   }
   input.star:checked ~ label.star:before {
-    content: '\f005';
+    content: "\f005";
     color: $beige;
-    transition: all .25s;
+    transition: all 0.25s;
   }
   input.star-5:checked ~ label.star:before {
     color: $beige;
     text-shadow: 0 0 20px $dark-red;
   }
   label.star:before {
-    content: '\f006';
+    content: "\f006";
     font-family: FontAwesome;
   }
 }
