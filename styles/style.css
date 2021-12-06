@@ -184,9 +184,25 @@ button {
   margin-bottom: 0;
 }
 
+@media (min-width: 550px) {
+  .about-70s .discount1 {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    margin-right: 20px;
+  }
+}
+
 .about-70s .discount2 {
   font-weight: bold;
   font-size: 14px;
+}
+
+@media (min-width: 550px) {
+  .about-70s .discount2 {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    margin-right: 20px;
+  }
 }
 
 .background-div {
@@ -278,14 +294,39 @@ button {
   margin: 5px;
 }
 
+@media (min-width: 550px) {
+  .clothes .clothes-group .small-image p {
+    font-weight: bold;
+    padding-left: 20px;
+  }
+}
+
 .clothes .clothes-group .small-image .price-info {
   font-weight: bolder;
   font-size: 14px;
 }
 
-.clothes .clothes-group .small-image button {
+@media (min-width: 550px) {
+  .clothes .clothes-group .small-image .price-info {
+    position: relative;
+    left: 200px;
+    bottom: 30px;
+    font-size: 22px;
+  }
+}
+
+.clothes .clothes-group .small-image button.buy-btn {
   left: 80px;
   bottom: 50px;
+}
+
+@media (min-width: 550px) {
+  .clothes .clothes-group .small-image button.buy-btn {
+    border-radius: 30px;
+    padding: 15px 30px;
+    left: 320px;
+    bottom: 75px;
+  }
 }
 
 .clothes .big-image {
@@ -313,6 +354,13 @@ button {
   margin: 5px;
 }
 
+@media (min-width: 550px) {
+  .clothes .big-image p {
+    padding-top: 15px;
+    font-weight: bold;
+  }
+}
+
 .clothes .big-image .price-info {
   font-family: "Kodchasan";
   color: #892300;
@@ -321,9 +369,27 @@ button {
   font-size: 14px;
 }
 
-.clothes .big-image button {
+@media (min-width: 550px) {
+  .clothes .big-image .price-info {
+    position: relative;
+    left: 200px;
+    bottom: 45px;
+    font-size: 22px;
+  }
+}
+
+.clothes .big-image button.buy-btn {
   left: 200px;
   bottom: 50px;
+}
+
+@media (min-width: 550px) {
+  .clothes .big-image button.buy-btn {
+    border-radius: 30px;
+    padding: 15px 30px;
+    left: 300px;
+    bottom: 85px;
+  }
 }
 
 h2 {
