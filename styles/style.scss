@@ -309,45 +309,105 @@ button {
 }
 
 //Om oss
+.about-background{
+  @include for-desktop{
+    background-image: url("/src/wallpaper.jpg");
+  }
+}
+.about-h2{
+  @include for-desktop{
+    display: none;
+  }
+}
 h2 {
   font-family: "lobster";
   color: $dark-red;
   text-align: center;
   font-weight: lighter;
   background: $beige;
+ @include for-desktop{
+   font-size: 36px;
+
+ }
 }
+
 .about-info {
+  @include for-desktop{
+    background: $beige;
+    border: 2px solid $orange;
+    margin: 40px 41px 22px 41px;
+    -webkit-box-shadow: 4px 4px 5px 0px rgba(35, 35, 35, 0.7);
+  }
   font-family: "kodchasan";
   color: $dark-red;
   text-align: center;
+  h3{
+    @include for-desktop{
+      font-family: "lobster";
+      font-size: 36px;
+      font-weight: lighter;
+    }
+  }
   p {
     font-size: 14px;
+    @include for-desktop{
+      font-size: 18px;
+    }
+  }
+
+}
+.about-article-background{
+  @include for-desktop{
+    background: $beige;
+    border: 2px solid $orange;
+    margin: 40px 41px 22px 41px;
+    -webkit-box-shadow: 4px 4px 5px 0px rgba(35, 35, 35, 0.7);
   }
 }
 .staff {
   display: flex;
   flex-direction: column;
   align-items: center;
+  @include for-desktop{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
   .person {
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    width: 220px;
+    @include for-desktop{
+    width: 280px; 
+    margin:10px 30px;
+    }
     .staff-name {
       font-family: "lobster";
       color: $dark-red;
       text-align: center;
       font-size: 18px;
+      @include for-desktop{
+        font-size: 24px;
+      }
     }
     img {
       height: 144px;
       width: 215px;
+      @include for-desktop{
+        height: 187px;
+        width: 279px;
+        
+      }
     }
     p {
       font-family: "kodchasan";
       font-size: 14px;
       text-align: center;
       color: $dark-red;
+      @include for-desktop{
+        font-size: 18px;
+      }
     }
   }
 }
