@@ -117,6 +117,12 @@ button {
       height: 30px;
     }
   }
+
+  span {
+    @include for-desktop {
+      display: none;
+    }
+  }
   
 }
 .active {

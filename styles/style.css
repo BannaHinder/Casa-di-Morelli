@@ -150,6 +150,12 @@ button {
   }
 }
 
+@media (min-width: 550px) {
+  .shopping-cart span {
+    display: none;
+  }
+}
+
 .active {
   display: -webkit-box;
   display: -ms-flexbox;
