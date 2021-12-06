@@ -419,6 +419,11 @@ h2 {
   align-items: center;
   height: 400px;
   padding: 30px 40px;
+  @include for-desktop{
+      padding-top: 50px;
+      height:100px;
+      margin-bottom: -150px;
+  }
   h4 {
     margin: 0 0 30px;
   }
@@ -426,6 +431,12 @@ h2 {
 .navigation {
   align-self: flex-start;
   padding-bottom: 90px;
+  @include for-desktop{
+      display:flex;
+      justify-content: space-between;
+      width: 40%;
+      padding-bottom: 0px;
+  }
   li {
     padding-bottom: 30px;
   }
@@ -434,6 +445,11 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-self: stretch;
+  @include for-desktop{
+      align-self: flex-end;
+    width: 40%;
+    margin-top:-60px;
+}
   img {
     height: 38px;
     &:hover {

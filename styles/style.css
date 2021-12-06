@@ -585,6 +585,14 @@ h2 {
   padding: 30px 40px;
 }
 
+@media (min-width: 550px) {
+  .bottom {
+    padding-top: 50px;
+    height: 100px;
+    margin-bottom: -150px;
+  }
+}
+
 .bottom h4 {
   margin: 0 0 30px;
 }
@@ -593,6 +601,19 @@ h2 {
   -ms-flex-item-align: start;
       align-self: flex-start;
   padding-bottom: 90px;
+}
+
+@media (min-width: 550px) {
+  .navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 40%;
+    padding-bottom: 0px;
+  }
 }
 
 .navigation li {
@@ -608,6 +629,15 @@ h2 {
           justify-content: space-between;
   -ms-flex-item-align: stretch;
       align-self: stretch;
+}
+
+@media (min-width: 550px) {
+  .social-media {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    width: 40%;
+    margin-top: -60px;
+  }
 }
 
 .social-media img {
