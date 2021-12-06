@@ -254,9 +254,8 @@ button {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 @media (min-width: 550px) {
@@ -271,14 +270,6 @@ button {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-}
-
-.clothes .small-image {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
 }
 
 @media (min-width: 550px) {
@@ -345,8 +336,9 @@ button {
 }
 
 .clothes .big-image {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 @media (min-width: 550px) {
@@ -491,9 +483,9 @@ h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 @media (min-width: 550px) {
