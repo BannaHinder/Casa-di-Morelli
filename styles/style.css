@@ -104,6 +104,19 @@ button {
   background-color: #D06224;
 }
 
+@media (min-width: 550px) {
+  .navbar-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    background-color: #892300;
+  }
+}
+
 .navbar-links li {
   padding: 1rem;
   border-bottom: 2px solid #892300;
