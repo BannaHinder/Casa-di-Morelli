@@ -692,10 +692,16 @@ h2 {
   margin-top: 25px;
 }
 
-/*recensioner- mobile*/
+/*recensioner- */
 .wallpaper {
   background-image: url("/src/wallpaper.jpg");
   background-size: cover;
+}
+
+@media (min-width: 550px) {
+  .wallpaper {
+    background-size: contain;
+  }
 }
 
 .recension-wrapper {
@@ -728,6 +734,7 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  max-width: 500px;
 }
 
 .recension-wrapper .recension .customer {
@@ -827,6 +834,23 @@ h2 {
 .recension-wrapper .skriv-recension .input-container input::placeholder, .recension-wrapper .skriv-recension .input-container textarea::placeholder {
   color: #892300;
   font-family: "lobster";
+}
+
+/* desktop */
+@media (min-width: 550px) {
+  .recensioner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 /* star rating user input */
