@@ -124,9 +124,15 @@ button {
 
 .navbar-links a {
   font-family: "Lobster";
-  font-size: 24px;
+  font-size: 1.3rem;
   text-shadow: 0 0 2px #892300;
   color: white;
+}
+
+@media (min-width: 550px) {
+  .navbar-links a {
+    color: #FFE2B2;
+  }
 }
 
 .active {

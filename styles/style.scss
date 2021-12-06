@@ -97,9 +97,12 @@ button {
   }
   a {
     font-family: "Lobster";
-    font-size: 24px;
+    font-size: 1.3rem;
     text-shadow: 0 0 2px $dark-red;
     color: white;
+    @include for-desktop {
+      color: $beige;
+    }
   }
 }
 .active {
