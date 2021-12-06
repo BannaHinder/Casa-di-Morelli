@@ -56,24 +56,16 @@ button {
 /* Navbar */
 .header {
   background: $dark-red;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 100;
   h1 {
     margin: 0;
     padding-bottom: 0.7rem;
     font-size: 1.5rem;
     text-align: center;
     text-shadow: 0 4px 3px rgba(0, 0, 0, 0.5);
-    @include for-desktop {
-      padding: 0;
-    }
   }
 }
 .navbar {
   padding-top: 0.7rem;
-  position: relative;
 }
 .hamburgare-icon {
   width: 20px;
@@ -83,9 +75,6 @@ button {
   position: absolute;
   top: 1rem;
   right: 1rem;
-  @include for-desktop {
-    display: none;
-  }
 }
 .navbar-links {
   display: none;
@@ -94,73 +83,34 @@ button {
   width: 100%;
   z-index: 1;
   background-color: $orange;
-  @include for-desktop {
-    display: flex;
-    flex-direction: row;
-    background-color: $dark-red;
-  }
   li {
     padding: 1rem;
     border-bottom: 2px solid $dark-red;
-    @include for-desktop {
-      padding: 0 10px 8px 10px;
-    }
   }
   a {
     font-family: "Lobster";
-    font-size: 1.3rem;
+    font-size: 24px;
     text-shadow: 0 0 2px $dark-red;
     color: white;
-    @include for-desktop {
-      color: $beige;
-    }
-    &.active {
-      background: $dark-green;
-      border-radius: 30px;
-      padding: 2px 10px;
-      margin: 0 5px 0 5px;
-      box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
-      text-shadow: none;
-    }
-  }
-  li:nth-of-type(3){
-    @include for-desktop {
-      margin-left: auto;
-    }
   }
 }
-.shopping-cart {
-  img {
-    display: none;
-    @include for-desktop {
-      display: block;
-      position: absolute;
-      top: -40px;
-      right: 15px;
-      height: 30px;
-    }
-  }
-  span {
-    @include for-desktop {
-      display: none;
-    }
-  }
-}
-.active-toggle {
+.active {
   display: flex;
 }
 
 /* om 70-talet och rabatt */
 .startpage-main{
-/*   Push down so navbar doesn't cover it */
-  margin-top: 50px;
   @include for-desktop{
     display: flex;
-    margin-top: 75px;
   }
 }
 .about-70s {
- 
+  @include for-desktop{
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   width: 30%;
+  }
   background-image: url("/src/wallpaper2.jpg");
   display: flex;
   flex-direction: column;
@@ -170,12 +120,6 @@ button {
   font-family: "Kodchasan";
   color: $dark-red;
   border: 2px solid $dark-red;
-  @include for-desktop{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    width: 30%;
-   }
 
   .discount-image {
     height: 168px;
@@ -260,7 +204,7 @@ button {
     .small-image {
       align-self: center;
       @include for-desktop{
-        flex-basis: auto;
+        display: none;
       }
       img {
         height: 189px;
@@ -317,6 +261,7 @@ button {
     
     @include for-desktop{
       flex-basis: auto;
+      display: none;
     }
     img {
       height: 360px;
@@ -365,6 +310,122 @@ button {
   }
 }
 
+
+  
+
+  .small-image-desktop {
+    display: none;
+    align-self: center;
+    @include for-desktop{
+      display: block;
+      flex-basis: auto;
+     
+    }
+    img {
+      height: 189px;
+      width: 130px;
+      margin-top: 5px;
+      @include for-desktop{
+        width: 398px;
+        height: 522px;
+        margin: 20px;
+      }
+    }
+    p {
+      font-family: "Kodchasan";
+      color: $dark-red;
+      margin: 5px;
+      @include for-desktop{
+       font-weight: bold;
+       padding-left: 20px;
+     
+      }
+    }
+    .price-info {
+      font-weight: bolder;
+      font-size: 14px;
+      @include for-desktop{
+        position: relative;
+        left: 200px;
+       bottom: 35px;
+       font-size:22px;
+       display: inline;
+     
+      }
+    }
+    button.buy-btn {
+      left: 80px;
+      bottom: 50px;
+      @include for-desktop{
+        border-radius: 30px;
+        padding: 15px 30px;
+        left:200px;
+        bottom: 40px;
+      }
+    }
+    
+   }
+
+  
+
+
+
+.big-image-desktop {
+  align-self: center;
+display: none;
+  
+  @include for-desktop{
+    flex-basis: auto;
+   display: block;
+  }
+  img {
+    height: 360px;
+    width: 262px;
+    margin-top: 5px;
+    @include for-desktop{
+      width: 398px;
+      height: 522px;
+      margin: 20px;
+    }
+  }
+  p {
+    font-family: "Kodchasan";
+    color: $dark-red;
+    margin: 5px;
+    @include for-desktop{
+      font-weight: bold;
+      padding-left: 20px;
+     }
+  }
+  .price-info {
+    font-family: "Kodchasan";
+    color: $dark-red;
+    margin: 5px;
+    font-weight: bolder;
+    font-size: 14px;
+    @include for-desktop{
+      position: relative;
+      left: 200px;
+     bottom: 35px;
+     font-size:22px;
+     display: inline;
+   
+    }
+  }
+  button.buy-btn {
+    left: 200px;
+    bottom: 50px;
+    @include for-desktop{
+      border-radius: 30px;
+      padding: 15px 30px;
+      left:200px;
+      bottom: 40px;
+    }
+  }
+}
+
+
+
 //Om oss
 .about-background{
   @include for-desktop{
@@ -392,7 +453,7 @@ h2 {
   @include for-desktop{
     background: $beige;
     border: 2px solid $orange;
-    margin: 100px 41px 22px 41px;
+    margin: 40px 41px 22px 41px;
     -webkit-box-shadow: 4px 4px 5px 0px rgba(35, 35, 35, 0.7);
   }
   font-family: "kodchasan";
@@ -424,7 +485,7 @@ h2 {
 .staff {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   @include for-desktop{
     flex-direction: row;
     flex-wrap: wrap;
@@ -498,61 +559,7 @@ h2 {
       filter: drop-shadow(0 5px 5px rgba(34, 34, 34, 0.603));
     }
   }
-}/* Footer */
-.bottom {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 400px;
-  padding: 30px 40px;
-  @include for-desktop {
-    padding-top: 60px;
-    height: 60px;
-  }
-  h4 {
-    margin: 0 0 30px;
-    @include for-desktop{
-        margin-bottom: -20px;
-    }
-  }
 }
-.navigation {
-  align-self: flex-start;
-  padding-bottom: 90px;
-  @include for-desktop {
-    display: flex;
-    justify-content: space-around;
-    width: 40%;
-    padding-bottom: 0px;
-  }
-  li {
-    padding-bottom: 30px;
-    &:hover {
-        -webkit-filter: drop-shadow(0 5px 5px rgba(34, 34, 34, 0.603));
-        filter: drop-shadow(0 5px 5px rgba(34, 34, 34, 0.603));
-        font-weight: bold;
-      }
-  }
-}
-.social-media {
-  display: flex;
-  justify-content: space-between;
-  align-self: stretch;
-  @include for-desktop {
-    align-self: flex-end;
-    justify-content: space-around;
-    width: 40%;
-    margin-top: -60px;
-  }
-  img {
-    height: 38px;
-    &:hover {
-      -webkit-filter: drop-shadow(0 5px 5px rgba(34, 34, 34, 0.603));
-      filter: drop-shadow(0 5px 5px rgba(34, 34, 34, 0.603));
-    }
-  }
-}
-
 
 /*kontakt mobile style*/
 
@@ -639,7 +646,8 @@ h2 {
   background-image: url("/src/wallpaper.jpg");
   background-size: cover;
   @include for-desktop{
-    background: url("/src/wallpaper.jpg") no-repeat fixed top;
+    background-size: contain;
+    background: contain url("/src/wallpaper.jpg") no-repeat fixed top;
   }
 }
 .recension-wrapper {
