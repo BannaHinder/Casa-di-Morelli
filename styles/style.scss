@@ -160,8 +160,6 @@ main {
 /* om 70-talet och rabatt */
 .about-70s {
   @include for-desktop{
-   display: flex;
-   flex-direction: column;
    justify-content: flex-start;
    width: 30%;
    position: fixed;
