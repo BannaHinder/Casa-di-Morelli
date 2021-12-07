@@ -435,6 +435,7 @@ main {
       align-self: center;
   width: 100%;
   position: relative;
+  margin: 30px 0;
 }
 
 @media (min-width: 550px) {
