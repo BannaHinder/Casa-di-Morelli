@@ -167,8 +167,8 @@ button {
    width: 30%;
    position: fixed;
    height: 100%;
+   z-index: -2;
   }
-  background-image: url("/src/wallpaper2.jpg");
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -177,7 +177,18 @@ button {
   font-family: "Kodchasan";
   color: $dark-red;
   border: 2px solid $dark-red;
-
+  &::before {
+    content: "";
+    background-image: url("/src/wallpaper2.jpg");
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.5;
+    z-index: -5;
+  }
   .discount-image {
     width: 225px;
     margin: 5px 0;
@@ -226,7 +237,7 @@ button {
 }
 .product-list {
   @include for-desktop {
-    margin-left: 30%;
+    margin-left: 31%;
   }
 }
 .popular {

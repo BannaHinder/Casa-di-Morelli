@@ -210,7 +210,6 @@ button {
 }
 
 .about-70s {
-  background-image: url("/src/wallpaper2.jpg");
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -245,7 +244,21 @@ button {
     width: 30%;
     position: fixed;
     height: 100%;
+    z-index: -2;
   }
+}
+
+.about-70s::before {
+  content: "";
+  background-image: url("/src/wallpaper2.jpg");
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.5;
+  z-index: -5;
 }
 
 .about-70s .discount-image {
@@ -313,7 +326,7 @@ button {
 
 @media (min-width: 550px) {
   .product-list {
-    margin-left: 30%;
+    margin-left: 31%;
   }
 }
 
