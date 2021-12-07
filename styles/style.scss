@@ -149,16 +149,15 @@ button {
 .active-toggle {
   display: flex;
 }
-
-/* om 70-talet och rabatt */
-.startpage-main{
-/*   Push down so navbar doesn't cover it */
-  margin-top: 50px;
-  @include for-desktop{
-    display: flex;
-    margin-top: 75px;
+main {
+  /*   Push down so navbar doesn't cover it */
+    margin-top: 50px;
+    @include for-desktop{
+  /*     display: flex; */
+      margin-top: 75px;
+    }
   }
-}
+/* om 70-talet och rabatt */
 .about-70s {
   @include for-desktop{
    display: flex;
@@ -254,6 +253,11 @@ button {
   }
 }
 // kläder på startsidan
+.startpage-main {
+  @include for-desktop{
+    display: flex;
+  }
+}
 .clothes {
   background: $beige;
   display: flex;
@@ -714,7 +718,6 @@ h2 {
   }
 }
 .recension-wrapper {
-    margin-top: 80px;
   @include flex-column-center;
   h2 {
     padding: 0px 40px 0px 40px;

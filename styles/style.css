@@ -194,21 +194,19 @@ button {
   display: flex;
 }
 
-/* om 70-talet och rabatt */
-.startpage-main {
+main {
   /*   Push down so navbar doesn't cover it */
   margin-top: 50px;
 }
 
 @media (min-width: 550px) {
-  .startpage-main {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  main {
+    /*     display: flex; */
     margin-top: 75px;
   }
 }
 
+/* om 70-talet och rabatt */
 .about-70s {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -344,6 +342,14 @@ button {
 @media (min-width: 550px) {
   .popular {
     margin: 20px;
+  }
+}
+
+@media (min-width: 550px) {
+  .startpage-main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -917,7 +923,6 @@ h2 {
 }
 
 .recension-wrapper {
-  margin-top: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
