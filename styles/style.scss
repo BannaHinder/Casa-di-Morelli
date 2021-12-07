@@ -285,6 +285,7 @@ main {
     .small-image {
       align-self: center;
       flex: 1;
+      position: relative;
       img {
         height: auto;
         width: 100%;
@@ -299,13 +300,8 @@ main {
         font-weight: bolder;
         font-size: 14px;
       }
-      button.buy-btn {
-        left: 80px;
-        bottom: 50px;
-      }
     }
   }
-
 
   .big-image {
     align-self: center;
@@ -324,7 +320,6 @@ main {
       font-family: "Kodchasan";
       color: $dark-red;
       margin: 5px;
-     
     }
     .price-info {
       font-family: "Kodchasan";
@@ -333,12 +328,13 @@ main {
       font-weight: bolder;
       font-size: 14px;
     }
-    button.buy-btn {
-      right: 0;
-      bottom: 10px;
-      position: absolute;
-    }
   }
+}
+
+button.buy-btn {
+  right: 0;
+  bottom: 10px;
+  position: absolute;
 }
 
   .small-image-desktop {
@@ -346,7 +342,7 @@ main {
     @include for-desktop{
       display: block;
       flex-basis: auto;
-     
+      position: relative;
     }
     img {
       @include for-desktop{
@@ -381,8 +377,8 @@ main {
       @include for-desktop{
         border-radius: 30px;
         padding: 15px 30px;
-        left:200px;
-        bottom: 40px;
+/*         left:200px;
+        bottom: 40px; */
       }
     }
     
@@ -394,6 +390,7 @@ display: none;
   
   @include for-desktop{
    display: block;
+   position: relative;
   }
   img {
     @include for-desktop{
@@ -427,13 +424,9 @@ display: none;
     }
   }
   button.buy-btn {
-    left: 200px;
-    bottom: 50px;
     @include for-desktop{
       border-radius: 30px;
       padding: 15px 30px;
-      left:200px;
-      bottom: 40px;
     }
   }
 }

@@ -409,6 +409,7 @@ main {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  position: relative;
 }
 
 .clothes .clothes-group .small-image img {
@@ -426,11 +427,6 @@ main {
 .clothes .clothes-group .small-image .price-info {
   font-weight: bolder;
   font-size: 14px;
-}
-
-.clothes .clothes-group .small-image button.buy-btn {
-  left: 80px;
-  bottom: 50px;
 }
 
 .clothes .big-image {
@@ -467,7 +463,7 @@ main {
   font-size: 14px;
 }
 
-.clothes .big-image button.buy-btn {
+button.buy-btn {
   right: 0;
   bottom: 10px;
   position: absolute;
@@ -482,6 +478,7 @@ main {
     display: block;
     -ms-flex-preferred-size: auto;
         flex-basis: auto;
+    position: relative;
   }
 }
 
@@ -519,8 +516,8 @@ main {
   .small-image-desktop button.buy-btn {
     border-radius: 30px;
     padding: 15px 30px;
-    left: 200px;
-    bottom: 40px;
+    /*         left:200px;
+        bottom: 40px; */
   }
 }
 
@@ -531,6 +528,7 @@ main {
 @media (min-width: 550px) {
   .big-image-desktop {
     display: block;
+    position: relative;
   }
 }
 
@@ -566,17 +564,10 @@ main {
   }
 }
 
-.big-image-desktop button.buy-btn {
-  left: 200px;
-  bottom: 50px;
-}
-
 @media (min-width: 550px) {
   .big-image-desktop button.buy-btn {
     border-radius: 30px;
     padding: 15px 30px;
-    left: 200px;
-    bottom: 40px;
   }
 }
 
