@@ -429,6 +429,8 @@ main {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  width: 100%;
+  position: relative;
 }
 
 @media (min-width: 550px) {
@@ -438,9 +440,9 @@ main {
 }
 
 .clothes .big-image img {
-  height: 360px;
-  width: 262px;
   margin-top: 5px;
+  height: auto;
+  width: 100%;
 }
 
 .clothes .big-image p {
@@ -458,8 +460,9 @@ main {
 }
 
 .clothes .big-image button.buy-btn {
-  left: 200px;
-  bottom: 50px;
+  right: 0;
+  bottom: 10px;
+  position: absolute;
 }
 
 .small-image-desktop {

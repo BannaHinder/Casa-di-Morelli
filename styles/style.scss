@@ -307,15 +307,16 @@ main {
 
   .big-image {
     align-self: center;
+    width: 100%;
+    position: relative;
 
     @include for-desktop{
-    
       display: none;
     }
     img {
-      height: 360px;
-      width: 262px;
       margin-top: 5px;
+      height: auto;
+      width: 100%;
     }
     p {
       font-family: "Kodchasan";
@@ -331,9 +332,9 @@ main {
       font-size: 14px;
     }
     button.buy-btn {
-      left: 200px;
-      bottom: 50px;
-     
+      right: 0;
+      bottom: 10px;
+      position: absolute;
     }
   }
 }
