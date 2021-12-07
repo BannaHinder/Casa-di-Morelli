@@ -740,6 +740,7 @@ h2 {
   align-items: center;
   height: 400px;
   padding: 30px 40px;
+  margin-top: 50px;
 }
 
 @media (min-width: 550px) {
