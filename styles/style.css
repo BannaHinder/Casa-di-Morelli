@@ -364,6 +364,7 @@ main {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  padding: 0 15px;
 }
 
 @media (min-width: 550px) {

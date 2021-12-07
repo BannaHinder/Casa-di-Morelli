@@ -263,6 +263,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  padding: 0 15px;
 
   @include for-desktop{
     display: flex;
