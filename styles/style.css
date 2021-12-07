@@ -389,6 +389,7 @@ main {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  /* Select first small image of each row*/
 }
 
 @media (min-width: 550px) {
@@ -397,15 +398,22 @@ main {
   }
 }
 
+.clothes .clothes-group .small-image:first-of-type {
+  margin-right: 10px;
+}
+
 .clothes .clothes-group .small-image {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .clothes .clothes-group .small-image img {
-  height: 189px;
-  width: 130px;
+  height: auto;
+  width: 100%;
   margin-top: 5px;
 }
 

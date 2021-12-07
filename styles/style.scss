@@ -278,12 +278,16 @@ main {
     @include for-desktop{
       display: none;
     }
-
+    /* Select first small image of each row*/
+    .small-image:first-of-type {
+      margin-right: 10px;
+    }
     .small-image {
       align-self: center;
+      flex: 1;
       img {
-        height: 189px;
-        width: 130px;
+        height: auto;
+        width: 100%;
         margin-top: 5px;
       }
       p {
@@ -299,9 +303,7 @@ main {
         left: 80px;
         bottom: 50px;
       }
-      
-     }
-    
+    }
   }
 
 
