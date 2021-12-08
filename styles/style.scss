@@ -687,6 +687,15 @@ h2 {
 #choose-question {
   margin-top: 25px;
 }
+/*kontakt dekstop*/
+@media (min-width: 550px) {
+  .kontakt-wrapper {
+    display: flex;
+    flex-direction: row;
+
+    
+  }
+}
 
 /*recensioner- */
 .wallpaper {
