@@ -742,19 +742,23 @@ h2 {
     -moz-box-shadow: 4px 4px 5px 0px rgba(34, 34, 34, 0.7);
     display: flex;
     max-width: 500px;
+    width: -webkit-fill-available;
     .customer {
       @include flex-column-center;
       margin: 15px;
+      max-width: 15%;
       .iconify {
         font-size: 50px;
       }
       h5 {
         font-family: "Kodchasan";
         text-align: center;
+        overflow-wrap: anywhere;
       }
     }
     .rating {
       margin: 15px;
+      overflow-wrap: anywhere;
       .fa-star {
         color: $dark-red;
       }
