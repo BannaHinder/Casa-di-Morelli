@@ -149,35 +149,44 @@ button {
 .active-toggle {
   display: flex;
 }
-
-/* om 70-talet och rabatt */
-.startpage-main{
-/*   Push down so navbar doesn't cover it */
-  margin-top: 50px;
-  @include for-desktop{
-    display: flex;
-    margin-top: 75px;
+main {
+  /*   Push down so navbar doesn't cover it */
+    margin-top: 50px;
+    @include for-desktop{
+  /*     display: flex; */
+      margin-top: 75px;
+    }
   }
-}
+/* om 70-talet och rabatt */
 .about-70s {
   @include for-desktop{
-   display: flex;
-   flex-direction: column;
    justify-content: flex-start;
    width: 30%;
+   position: fixed;
+   height: 100%;
+   z-index: -2;
   }
-  background-image: url("/src/wallpaper2.jpg");
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 30px;
+  padding: 30px 20px;
   font-family: "Kodchasan";
   color: $dark-red;
   border: 2px solid $dark-red;
-
+  &::before {
+    content: "";
+    background-image: url("/src/wallpaper2.jpg");
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.5;
+    z-index: -5;
+  }
   .discount-image {
-    height: 168px;
     width: 225px;
     margin: 5px 0;
     @include for-desktop{
@@ -223,6 +232,11 @@ button {
   opacity: 0.89;
   border-radius: 5px;
 }
+.product-list {
+  @include for-desktop {
+    margin-left: 35%;
+  }
+}
 .popular {
   font-family: "Lobster";
   color: white;
@@ -237,11 +251,17 @@ button {
   }
 }
 // kläder på startsidan
+.startpage-main {
+  @include for-desktop{
+    display: flex;
+  }
+}
 .clothes {
   background: $beige;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  padding: 0 30px;
 
   @include for-desktop{
     display: flex;
@@ -256,12 +276,17 @@ button {
     @include for-desktop{
       display: none;
     }
-
+    /* Select first small image of each row*/
+    .small-image:first-of-type {
+      margin-right: 10px;
+    }
     .small-image {
       align-self: center;
+      flex: 1;
+      position: relative;
       img {
-        height: 189px;
-        width: 130px;
+        height: auto;
+        width: 100%;
         margin-top: 5px;
       }
       p {
@@ -273,33 +298,27 @@ button {
         font-weight: bolder;
         font-size: 14px;
       }
-      button.buy-btn {
-        left: 80px;
-        bottom: 50px;
-      }
-      
-     }
-    
+    }
   }
-
 
   .big-image {
     align-self: center;
+    width: 100%;
+    position: relative;
+    margin: 30px 0;
 
     @include for-desktop{
-    
       display: none;
     }
     img {
-      height: 360px;
-      width: 262px;
       margin-top: 5px;
+      height: auto;
+      width: 100%;
     }
     p {
       font-family: "Kodchasan";
       color: $dark-red;
       margin: 5px;
-     
     }
     .price-info {
       font-family: "Kodchasan";
@@ -308,12 +327,13 @@ button {
       font-weight: bolder;
       font-size: 14px;
     }
-    button.buy-btn {
-      left: 200px;
-      bottom: 50px;
-     
-    }
   }
+}
+
+button.buy-btn {
+  right: 0;
+  bottom: 10px;
+  position: absolute;
 }
 
   .small-image-desktop {
@@ -321,7 +341,7 @@ button {
     @include for-desktop{
       display: block;
       flex-basis: auto;
-     
+      position: relative;
     }
     img {
       @include for-desktop{
@@ -356,8 +376,8 @@ button {
       @include for-desktop{
         border-radius: 30px;
         padding: 15px 30px;
-        left:200px;
-        bottom: 40px;
+/*         left:200px;
+        bottom: 40px; */
       }
     }
     
@@ -369,6 +389,7 @@ display: none;
   
   @include for-desktop{
    display: block;
+   position: relative;
   }
   img {
     @include for-desktop{
@@ -402,13 +423,9 @@ display: none;
     }
   }
   button.buy-btn {
-    left: 200px;
-    bottom: 50px;
     @include for-desktop{
       border-radius: 30px;
       padding: 15px 30px;
-      left:200px;
-      bottom: 40px;
     }
   }
 }
@@ -530,6 +547,7 @@ h2 {
           align-items: center;
   height: 400px;
   padding: 30px 40px;
+  margin-top: 50px;
 }
 
 @media (min-width: 550px) {
@@ -697,7 +715,6 @@ h2 {
   }
 }
 .recension-wrapper {
-    margin-top: 80px;
   @include flex-column-center;
   h2 {
     padding: 0px 40px 0px 40px;

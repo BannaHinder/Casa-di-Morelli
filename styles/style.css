@@ -194,23 +194,20 @@ button {
   display: flex;
 }
 
-/* om 70-talet och rabatt */
-.startpage-main {
+main {
   /*   Push down so navbar doesn't cover it */
   margin-top: 50px;
 }
 
 @media (min-width: 550px) {
-  .startpage-main {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  main {
+    /*     display: flex; */
     margin-top: 75px;
   }
 }
 
+/* om 70-talet och rabatt */
 .about-70s {
-  background-image: url("/src/wallpaper2.jpg");
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -224,7 +221,7 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 30px;
+  padding: 30px 20px;
   font-family: "Kodchasan";
   color: #892300;
   border: 2px solid #892300;
@@ -232,22 +229,30 @@ button {
 
 @media (min-width: 550px) {
   .about-70s {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
     width: 30%;
+    position: fixed;
+    height: 100%;
+    z-index: -2;
   }
 }
 
+.about-70s::before {
+  content: "";
+  background-image: url("/src/wallpaper2.jpg");
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.5;
+  z-index: -5;
+}
+
 .about-70s .discount-image {
-  height: 168px;
   width: 225px;
   margin: 5px 0;
 }
@@ -310,6 +315,12 @@ button {
   border-radius: 5px;
 }
 
+@media (min-width: 550px) {
+  .product-list {
+    margin-left: 35%;
+  }
+}
+
 .popular {
   font-family: "Lobster";
   color: white;
@@ -327,6 +338,14 @@ button {
   }
 }
 
+@media (min-width: 550px) {
+  .startpage-main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .clothes {
   background: #FFE2B2;
   display: -webkit-box;
@@ -338,6 +357,7 @@ button {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  padding: 0 30px;
 }
 
 @media (min-width: 550px) {
@@ -362,6 +382,7 @@ button {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  /* Select first small image of each row*/
 }
 
 @media (min-width: 550px) {
@@ -370,15 +391,23 @@ button {
   }
 }
 
+.clothes .clothes-group .small-image:first-of-type {
+  margin-right: 10px;
+}
+
 .clothes .clothes-group .small-image {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  position: relative;
 }
 
 .clothes .clothes-group .small-image img {
-  height: 189px;
-  width: 130px;
+  height: auto;
+  width: 100%;
   margin-top: 5px;
 }
 
@@ -393,15 +422,13 @@ button {
   font-size: 14px;
 }
 
-.clothes .clothes-group .small-image button.buy-btn {
-  left: 80px;
-  bottom: 50px;
-}
-
 .clothes .big-image {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  width: 100%;
+  position: relative;
+  margin: 30px 0;
 }
 
 @media (min-width: 550px) {
@@ -411,9 +438,9 @@ button {
 }
 
 .clothes .big-image img {
-  height: 360px;
-  width: 262px;
   margin-top: 5px;
+  height: auto;
+  width: 100%;
 }
 
 .clothes .big-image p {
@@ -430,9 +457,10 @@ button {
   font-size: 14px;
 }
 
-.clothes .big-image button.buy-btn {
-  left: 200px;
-  bottom: 50px;
+button.buy-btn {
+  right: 0;
+  bottom: 10px;
+  position: absolute;
 }
 
 .small-image-desktop {
@@ -444,6 +472,7 @@ button {
     display: block;
     -ms-flex-preferred-size: auto;
         flex-basis: auto;
+    position: relative;
   }
 }
 
@@ -481,8 +510,8 @@ button {
   .small-image-desktop button.buy-btn {
     border-radius: 30px;
     padding: 15px 30px;
-    left: 200px;
-    bottom: 40px;
+    /*         left:200px;
+        bottom: 40px; */
   }
 }
 
@@ -493,6 +522,7 @@ button {
 @media (min-width: 550px) {
   .big-image-desktop {
     display: block;
+    position: relative;
   }
 }
 
@@ -528,17 +558,10 @@ button {
   }
 }
 
-.big-image-desktop button.buy-btn {
-  left: 200px;
-  bottom: 50px;
-}
-
 @media (min-width: 550px) {
   .big-image-desktop button.buy-btn {
     border-radius: 30px;
     padding: 15px 30px;
-    left: 200px;
-    bottom: 40px;
   }
 }
 
@@ -710,6 +733,7 @@ h2 {
   align-items: center;
   height: 400px;
   padding: 30px 40px;
+  margin-top: 50px;
 }
 
 @media (min-width: 550px) {
@@ -897,7 +921,6 @@ h2 {
 }
 
 .recension-wrapper {
-  margin-top: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
