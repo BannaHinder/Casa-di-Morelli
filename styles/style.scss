@@ -633,7 +633,7 @@ h2 {
   height: 100px;
 }
 .kontakt-img {
-  width: 50px; /*fixa funkar ej*/
+  width: 50px; 
   height: 50px;
 }
 .map-img {
@@ -666,7 +666,7 @@ h2 {
   text-decoration: none;
   font-weight: bold;
 }
-/*square 2*/
+
 .content2 {
   font-family: "lobster";
   text-align: center;
@@ -705,6 +705,7 @@ h2 {
 #choose-question {
   margin-top: 25px;
 }
+
 /*kontakt dekstop*/
 @media (min-width: 550px) {
   .kontakt-wrapper {
@@ -712,7 +713,7 @@ h2 {
     flex-direction: row;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    grid-gap: 20px; /*atstumai tarp kvadratu*/
+    grid-gap: 20px; 
   }
 }
 
