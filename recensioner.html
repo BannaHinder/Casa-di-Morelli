@@ -39,12 +39,17 @@
         <ul class="navbar-links">
           <li><a class="navbar-link" href="startpage.html">Startsida</a></li>
           <li><a class="navbar-link" href="omoss.html">Om oss</a></li>
-          <li><a class="navbar-link" href="recensioner.html">Recensioner</a></li>
+          <li>
+            <a class="navbar-link" href="recensioner.html">Recensioner</a>
+          </li>
           <li><a class="navbar-link" href="kontakt.html">Kontakt</a></li>
           <li class="shopping-cart">
-            <a href=""><span>Kundkorg</span><img
+            <a href=""
+              ><span>Kundkorg</span
+              ><img
                 src="src/icons/fa-solid_shopping-basketshopping-cart-icon.png"
-                alt="kundkorg"/></a>
+                alt="kundkorg"
+            /></a>
           </li>
         </ul>
       </nav>
@@ -52,7 +57,7 @@
     <!-----------------------------------main---------------------------------------->
     <main class="recension-wrapper">
       <h2>Recensioner</h2>
-      <article class="recensioner">
+      <article class="recensioner" id="recensioner">
         <section class="recension">
           <div class="customer">
             <span
@@ -185,6 +190,25 @@
             <p>彼女はよくこのサイトの服を購入します。相変わらず一流。</p>
           </div>
         </section>
+        <section class="recension" id="recension" style="display: none">
+          <div class="customer">
+            <span
+              class="iconify"
+              data-icon="emojione:woman-light-skin-tone"
+            ></span>
+            <h5>宮野, 信彦</h5>
+          </div>
+          <div class="rating">
+            <div class="stars" id="stars">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+            </div>
+            <p>彼女はよくこのサイトの服を購入します。相変わらず一流。</p>
+          </div>
+        </section>
       </article>
 
       <!-- -----------------------------SKRIV RECENSION------------------------------------------ -->
@@ -212,7 +236,7 @@
           ></textarea>
         </section>
         <div class="stars-rating">
-          <form > 
+          <form>
             <input class="star star-5" id="star-5" type="radio" name="star" />
             <label class="star star-5" for="star-5"></label>
             <input class="star star-4" id="star-4" type="radio" name="star" />
@@ -226,7 +250,7 @@
           </form>
         </div>
 
-        <button>Skicka!</button>
+        <button id="recension-btn" onclick="postRecension()">Skicka!</button>
       </article>
     </main>
     <!-- Add finished footer here -->
@@ -245,5 +269,57 @@
         <img src="src/icons/Pinterest.png" alt="Pinterest logo" />
       </div>
     </footer>
+    <script>
+      function postRecension() {
+        let customerName = document.getElementById("name-input-recension").value;
+        let textInput = document.getElementById("recension-input").value;
+
+        if(customerName===""||textInput===""){
+          window.alert("Please fill in all input fields");
+          return
+        }
+
+        let recensioner = document.querySelector("#recensioner");
+        //////////////////////////////////GETTING USER INPUT////////////////////////////////
+        let customerNameTag = document.createElement("h5");
+        customerNameTag.innerHTML = customerName;
+        
+        let recensionsText = document.createElement("p");
+        recensionsText.innerHTML = textInput;
+
+        //////////////////////////////////CREATING NEW RECENSION////////////////////////////////
+
+        let newRecension = document.createElement("section");
+        newRecension.className = "recension";
+        let newCustomer = document.createElement("div");
+        newCustomer.className = "customer";
+
+        let icon = document.createElement("span");
+        icon.className = "iconify";
+        icon.setAttribute(
+          "data-icon",
+          "emojione:blond-haired-person-light-skin-tone"
+        );
+
+        let stars = document.getElementById("stars");
+        console.log(stars);
+
+        newCustomer.appendChild(icon);
+        newCustomer.appendChild(customerNameTag);
+        newRecension.appendChild(newCustomer);
+
+        let newRating = document.createElement("div");
+        newRating.className = "rating";
+        newRating.appendChild(stars);
+        newRating.appendChild(recensionsText);
+        newRecension.appendChild(newRating);
+        recensioner.appendChild(newRecension);
+
+        document.getElementById(
+          "name-input-recension"
+        ).value = "";
+        document.getElementById("recension-input").value= "";
+      }
+    </script>
   </body>
 </html>
