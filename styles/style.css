@@ -820,7 +820,6 @@ h2 {
 
 .kontakt-img {
   width: 50px;
-  /*fixa funkar ej*/
   height: 50px;
 }
 
@@ -854,7 +853,6 @@ h2 {
   font-weight: bold;
 }
 
-/*square 2*/
 .content2 {
   font-family: "lobster";
   text-align: center;
@@ -923,7 +921,6 @@ h2 {
     -ms-grid-columns: (minmax(150px, 1fr))[auto-fit];
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     grid-gap: 20px;
-    /*atstumai tarp kvadratu*/
   }
 }
 
