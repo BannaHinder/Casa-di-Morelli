@@ -1,3 +1,7 @@
+.alert-style {
+  color: red;
+}
+
 /* Reset */
 a {
   text-decoration: none;
