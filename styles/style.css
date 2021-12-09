@@ -824,13 +824,6 @@ h2 {
   height: 100px;
 }
 
-@media (min-width: 550px) {
-  .hus {
-    width: 264px;
-    height: 163px;
-  }
-}
-
 .kontakt-img {
   width: 50px;
   height: 50px;
@@ -994,6 +987,7 @@ h2 {
   display: -ms-flexbox;
   display: flex;
   max-width: 500px;
+  width: -webkit-fill-available;
 }
 
 .recension-wrapper .recension .customer {
@@ -1008,6 +1002,7 @@ h2 {
       -ms-flex-align: center;
           align-items: center;
   margin: 15px;
+  max-width: 15%;
 }
 
 .recension-wrapper .recension .customer .iconify {
@@ -1017,10 +1012,12 @@ h2 {
 .recension-wrapper .recension .customer h5 {
   font-family: "Kodchasan";
   text-align: center;
+  overflow-wrap: anywhere;
 }
 
 .recension-wrapper .recension .rating {
   margin: 15px;
+  overflow-wrap: anywhere;
 }
 
 .recension-wrapper .recension .rating .fa-star {

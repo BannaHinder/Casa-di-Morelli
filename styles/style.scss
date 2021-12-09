@@ -635,10 +635,6 @@ h2 {
 .hus {
   width: 140px;
   height: 100px;
-  @include for-desktop{
-    width: 264px;
-    height: 163px;
-  }
 }
 .kontakt-img {
   width: 50px; 
