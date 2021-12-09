@@ -27,11 +27,16 @@ myPara.className="kontakt-para";
 myAddButton.addEventListener("click",()=>{
     let myContentDiv = document.querySelector(".user-input");
     let myTextInput = document.querySelector("#text-input");
+
+    if(nameInput.value===""|| emailInput.value==="" || myTextInput.value===""){
+    alert("Please fill in all input fields");
+    } 
+    else {
     myPara.innerText="Tack för att du kontaktar oss! Vi återkommer snarast!";
     myContentDiv.appendChild(myPara);
     myContentDiv.removeChild(myTextInput);
     myContentDiv.removeChild(myAddButton); 
     myContentDiv.removeChild(inputSelect);
     myContentDiv.removeChild(nameInput);
-    myContentDiv.removeChild(emailInput);
+    myContentDiv.removeChild(emailInput);}
 });
