@@ -813,9 +813,22 @@ h2 {
 }
 
 /*kontakt mobile style*/
+@media (min-width: 550px) {
+  .kontakt-oss {
+    display: none;
+  }
+}
+
 .hus {
   width: 140px;
   height: 100px;
+}
+
+@media (min-width: 550px) {
+  .hus {
+    width: 264px;
+    height: 163px;
+  }
 }
 
 .kontakt-img {
@@ -841,6 +854,10 @@ h2 {
   -webkit-box-shadow: 4px 4px 5px 0px rgba(35, 35, 35, 0.7);
   -moz-box-shadow: 4px 4px 5px 0px rgba(35, 35, 35, 0.7);
   line-height: 80%;
+}
+
+.content1 p {
+  color: #FFE2B2;
 }
 
 .kontakt-under {
@@ -904,6 +921,16 @@ h2 {
 
 #choose-question {
   margin-top: 25px;
+}
+
+.kontakt-para {
+  color: #FFE2B2;
+}
+
+@media (min-width: 550px) {
+  .kontakt-para {
+    font-size: 18px;
+  }
 }
 
 /*kontakt dekstop*/

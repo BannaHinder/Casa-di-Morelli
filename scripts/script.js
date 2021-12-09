@@ -21,7 +21,8 @@ let myPara = document.createElement("p");
 let inputSelect = document.querySelector("#choose-question");
 let nameInput = document.querySelector("#name-input");
 let emailInput = document.querySelector("#email-input");
-myPara.style.color="#FFE2B2";
+myPara.className= "contact-para";
+myPara.className="kontakt-para";
 
 myAddButton.addEventListener("click",()=>{
     let myContentDiv = document.querySelector(".user-input");
