@@ -1,7 +1,3 @@
-.alert-style {
-  color: red;
-}
-
 /* Reset */
 a {
   text-decoration: none;
@@ -599,6 +595,7 @@ h2 {
   font-family: "kodchasan";
   color: #892300;
   text-align: center;
+  margin: 10px;
 }
 
 @media (min-width: 550px) {

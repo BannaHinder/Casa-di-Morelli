@@ -1,8 +1,5 @@
 @import "partials/mixins";
 @import "partials/variables";
-.alert-style{
-  color: red;
-}
 
 /* Reset */
 a {
@@ -465,6 +462,7 @@ h2 {
   font-family: "kodchasan";
   color: $dark-red;
   text-align: center;
+  margin: 10px;
   h3{
     @include for-desktop{
       font-family: "lobster";
