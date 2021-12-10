@@ -377,12 +377,12 @@ main {
 
 .price-info {
   font-weight: bold;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .buy-btn {
   right: 0;
-  bottom: 6px;
+  bottom: 2px;
   position: absolute;
   padding: 13px 15px;
   border-radius: 30px;
