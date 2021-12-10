@@ -153,15 +153,12 @@ main {
   /*   Push down so navbar doesn't cover it */
     margin-top: 50px;
     @include for-desktop{
-  /*     display: flex; */
       margin-top: 75px;
     }
   }
-/* om 70-talet och rabatt */
+/* Aside om 70-talet och rabatt */
 .about-70s {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  @include flex-column-center;
   align-items: center;
   padding: 30px 20px;
   font-family: "Kodchasan";
@@ -211,11 +208,9 @@ main {
   }
 }
 .background-div {
-  background: $beige;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  @include flex-column-center;
   align-items: center;
+  background: $beige;
   padding: 0 15px 15px 15px;
   opacity: 0.89;
   border-radius: 5px;
@@ -242,18 +237,18 @@ main {
   }
 }
 .clothes-container {
-  background: $beige;
   display: flex;
   flex-wrap: wrap;
   padding: 30px;
   gap: 20px 8px;
+  background: $beige;
   @include for-desktop {
     padding: 0;
     gap: 35px;
   }
-
   .card-item {
     position: relative;
+    /* Shows two items per row with gap*/
     flex: 1 0 calc(50% - 8px);
     @include for-desktop {
       flex: 1 0 calc(50% - 35px);
@@ -271,9 +266,11 @@ main {
       } 
     }
   }
+/*   Every 5th product takes full width, starting from the 3rd */
   .card-item:nth-child(5n-2) {
     flex: 1 0 100%;
     margin: 20px 0;
+    /* Reset layout to show 2 items per row for desktop */
     @include for-desktop {
       flex: 1 0 calc(50% - 35px);
       margin: unset;

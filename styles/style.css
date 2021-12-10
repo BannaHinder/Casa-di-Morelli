@@ -201,12 +201,11 @@ main {
 
 @media (min-width: 550px) {
   main {
-    /*     display: flex; */
     margin-top: 75px;
   }
 }
 
-/* om 70-talet och rabatt */
+/* Aside om 70-talet och rabatt */
 .about-70s {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -215,12 +214,10 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  align-items: center;
   padding: 30px 20px;
   font-family: "Kodchasan";
   color: #892300;
@@ -286,7 +283,6 @@ main {
 }
 
 .background-div {
-  background: #FFE2B2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -294,12 +290,11 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  align-items: center;
+  background: #FFE2B2;
   padding: 0 15px 15px 15px;
   opacity: 0.89;
   border-radius: 5px;
@@ -330,7 +325,6 @@ main {
 }
 
 .clothes-container {
-  background: #FFE2B2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -338,6 +332,8 @@ main {
       flex-wrap: wrap;
   padding: 30px;
   gap: 20px 8px;
+  background: #FFE2B2;
+  /*   Every 5th product takes full width, starting from the 3rd */
 }
 
 @media (min-width: 550px) {
@@ -349,6 +345,7 @@ main {
 
 .clothes-container .card-item {
   position: relative;
+  /* Shows two items per row with gap*/
   -webkit-box-flex: 1;
       -ms-flex: 1 0 calc(50% - 8px);
           flex: 1 0 calc(50% - 8px);
@@ -381,6 +378,7 @@ main {
       -ms-flex: 1 0 100%;
           flex: 1 0 100%;
   margin: 20px 0;
+  /* Reset layout to show 2 items per row for desktop */
 }
 
 @media (min-width: 550px) {
