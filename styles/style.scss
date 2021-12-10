@@ -47,8 +47,8 @@ button {
   color: white;
   font-family: "Kodchasan";
   border-radius: 20px;
-  font-weight: bolder;
-  padding: 10px 10px;
+  font-weight: bold;
+  padding: 10px;
   border: $dark-green;
   filter: drop-shadow(0 5px 5px rgba(34, 34, 34, 0.603));
   position: relative;
@@ -135,7 +135,7 @@ button {
     @include for-desktop {
       display: block;
       position: absolute;
-      top: -40px;
+      top: -36px;
       right: 15px;
       height: 30px;
     }
@@ -159,13 +159,6 @@ main {
   }
 /* om 70-talet och rabatt */
 .about-70s {
-  @include for-desktop{
-   justify-content: flex-start;
-   width: 30%;
-   position: fixed;
-   height: 100%;
-   z-index: -2;
-  }
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -186,60 +179,58 @@ main {
     opacity: 0.5;
     z-index: -5;
   }
+  @include for-desktop{
+    justify-content: flex-start;
+    width: 33%;
+    position: fixed;
+    height: 100%;
+    z-index: -2;
+    box-sizing: border-box;
+  }
   .discount-image {
     width: 225px;
     margin: 5px 0;
-    @include for-desktop{
-
-    }
   }
-
   h3 {
-    opacity: 1;
     margin-bottom: 0;
   }
   p {
-    opacity: 1;
     margin-top: 0;
-  }
-  .discount1 {
-    font-size: 40px;
-    font-weight: bolder;
-    margin-bottom: 0;
-   @include for-desktop{
-     align-self: flex-end;
-     margin-right: 20px;
-   }
-  }
-  .discount2 {
-    font-weight: bold;
-    font-size: 14px;
     @include for-desktop{
       align-self: flex-end;
       margin-right: 20px;
     }
   }
+  .discount1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+  .discount2 {
+    font-size: 14px;
+  }
 }
-
 .background-div {
   background: $beige;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 5px 0 5px;
-  padding: 0 5px 0 5px;
+  padding: 0 15px 15px 15px;
   opacity: 0.89;
   border-radius: 5px;
 }
+
+// kläder på startsidan
 .product-list {
   @include for-desktop {
-    margin-left: 35%;
+    margin-left: 33%;
+    padding: 30px;
   }
 }
 .popular {
-  font-family: "Lobster";
   color: white;
+  font-size: 23px;
   text-shadow: 1px 1px $dark-red;
   background: $dark-green;
   text-align: center;
@@ -247,186 +238,66 @@ main {
   margin: 0;
   border: 1px solid $dark-red;
   @include for-desktop{
-    margin: 20px;
+    margin-bottom: 20px;
   }
 }
-// kläder på startsidan
-.startpage-main {
-  @include for-desktop{
-    display: flex;
-  }
-}
-.clothes {
+.clothes-container {
   background: $beige;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding: 0 30px;
-
-  @include for-desktop{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: space-around
-   }
-  
-  .clothes-group {
-    display: flex;
-    justify-content: space-around;
-    @include for-desktop{
-      display: none;
-    }
-    /* Select first small image of each row*/
-    .small-image:first-of-type {
-      margin-right: 10px;
-    }
-    .small-image {
-      align-self: center;
-      flex: 1;
-      position: relative;
-      img {
-        height: auto;
-        width: 100%;
-        margin-top: 5px;
-      }
-      p {
-        font-family: "Kodchasan";
-        color: $dark-red;
-        margin: 5px;
-      }
-      .price-info {
-        font-weight: bolder;
-        font-size: 14px;
-      }
-    }
+  flex-wrap: wrap;
+  padding: 30px;
+  gap: 20px 8px;
+  @include for-desktop {
+    padding: 0;
+    gap: 35px;
   }
 
-  .big-image {
-    align-self: center;
-    width: 100%;
+  .card-item {
     position: relative;
-    margin: 30px 0;
-
-    @include for-desktop{
-      display: none;
+    flex: 1 0 calc(50% - 8px);
+    @include for-desktop {
+      flex: 1 0 calc(50% - 35px);
     }
     img {
-      margin-top: 5px;
       height: auto;
       width: 100%;
+      border-radius: 3px;
     }
     p {
-      font-family: "Kodchasan";
-      color: $dark-red;
-      margin: 5px;
+      @include for-desktop {
+        display: inline-block;
+        margin-top: 19px;
+        font-size: 18px;
+      } 
     }
-    .price-info {
-      font-family: "Kodchasan";
-      color: $dark-red;
-      margin: 5px;
-      font-weight: bolder;
-      font-size: 14px;
+  }
+  .card-item:nth-child(5n-2) {
+    flex: 1 0 100%;
+    margin: 20px 0;
+    @include for-desktop {
+      flex: 1 0 calc(50% - 35px);
+      margin: unset;
     }
   }
 }
-
-button.buy-btn {
+.startpage-main p {
+  font-family: "Kodchasan";
+  color: $dark-red;
+  margin: 5px;
+}
+.price-info {
+  font-weight: bold;
+  font-size: 13px;
+}
+.buy-btn {
   right: 0;
-  bottom: 10px;
+  bottom: 2px;
   position: absolute;
-}
-
-  .small-image-desktop {
-    display: none;
-    @include for-desktop{
-      display: block;
-      flex-basis: auto;
-      position: relative;
-    }
-    img {
-      @include for-desktop{
-        width: 398px;
-        height: 522px;
-        margin: 20px;
-      }
-    }
-    p {
-      @include for-desktop{
-        font-family: "Kodchasan";
-        color: $dark-red;
-        margin: 5px;
-       font-weight: bold;
-       padding-left: 20px;
-     
-      }
-    }
-    .price-info {
-      @include for-desktop{
-        font-weight: bolder;
-        font-size: 14px;
-        position: relative;
-        left: 200px;
-       bottom: 35px;
-       font-size:22px;
-       display: inline;
-     
-      }
-    }
-    button.buy-btn {
-      @include for-desktop{
-        border-radius: 30px;
-        padding: 15px 30px;
-/*         left:200px;
-        bottom: 40px; */
-      }
-    }
-    
-   }
-
-.big-image-desktop {
-
-display: none;
-  
+  padding: 13px 15px;
+  border-radius: 30px;
+  filter: drop-shadow(0 3px 2px rgba(34, 34, 34, 0.4));
   @include for-desktop{
-   display: block;
-   position: relative;
-  }
-  img {
-    @include for-desktop{
-      width: 398px;
-      height: 522px;
-      margin: 20px;
-    }
-  }
-  p {
-    @include for-desktop{
-      font-weight: bold;
-      padding-left: 20px;
-      font-family: "Kodchasan";
-      color: $dark-red;
-      margin: 5px;
-     }
-  }
-  .price-info {
-
-    @include for-desktop{
-      position: relative;
-      left: 200px;
-     bottom: 35px;
-     font-size:22px;
-     display: inline;
-     font-family: "Kodchasan";
-     color: $dark-red;
-     margin: 5px;
-     font-weight: bolder;
-   
-    }
-  }
-  button.buy-btn {
-    @include for-desktop{
-      border-radius: 30px;
-      padding: 15px 30px;
-    }
+    padding: 13px 20px;
   }
 }
 //Om oss
