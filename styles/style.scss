@@ -251,83 +251,31 @@ main {
   }
 }
 // kläder på startsidan
-.startpage-main {
-  @include for-desktop{
-    display: flex;
-  }
-}
-.clothes {
+.clothes-container {
   background: $beige;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: space-around;
   padding: 0 30px;
 
-  @include for-desktop{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: space-around
-   }
-  
-  .clothes-group {
-    display: flex;
-    justify-content: space-around;
-    @include for-desktop{
-      display: none;
-    }
-    /* Select first small image of each row*/
-    .small-image:first-of-type {
-      margin-right: 10px;
-    }
-    .small-image {
-      align-self: center;
-      flex: 1;
-      position: relative;
-      img {
-        height: auto;
-        width: 100%;
-        margin-top: 5px;
-      }
-      p {
-        font-family: "Kodchasan";
-        color: $dark-red;
-        margin: 5px;
-      }
-      .price-info {
-        font-weight: bolder;
-        font-size: 14px;
-      }
-    }
-  }
-
-  .big-image {
-    align-self: center;
-    width: 100%;
+  .card-item {
     position: relative;
-    margin: 30px 0;
-
-    @include for-desktop{
-      display: none;
-    }
+    flex: 0 50%;
     img {
-      margin-top: 5px;
       height: auto;
       width: 100%;
-    }
-    p {
-      font-family: "Kodchasan";
-      color: $dark-red;
-      margin: 5px;
-    }
-    .price-info {
-      font-family: "Kodchasan";
-      color: $dark-red;
-      margin: 5px;
-      font-weight: bolder;
-      font-size: 14px;
+      margin-top: 5px;
     }
   }
+}
+.startpage-main p {
+  font-family: "Kodchasan";
+  color: $dark-red;
+  margin: 5px;
+}
+.price-info {
+  font-weight: bolder;
+  font-size: 14px;
 }
 
 button.buy-btn {
@@ -336,30 +284,6 @@ button.buy-btn {
   position: absolute;
 }
 
-  .small-image-desktop {
-    display: none;
-    @include for-desktop{
-      display: block;
-      flex-basis: auto;
-      position: relative;
-    }
-    img {
-      @include for-desktop{
-        width: 398px;
-        height: 522px;
-        margin: 20px;
-      }
-    }
-    p {
-      @include for-desktop{
-        font-family: "Kodchasan";
-        color: $dark-red;
-        margin: 5px;
-       font-weight: bold;
-       padding-left: 20px;
-     
-      }
-    }
     .price-info {
       @include for-desktop{
         font-weight: bolder;
@@ -380,9 +304,6 @@ button.buy-btn {
         bottom: 40px; */
       }
     }
-    
-   }
-
 .big-image-desktop {
 
 display: none;

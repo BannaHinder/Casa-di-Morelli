@@ -338,121 +338,38 @@ main {
   }
 }
 
-@media (min-width: 550px) {
-  .startpage-main {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
-
-.clothes {
+.clothes-container {
   background: #FFE2B2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   padding: 0 30px;
 }
 
-@media (min-width: 550px) {
-  .clothes {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-line-pack: distribute;
-        align-content: space-around;
-  }
-}
-
-.clothes .clothes-group {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  /* Select first small image of each row*/
-}
-
-@media (min-width: 550px) {
-  .clothes .clothes-group {
-    display: none;
-  }
-}
-
-.clothes .clothes-group .small-image:first-of-type {
-  margin-right: 10px;
-}
-
-.clothes .clothes-group .small-image {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+.clothes-container .card-item {
   position: relative;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 50%;
+          flex: 0 50%;
 }
 
-.clothes .clothes-group .small-image img {
+.clothes-container .card-item img {
   height: auto;
   width: 100%;
   margin-top: 5px;
 }
 
-.clothes .clothes-group .small-image p {
+.startpage-main p {
   font-family: "Kodchasan";
   color: #892300;
   margin: 5px;
 }
 
-.clothes .clothes-group .small-image .price-info {
-  font-weight: bolder;
-  font-size: 14px;
-}
-
-.clothes .big-image {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  width: 100%;
-  position: relative;
-  margin: 30px 0;
-}
-
-@media (min-width: 550px) {
-  .clothes .big-image {
-    display: none;
-  }
-}
-
-.clothes .big-image img {
-  margin-top: 5px;
-  height: auto;
-  width: 100%;
-}
-
-.clothes .big-image p {
-  font-family: "Kodchasan";
-  color: #892300;
-  margin: 5px;
-}
-
-.clothes .big-image .price-info {
-  font-family: "Kodchasan";
-  color: #892300;
-  margin: 5px;
+.price-info {
   font-weight: bolder;
   font-size: 14px;
 }
@@ -463,39 +380,8 @@ button.buy-btn {
   position: absolute;
 }
 
-.small-image-desktop {
-  display: none;
-}
-
 @media (min-width: 550px) {
-  .small-image-desktop {
-    display: block;
-    -ms-flex-preferred-size: auto;
-        flex-basis: auto;
-    position: relative;
-  }
-}
-
-@media (min-width: 550px) {
-  .small-image-desktop img {
-    width: 398px;
-    height: 522px;
-    margin: 20px;
-  }
-}
-
-@media (min-width: 550px) {
-  .small-image-desktop p {
-    font-family: "Kodchasan";
-    color: #892300;
-    margin: 5px;
-    font-weight: bold;
-    padding-left: 20px;
-  }
-}
-
-@media (min-width: 550px) {
-  .small-image-desktop .price-info {
+  .price-info {
     font-weight: bolder;
     font-size: 14px;
     position: relative;
@@ -507,7 +393,7 @@ button.buy-btn {
 }
 
 @media (min-width: 550px) {
-  .small-image-desktop button.buy-btn {
+  button.buy-btn {
     border-radius: 30px;
     padding: 15px 30px;
     /*         left:200px;
@@ -967,6 +853,7 @@ h2 {
   display: -ms-flexbox;
   display: flex;
   max-width: 500px;
+  width: -webkit-fill-available;
 }
 
 .recension-wrapper .recension .customer {
@@ -981,6 +868,7 @@ h2 {
       -ms-flex-align: center;
           align-items: center;
   margin: 15px;
+  max-width: 15%;
 }
 
 .recension-wrapper .recension .customer .iconify {
@@ -990,10 +878,12 @@ h2 {
 .recension-wrapper .recension .customer h5 {
   font-family: "Kodchasan";
   text-align: center;
+  overflow-wrap: anywhere;
 }
 
 .recension-wrapper .recension .rating {
   margin: 15px;
+  overflow-wrap: anywhere;
 }
 
 .recension-wrapper .recension .rating .fa-star {
