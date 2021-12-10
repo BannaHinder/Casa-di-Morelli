@@ -383,6 +383,7 @@ h2 {
   font-family: "kodchasan";
   color: $dark-red;
   text-align: center;
+  margin: 10px;
   h3{
     @include for-desktop{
       font-family: "lobster";
@@ -548,7 +549,11 @@ h2 {
 }
 
 /*kontakt mobile style*/
-
+.kontakt-oss{
+  @include for-desktop{
+    display: none;
+  }
+}
 .hus {
   width: 140px;
   height: 100px;
@@ -575,6 +580,9 @@ h2 {
   -webkit-box-shadow: 4px 4px 5px 0px rgba(35, 35, 35, 0.7);
   -moz-box-shadow: 4px 4px 5px 0px rgba(35, 35, 35, 0.7);
   line-height: 80%;
+  p{
+    color: $beige;
+  }
 }
 
 
@@ -625,6 +633,13 @@ h2 {
 
 #choose-question {
   margin-top: 25px;
+}
+
+.kontakt-para{
+  color: $beige;
+  @include for-desktop{
+    font-size: 18px;
+  }
 }
 
 /*kontakt dekstop*/
