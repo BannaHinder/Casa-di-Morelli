@@ -165,6 +165,7 @@ main {
    position: fixed;
    height: 100%;
    z-index: -2;
+   box-sizing: border-box;
   }
   display: flex;
   flex-direction: column;
@@ -227,9 +228,11 @@ main {
   opacity: 0.89;
   border-radius: 5px;
 }
+
+// kläder på startsidan
 .product-list {
   @include for-desktop {
-    margin-left: 35%;
+    margin-left: 30%;
   }
 }
 .popular {
@@ -245,7 +248,7 @@ main {
     margin: 20px;
   }
 }
-// kläder på startsidan
+
 .clothes-container {
   background: $beige;
   display: flex;
@@ -265,6 +268,10 @@ main {
   .card-item:nth-child(5n-2) {
     flex: 1 0 100%;
     margin: 20px 0;
+    @include for-desktop {
+      flex: 1 0 calc(50% - 8px);
+      margin:unset;
+    }
   }
 }
 .startpage-main p {
