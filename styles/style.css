@@ -176,7 +176,7 @@ button {
   .shopping-cart img {
     display: block;
     position: absolute;
-    top: -40px;
+    top: -36px;
     right: 15px;
     height: 30px;
   }
@@ -227,20 +227,6 @@ main {
   border: 2px solid #892300;
 }
 
-@media (min-width: 550px) {
-  .about-70s {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    width: 30%;
-    position: fixed;
-    height: 100%;
-    z-index: -2;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-  }
-}
-
 .about-70s::before {
   content: "";
   background-image: url("/src/wallpaper2.jpg");
@@ -254,46 +240,49 @@ main {
   z-index: -5;
 }
 
+@media (min-width: 550px) {
+  .about-70s {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: 33%;
+    position: fixed;
+    height: 100%;
+    z-index: -2;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+}
+
 .about-70s .discount-image {
   width: 225px;
   margin: 5px 0;
 }
 
 .about-70s h3 {
-  opacity: 1;
   margin-bottom: 0;
 }
 
 .about-70s p {
-  opacity: 1;
   margin-top: 0;
+}
+
+@media (min-width: 550px) {
+  .about-70s p {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    margin-right: 20px;
+  }
 }
 
 .about-70s .discount1 {
   font-size: 40px;
-  font-weight: bolder;
+  font-weight: bold;
   margin-bottom: 0;
 }
 
-@media (min-width: 550px) {
-  .about-70s .discount1 {
-    -ms-flex-item-align: end;
-        align-self: flex-end;
-    margin-right: 20px;
-  }
-}
-
 .about-70s .discount2 {
-  font-weight: bold;
   font-size: 14px;
-}
-
-@media (min-width: 550px) {
-  .about-70s .discount2 {
-    -ms-flex-item-align: end;
-        align-self: flex-end;
-    margin-right: 20px;
-  }
 }
 
 .background-div {
@@ -311,22 +300,21 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 5px 0 5px;
-  padding: 0 5px 0 5px;
+  padding: 0 15px 15px 15px;
   opacity: 0.89;
   border-radius: 5px;
 }
 
 @media (min-width: 550px) {
   .product-list {
-    margin-left: 30%;
+    margin-left: 33%;
     padding: 30px;
   }
 }
 
 .popular {
-  font-family: "Lobster";
   color: white;
+  font-size: 23px;
   text-shadow: 1px 1px #892300;
   background: #8A8635;
   text-align: center;

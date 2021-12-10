@@ -135,7 +135,7 @@ button {
     @include for-desktop {
       display: block;
       position: absolute;
-      top: -40px;
+      top: -36px;
       right: 15px;
       height: 30px;
     }
@@ -159,14 +159,6 @@ main {
   }
 /* om 70-talet och rabatt */
 .about-70s {
-  @include for-desktop{
-   justify-content: flex-start;
-   width: 30%;
-   position: fixed;
-   height: 100%;
-   z-index: -2;
-   box-sizing: border-box;
-  }
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -187,34 +179,35 @@ main {
     opacity: 0.5;
     z-index: -5;
   }
+  @include for-desktop{
+    justify-content: flex-start;
+    width: 33%;
+    position: fixed;
+    height: 100%;
+    z-index: -2;
+    box-sizing: border-box;
+  }
   .discount-image {
     width: 225px;
     margin: 5px 0;
   }
   h3 {
-    opacity: 1;
     margin-bottom: 0;
   }
   p {
-    opacity: 1;
     margin-top: 0;
-  }
-  .discount1 {
-    font-size: 40px;
-    font-weight: bolder;
-    margin-bottom: 0;
-   @include for-desktop{
-     align-self: flex-end;
-     margin-right: 20px;
-   }
-  }
-  .discount2 {
-    font-weight: bold;
-    font-size: 14px;
     @include for-desktop{
       align-self: flex-end;
       margin-right: 20px;
     }
+  }
+  .discount1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+  .discount2 {
+    font-size: 14px;
   }
 }
 .background-div {
@@ -223,8 +216,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 5px 0 5px;
-  padding: 0 5px 0 5px;
+  padding: 0 15px 15px 15px;
   opacity: 0.89;
   border-radius: 5px;
 }
@@ -232,13 +224,13 @@ main {
 // kläder på startsidan
 .product-list {
   @include for-desktop {
-    margin-left: 30%;
+    margin-left: 33%;
     padding: 30px;
   }
 }
 .popular {
-  font-family: "Lobster";
   color: white;
+  font-size: 23px;
   text-shadow: 1px 1px $dark-red;
   background: $dark-green;
   text-align: center;
