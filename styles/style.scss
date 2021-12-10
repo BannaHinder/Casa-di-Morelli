@@ -271,6 +271,13 @@ main {
       width: 100%;
       border-radius: 3px;
     }
+    p {
+      @include for-desktop {
+        display: inline-block;
+        margin-top: 19px;
+        font-size: 18px;
+      } 
+    }
   }
   .card-item:nth-child(5n-2) {
     flex: 1 0 100%;
@@ -299,53 +306,6 @@ main {
   filter: drop-shadow(0 3px 2px rgba(34, 34, 34, 0.4));
   @include for-desktop{
     padding: 13px 20px;
-  }
-}
-
-.big-image-desktop {
-
-display: none;
-  
-  @include for-desktop{
-   display: block;
-   position: relative;
-  }
-  img {
-    @include for-desktop{
-      width: 398px;
-      height: 522px;
-      margin: 20px;
-    }
-  }
-  p {
-    @include for-desktop{
-      font-weight: bold;
-      padding-left: 20px;
-      font-family: "Kodchasan";
-      color: $dark-red;
-      margin: 5px;
-     }
-  }
-  .price-info {
-
-    @include for-desktop{
-      position: relative;
-      left: 200px;
-     bottom: 35px;
-     font-size:22px;
-     display: inline;
-     font-family: "Kodchasan";
-     color: $dark-red;
-     margin: 5px;
-     font-weight: bolder;
-   
-    }
-  }
-  button.buy-btn {
-    @include for-desktop{
-      border-radius: 30px;
-      padding: 15px 30px;
-    }
   }
 }
 //Om oss
