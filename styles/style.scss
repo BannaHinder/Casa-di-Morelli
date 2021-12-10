@@ -255,12 +255,12 @@ main {
   background: $beige;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
   padding: 0 30px;
+  column-gap: 8px;
 
   .card-item {
     position: relative;
-    flex: 0 50%;
+    flex: 1 0 calc(50% - 8px);
     img {
       height: auto;
       width: 100%;
