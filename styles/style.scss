@@ -255,7 +255,7 @@ main {
   background: $beige;
   display: flex;
   flex-wrap: wrap;
-  padding: 0 30px;
+  padding: 5px 30px;
   column-gap: 8px;
 
   .card-item {
@@ -267,7 +267,13 @@ main {
       margin-top: 5px;
     }
   }
+  .card-item:nth-child(5n-2) {
+    flex: 1 0 100%;
+  }
 }
+
+
+
 .startpage-main p {
   font-family: "Kodchasan";
   color: $dark-red;

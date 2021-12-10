@@ -345,7 +345,7 @@ main {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 0 30px;
+  padding: 5px 30px;
   -webkit-column-gap: 8px;
           column-gap: 8px;
 }
@@ -361,6 +361,12 @@ main {
   height: auto;
   width: 100%;
   margin-top: 5px;
+}
+
+.clothes-container .card-item:nth-child(5n-2) {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 100%;
+          flex: 1 0 100%;
 }
 
 .startpage-main p {
