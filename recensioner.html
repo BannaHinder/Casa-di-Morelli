@@ -56,8 +56,8 @@
     <!-----------------------------------main---------------------------------------->
     <main class="recension-wrapper">
       <h2>Recensioner</h2>
-      <article class="recensioner" id="recensioner">
-        <section class="recension">
+      <article class="recensioner" id="recensioner" >
+        <section class="recension" tabindex="0">
           <div class="customer">
             <span
               class="iconify"
@@ -79,7 +79,7 @@
             </p>
           </div>
         </section>
-        <section class="recension">
+        <section class="recension" tabindex="0">
           <div class="customer">
             <span
               class="iconify"
@@ -103,7 +103,7 @@
             </p>
           </div>
         </section>
-        <section class="recension">
+        <section class="recension" tabindex="0">
           <div class="customer">
             <span
               class="iconify"
@@ -125,7 +125,7 @@
             </p>
           </div>
         </section>
-        <section class="recension">
+        <section class="recension" tabindex="0">
           <div class="customer">
             <span
               class="iconify"
@@ -147,7 +147,7 @@
             </p>
           </div>
         </section>
-        <section class="recension">
+        <section class="recension" tabindex="0">
           <div class="customer">
             <span
               class="iconify"
@@ -170,7 +170,7 @@
             </p>
           </div>
         </section>
-        <section class="recension">
+        <section class="recension" tabindex="0">
           <div class="customer">
             <span
               class="iconify"
@@ -189,26 +189,7 @@
             <p>彼女はよくこのサイトの服を購入します。相変わらず一流。</p>
           </div>
         </section>
-        <section class="recension" id="recension" style="display: none">
-          <div class="customer">
-            <span
-              class="iconify"
-              data-icon="emojione:woman-light-skin-tone"
-            ></span>
-            <h5>宮野, 信彦</h5>
-          </div>
-          <div class="rating">
-            <div class="stars" >
-
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-            </div>
-            <p>彼女はよくこのサイトの服を購入します。相変わらず一流。</p>
-          </div>
-        </section>
+        
       </article>
 
       <!-- -----------------------------SKRIV RECENSION------------------------------------------ -->
@@ -236,12 +217,13 @@
             placeholder="Skriv din text här..."
           ></textarea>
         </section>
+        <!-- --------------------------------star rating----------------------------------- -->
         <div class="stars-rating">
           <form id="star-input">
-            <input class="star star-5" id="star-5" type="radio" name="star" />
-            <label class="star star-5" for="star-5"></label>
+            <input class="star star-5" id="star-5" type="radio" name="star"/>
+            <label class="star star-5" for="star-5" ></label>
             <input class="star star-4" id="star-4" type="radio" name="star" />
-            <label class="star star-4" for="star-4"></label>
+            <label class="star star-4" for="star-4" ></label>
             <input class="star star-3" id="star-3" type="radio" name="star" />
             <label class="star star-3" for="star-3"></label>
             <input class="star star-2" id="star-2" type="radio" name="star" />
@@ -270,7 +252,7 @@
         <img src="src/icons/Pinterest.png" alt="Pinterest logo" />
       </div>
     </footer>
-
+<!-- ------------------------------------------script----------------------------------------- -->
     <script>
       function postRecension() {
         //////////////////////////GETTING TEXT INPUT/////////////////////////////////////
@@ -316,6 +298,7 @@
         let recensioner = document.querySelector("#recensioner");
         let newRecension = document.createElement("section");
         newRecension.className = "recension";
+        newRecension.tabIndex= "0";
         newRecension.style.width = "-webkit-fill-available";
         let newCustomer = document.createElement("div");
         newCustomer.className = "customer";
