@@ -20,7 +20,7 @@ ol {
 }
 
 /* General settings */
-h1,
+.logo-link,
 h4 {
   font-family: "Lobster";
   color: #FFE2B2;
@@ -67,7 +67,11 @@ button {
   z-index: 100;
 }
 
-.header h1 {
+.header .logo-parent {
+  text-align: center;
+}
+
+.header .logo-parent .logo-link {
   margin: 0;
   padding-bottom: 0.7rem;
   font-size: 1.5rem;
@@ -76,7 +80,7 @@ button {
 }
 
 @media (min-width: 550px) {
-  .header h1 {
+  .header .logo-parent .logo-link {
     padding: 0;
   }
 }
