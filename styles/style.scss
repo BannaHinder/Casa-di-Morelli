@@ -169,6 +169,7 @@ main {
   font-family: "Kodchasan";
   color: $dark-red;
   border: 2px solid $dark-red;
+  padding-bottom: 0px;
   &::before {
     content: "";
     background-image: url("/src/wallpaper2.jpg");
