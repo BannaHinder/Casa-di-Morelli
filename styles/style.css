@@ -54,6 +54,10 @@ button {
   position: relative;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 /* Navbar */
 .header {
   background: #892300;
@@ -83,6 +87,7 @@ button {
 
 .navbar {
   padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
   position: relative;
 }
 
@@ -142,7 +147,7 @@ button {
 .navbar-links a {
   font-family: "Lobster";
   font-size: 1.3rem;
-  text-shadow: 0 0 2px #892300;
+  text-shadow: 0 0 10px #000000;
   color: white;
 }
 

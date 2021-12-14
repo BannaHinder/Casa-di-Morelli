@@ -49,6 +49,9 @@ button {
   border: $dark-green;
   filter: drop-shadow(0 5px 5px rgba(34, 34, 34, 0.3));
   position: relative;
+  &:hover{
+    cursor: pointer;
+  }
 }
 /* Navbar */
 .header {
@@ -75,6 +78,7 @@ button {
 
 .navbar {
   padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
   position: relative;
 }
 .hamburgare-icon {
@@ -111,7 +115,7 @@ button {
   a {
     font-family: "Lobster";
     font-size: 1.3rem;
-    text-shadow: 0 0 2px $dark-red;
+    text-shadow: 0 0 10px #000000;
     color: white;
     @include for-desktop {
       color: $beige;
