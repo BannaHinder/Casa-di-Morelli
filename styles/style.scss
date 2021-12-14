@@ -2,9 +2,6 @@
 @import "partials/variables";
 
 /* Reset */
-a {
-  text-decoration: none;
-}
 ul,
 ol,
 fieldset,
@@ -31,8 +28,9 @@ h4 {
   text-shadow: 1px 2px rgba(0, 0, 0, 0.5);
 }
 a {
+  text-decoration: none;
   font-family: "Kodchasan";
-  color: $beige;
+  color: #fff0d6;
 }
 footer {
   background: $dark-green;
@@ -456,7 +454,6 @@ h2 {
 .navigation li:hover {
   -webkit-filter: drop-shadow(0 5px 5px rgba(34, 34, 34, 0.603));
   filter: drop-shadow(0 5px 5px rgba(34, 34, 34, 0.603));
-  font-weight: bold;
 }
 
 .social-media {
@@ -471,7 +468,7 @@ h2 {
  @include for-desktop{
 align-self: unset;
 width:35%;
-margin-bottom: 6px;
+margin-top: -3px;
  }
 }
 
@@ -647,13 +644,8 @@ margin-bottom: 6px;
       margin: 15px;
       overflow-wrap: anywhere;
       .fa-star {
-        color: $beige;  
-
-      }
-      .checked {
         color: $dark-red;
-
-        opacity: 30%;
+        opacity: 30%;  
       }
       .checked {
         color: $dark-red;
