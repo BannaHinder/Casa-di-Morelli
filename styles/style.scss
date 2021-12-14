@@ -500,19 +500,10 @@ h2 {
 /*kontakt mobile style*/
 .kontakt-oss{
   @include for-desktop{
-    /*
-    display: inline;
+    background: $beige;
     border: 2px solid $dark-red;
     display: flex;
     justify-content: center;
-    */
-    justify-content: center;
-    /*
-    align-self: center;
-    background: $beige;
-    border: solid 2px $dark-red;
-    border-radius: 3px;
-    */
   }
 }
 .hus {
@@ -531,12 +522,6 @@ h2 {
 }
 .about-background {
   background-image: url("/src/wallpaper.jpg");
-}
-
-.kontakt-oss {
-  display: inline-block;
-  border: 2px solid $dark-red;
-  padding: 5px;
 }
 
 .content1 {
@@ -609,7 +594,7 @@ h2 {
   margin-top: 25px;
 }
 .kontakt-para{
-  color: $beige;
+  color: $dark-red;
   @include for-desktop{
     font-size: 18px;
   }
