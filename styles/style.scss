@@ -658,11 +658,17 @@ h2 {
       overflow-wrap: anywhere;
       .fa-star {
         color: $orange;
+
+      }
+      .checked {
+        color: $dark-red;
+
         opacity: 30%;
       }
       .checked {
         color: $dark-red;
         opacity: 1;
+
       }
       p {
         margin-top: 5px;
@@ -684,9 +690,11 @@ h2 {
     }
     .input-container {
       input, textarea {
+
         background: #fff8eb;
+
         color: $dark-red;
-        border: none;
+        border: 1px solid $dark-red;
         margin: 10px;
         padding: 5px;
         width: 90%;

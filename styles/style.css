@@ -901,12 +901,16 @@ h2 {
 
 .recension-wrapper .recension .rating .fa-star {
   color: #D06224;
+
   opacity: 30%;
+
 }
 
 .recension-wrapper .recension .rating .checked {
   color: #892300;
+
   opacity: 1;
+
 }
 
 .recension-wrapper .recension .rating p {
@@ -941,9 +945,11 @@ h2 {
 }
 
 .recension-wrapper .skriv-recension .input-container input, .recension-wrapper .skriv-recension .input-container textarea {
+
   background: #fff8eb;
+
   color: #892300;
-  border: none;
+  border: 1px solid #892300;
   margin: 10px;
   padding: 5px;
   width: 90%;
