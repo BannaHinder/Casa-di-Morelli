@@ -679,16 +679,15 @@ h2 {
     display: flex;
     justify-content: center;
     */
-    display: inline-block;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    background: #FFE2B2;
-    border: solid 2px #892300;
+    /*
+    align-self: center;
+    background: $beige;
+    border: solid 2px $dark-red;
     border-radius: 3px;
+    */
   }
 }
 
@@ -711,6 +710,12 @@ h2 {
 
 .about-background {
   background-image: url("/src/wallpaper.jpg");
+}
+
+.kontakt-oss {
+  display: inline-block;
+  border: 2px solid #892300;
+  padding: 5px;
 }
 
 .content1 {
