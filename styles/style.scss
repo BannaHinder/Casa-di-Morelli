@@ -629,8 +629,8 @@ h2 {
   }
   .recension {
     margin: 20px;
-    background-color: $orange;
-    color: $beige;
+    background-color: $beige;
+    color: $dark-red;
     box-shadow: 4px 4px 5px 0px rgba(34, 34, 34, 0.7);
     -webkit-box-shadow: 4px 4px 5px 0px rgba(34, 34, 34, 0.7);
     -moz-box-shadow: 4px 4px 5px 0px rgba(34, 34, 34, 0.7);
@@ -654,10 +654,10 @@ h2 {
       margin: 15px;
       overflow-wrap: anywhere;
       .fa-star {
-        color: $dark-red;
+        color: $orange;
       }
       .checked {
-        color: $beige;
+        color: $dark-red;
       }
       p {
         margin-top: 5px;
@@ -680,9 +680,9 @@ h2 {
     }
     .input-container {
       input, textarea {
-        background: $beige;
+        background: white;
         color: $dark-red;
-        border: none;
+        border: 1px solid $dark-red;
         margin: 10px;
         padding: 5px;
         width: 90%;
