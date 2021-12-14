@@ -685,18 +685,21 @@ h2 {
 .kontakt-img {
   width: 50px;
   height: 50px;
+  color: #892300;
 }
 
 .map-img {
   width: 60px;
   height: 50px;
+  color: #892300;
 }
 
 .content1 {
   font-family: "lobster";
   text-align: center;
   height: 600px;
-  background: #D06224;
+  background: #FFE2B2;
+  border: 2px solid #D06224;
   border-radius: 0px;
   position: relative;
   margin: 20px;
@@ -708,7 +711,7 @@ h2 {
 }
 
 .content1 p {
-  color: #FFE2B2;
+  color: #892300;
 }
 
 .kontakt-under {
@@ -725,7 +728,8 @@ h2 {
   font-family: "lobster";
   text-align: center;
   height: 400px;
-  background: #D06224;
+  background: #FFE2B2;
+  border: 2px solid #D06224;
   border-radius: 0;
   position: relative;
   margin: 20px;
@@ -739,19 +743,19 @@ h2 {
 }
 
 ::-webkit-input-placeholder {
-  color: #D06224;
+  color: #892300;
 }
 
 :-ms-input-placeholder {
-  color: #D06224;
+  color: #892300;
 }
 
 ::-ms-input-placeholder {
-  color: #D06224;
+  color: #892300;
 }
 
 ::placeholder {
-  color: #D06224;
+  color: #892300;
 }
 
 #choose-question, #name-input, #email-input, #text-input {
@@ -760,9 +764,9 @@ h2 {
   margin-top: 10px;
   margin: 5px;
   padding: 10px;
-  background: #FFE2B2;
+  background: white;
   color: #892300;
-  border: none;
+  border: 1px solid #D06224;
   border-radius: 5px;
   width: 90%;
   font-family: 'lobster';
