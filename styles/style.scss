@@ -304,15 +304,10 @@ main {
   }
 }
 //Om oss
-.about-background{
-  @include for-desktop{
-    background-image: url("/src/wallpaper.jpg");
-  }
-}
 .about-h2{
   border: 2px solid $dark-red;
   border-radius: 3px;
-  margin: 20px 10px;
+  margin: 20px 20px;
   @include for-desktop{
     display: none;
   }
@@ -340,7 +335,7 @@ h2 {
   font-family: "kodchasan";
   color: $dark-red;
   text-align: center;
-  margin: 10px;
+  margin: 10px 20px;
   h3{
     @include for-desktop{
       font-family: "lobster";
@@ -357,11 +352,12 @@ h2 {
 
 }
 .about-article-background{
+  background: $beige;
+  border: 2px solid $orange;
+  margin: 10px 20px;
+  box-shadow: 4px 4px 5px 0px rgba(35, 35, 35, 0.7);
   @include for-desktop{
-    background: $beige;
-    border: 2px solid $orange;
     margin: 40px 41px 22px 41px;
-    -webkit-box-shadow: 4px 4px 5px 0px rgba(35, 35, 35, 0.7);
   }
 }
 .staff {
