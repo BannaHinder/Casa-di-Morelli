@@ -422,16 +422,10 @@ main {
   }
 }
 
-@media (min-width: 550px) {
-  .about-background {
-    background-image: url("/src/wallpaper.jpg");
-  }
-}
-
 .about-h2 {
   border: 2px solid #892300;
   border-radius: 3px;
-  margin: 20px 10px;
+  margin: 20px 20px;
 }
 
 @media (min-width: 550px) {
@@ -460,7 +454,7 @@ h2 {
   font-family: "kodchasan";
   color: #892300;
   text-align: center;
-  margin: 10px;
+  margin: 10px 20px;
 }
 
 @media (min-width: 550px) {
@@ -491,9 +485,15 @@ h2 {
 .about-article-background {
   background: #FFE2B2;
   border: 2px solid #D06224;
-  margin: 40px 41px 22px 41px;
+  margin: 10px 20px;
   -webkit-box-shadow: 4px 4px 5px 0px rgba(35, 35, 35, 0.7);
           box-shadow: 4px 4px 5px 0px rgba(35, 35, 35, 0.7);
+}
+
+@media (min-width: 550px) {
+  .about-article-background {
+    margin: 40px 41px 22px 41px;
+  }
 }
 
 .staff {
