@@ -641,6 +641,8 @@ h2 {
     display: flex;
     max-width: 500px;
     width: -webkit-fill-available;
+    border-radius: 4px;
+    border: solid 1px $dark-red;
     .customer {
       @include flex-column-center;
       margin: 15px;
@@ -657,7 +659,8 @@ h2 {
       margin: 15px;
       overflow-wrap: anywhere;
       .fa-star {
-        color: $orange;
+        color: $beige;
+        
 
       }
       .checked {
