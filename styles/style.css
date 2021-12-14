@@ -671,6 +671,13 @@ h2 {
 }
 
 /*kontakt mobile style*/
+.kontakt-oss {
+  border: 2px solid #892300;
+  border-radius: 2px;
+  margin-left: 18px;
+  margin-right: 18px;
+}
+
 @media (min-width: 550px) {
   .kontakt-oss {
     background: #FFE2B2;
