@@ -18,8 +18,7 @@ ol {
 }
 
 /* General settings */
-.logo-link,
-h4 {
+.logo-link,h4 {
   font-family: "Lobster";
   color: $beige;
 }
@@ -163,11 +162,10 @@ main {
 .about-70s {
   @include flex-column-center;
   align-items: center;
-  padding: 30px 20px;
+  padding: 20px 20px 0 20px;
   font-family: "Kodchasan";
   color: $dark-red;
   border: 2px solid $dark-red;
-  padding-bottom: 0px;
   &::before {
     content: "";
     background-image: url("/src/wallpaper2.jpg");
@@ -179,6 +177,7 @@ main {
     left: 0px;
     opacity: 0.5;
     z-index: -5;
+  
   }
   @include for-desktop{
     justify-content: flex-start;
