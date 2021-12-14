@@ -673,7 +673,22 @@ h2 {
 /*kontakt mobile style*/
 @media (min-width: 550px) {
   .kontakt-oss {
-    display: block;
+    /*
+    display: inline;
+    border: 2px solid $dark-red;
+    display: flex;
+    justify-content: center;
+    */
+    display: inline-block;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    background: #FFE2B2;
+    border: solid 2px #892300;
+    border-radius: 3px;
   }
 }
 

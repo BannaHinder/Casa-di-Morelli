@@ -500,7 +500,18 @@ h2 {
 /*kontakt mobile style*/
 .kontakt-oss{
   @include for-desktop{
-    display: block;
+    /*
+    display: inline;
+    border: 2px solid $dark-red;
+    display: flex;
+    justify-content: center;
+    */
+    display: inline-block;
+    justify-content: center;
+    align-self: center;
+    background: $beige;
+    border: solid 2px $dark-red;
+    border-radius: 3px;
   }
 }
 .hus {
