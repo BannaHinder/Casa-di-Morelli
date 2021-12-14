@@ -53,8 +53,8 @@ button {
   font-weight: bold;
   padding: 10px;
   border: #8A8635;
-  -webkit-filter: drop-shadow(0 5px 5px rgba(34, 34, 34, 0.603));
-          filter: drop-shadow(0 5px 5px rgba(34, 34, 34, 0.603));
+  -webkit-filter: drop-shadow(0 5px 5px rgba(34, 34, 34, 0.3));
+          filter: drop-shadow(0 5px 5px rgba(34, 34, 34, 0.3));
   position: relative;
 }
 
@@ -797,7 +797,7 @@ h2 {
 }
 
 .kontakt-para {
-  color: #FFE2B2;
+  color: #892300;
 }
 
 @media (min-width: 550px) {
@@ -858,8 +858,8 @@ h2 {
 
 .recension-wrapper .recension {
   margin: 20px;
-  background-color: #D06224;
-  color: #FFE2B2;
+  background-color: #FFE2B2;
+  color: #892300;
   box-shadow: 4px 4px 5px 0px rgba(34, 34, 34, 0.7);
   -webkit-box-shadow: 4px 4px 5px 0px rgba(34, 34, 34, 0.7);
   -moz-box-shadow: 4px 4px 5px 0px rgba(34, 34, 34, 0.7);
@@ -892,7 +892,6 @@ h2 {
 .recension-wrapper .recension .customer h5 {
   font-family: "Kodchasan";
   text-align: center;
-  overflow-wrap: anywhere;
 }
 
 .recension-wrapper .recension .rating {
@@ -901,11 +900,13 @@ h2 {
 }
 
 .recension-wrapper .recension .rating .fa-star {
-  color: #892300;
+  color: #D06224;
+  opacity: 30%;
 }
 
 .recension-wrapper .recension .rating .checked {
-  color: #FFE2B2;
+  color: #892300;
+  opacity: 1;
 }
 
 .recension-wrapper .recension .rating p {
@@ -932,7 +933,6 @@ h2 {
 
 .recension-wrapper .skriv-recension h3 {
   font-family: "lobster";
-  text-shadow: 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .recension-wrapper .skriv-recension .iconify {
@@ -941,7 +941,7 @@ h2 {
 }
 
 .recension-wrapper .skriv-recension .input-container input, .recension-wrapper .skriv-recension .input-container textarea {
-  background: #FFE2B2;
+  background: #fff8eb;
   color: #892300;
   border: none;
   margin: 10px;
@@ -1011,13 +1011,13 @@ div.stars-rating label.star {
 
 div.stars-rating input.star:checked ~ label.star:before {
   content: '\f005';
-  color: #FFE2B2;
+  color: #892300;
   -webkit-transition: all .25s;
   transition: all .25s;
 }
 
 div.stars-rating input.star-5:checked ~ label.star:before {
-  color: #FFE2B2;
+  color: #892300;
   text-shadow: 0 0 20px #892300;
 }
 
