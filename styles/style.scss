@@ -310,6 +310,9 @@ main {
   }
 }
 .about-h2{
+  border: 2px solid $dark-red;
+  border-radius: 3px;
+  margin: 20px 10px;
   @include for-desktop{
     display: none;
   }
@@ -328,11 +331,12 @@ h2 {
 
 .about-info {
   @include for-desktop{
-    background: $beige;
-    border: 2px solid $orange;
+
     margin: 100px 41px 22px 41px;
     -webkit-box-shadow: 4px 4px 5px 0px rgba(35, 35, 35, 0.7);
   }
+  background: $beige;
+  border: 2px solid $orange;
   font-family: "kodchasan";
   color: $dark-red;
   text-align: center;
@@ -658,23 +662,16 @@ h2 {
       overflow-wrap: anywhere;
       .fa-star {
         color: $orange;
-<<<<<<< HEAD
-=======
 
       }
       .checked {
         color: $dark-red;
 
->>>>>>> dee21561a5d9395a5ee722a544aa3b507147000f
         opacity: 30%;
       }
       .checked {
         color: $dark-red;
         opacity: 1;
-<<<<<<< HEAD
-=======
-
->>>>>>> dee21561a5d9395a5ee722a544aa3b507147000f
       }
       p {
         margin-top: 5px;
@@ -696,13 +693,9 @@ h2 {
     }
     .input-container {
       input, textarea {
-<<<<<<< HEAD
-        background: #fff8eb;
-=======
 
         background: #fff8eb;
 
->>>>>>> dee21561a5d9395a5ee722a544aa3b507147000f
         color: $dark-red;
         border: 1px solid $dark-red;
         margin: 10px;
