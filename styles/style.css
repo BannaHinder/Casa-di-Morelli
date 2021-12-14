@@ -673,7 +673,7 @@ h2 {
 /*kontakt mobile style*/
 @media (min-width: 550px) {
   .kontakt-oss {
-    display: none;
+    display: block;
   }
 }
 
@@ -692,6 +692,10 @@ h2 {
   width: 60px;
   height: 50px;
   color: #892300;
+}
+
+.about-background {
+  background-image: url("/src/wallpaper.jpg");
 }
 
 .content1 {

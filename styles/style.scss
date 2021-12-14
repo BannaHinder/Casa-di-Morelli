@@ -500,7 +500,7 @@ h2 {
 /*kontakt mobile style*/
 .kontakt-oss{
   @include for-desktop{
-    display: none;
+    display: block;
   }
 }
 .hus {
@@ -516,6 +516,9 @@ h2 {
   width: 60px;
   height: 50px;
   color: $dark-red;
+}
+.about-background {
+  background-image: url("/src/wallpaper.jpg");
 }
 
 .content1 {
