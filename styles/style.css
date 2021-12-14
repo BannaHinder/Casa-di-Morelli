@@ -460,7 +460,7 @@ h2 {
     background: #FFE2B2;
     border: 2px solid #D06224;
     margin: 100px 41px 22px 41px;
-    -webkit-box-shadow: 4px 4px 5px 0px rgba(35, 35, 35, 0.7);
+    box-shadow: 4px 4px 5px 0px rgba(35, 35, 35, 0.7);
   }
 }
 
@@ -487,7 +487,7 @@ h2 {
     background: #FFE2B2;
     border: 2px solid #D06224;
     margin: 40px 41px 22px 41px;
-    -webkit-box-shadow: 4px 4px 5px 0px rgba(35, 35, 35, 0.7);
+    box-shadow: 4px 4px 5px 0px rgba(35, 35, 35, 0.7);
   }
 }
 
@@ -901,16 +901,24 @@ h2 {
 
 .recension-wrapper .recension .rating .fa-star {
   color: #D06224;
+<<<<<<< HEAD
+  opacity: 30%;
+=======
 
   opacity: 30%;
 
+>>>>>>> dee21561a5d9395a5ee722a544aa3b507147000f
 }
 
 .recension-wrapper .recension .rating .checked {
   color: #892300;
+<<<<<<< HEAD
+  opacity: 1;
+=======
 
   opacity: 1;
 
+>>>>>>> dee21561a5d9395a5ee722a544aa3b507147000f
 }
 
 .recension-wrapper .recension .rating p {
@@ -945,9 +953,13 @@ h2 {
 }
 
 .recension-wrapper .skriv-recension .input-container input, .recension-wrapper .skriv-recension .input-container textarea {
+<<<<<<< HEAD
+  background: #fff8eb;
+=======
 
   background: #fff8eb;
 
+>>>>>>> dee21561a5d9395a5ee722a544aa3b507147000f
   color: #892300;
   border: 1px solid #892300;
   margin: 10px;
