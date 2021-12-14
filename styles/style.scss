@@ -357,12 +357,10 @@ h2 {
 
 }
 .about-article-background{
-  @include for-desktop{
-    background: $beige;
-    border: 2px solid $orange;
-    margin: 40px 41px 22px 41px;
-    -webkit-box-shadow: 4px 4px 5px 0px rgba(35, 35, 35, 0.7);
-  }
+  background: $beige;
+  border: 2px solid $orange;
+  margin: 40px 41px 22px 41px;
+  box-shadow: 4px 4px 5px 0px rgba(35, 35, 35, 0.7);
 }
 .staff {
   @include flex-column-center;
