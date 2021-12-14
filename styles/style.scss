@@ -658,11 +658,23 @@ h2 {
       overflow-wrap: anywhere;
       .fa-star {
         color: $orange;
+<<<<<<< HEAD
+=======
+
+      }
+      .checked {
+        color: $dark-red;
+
+>>>>>>> dee21561a5d9395a5ee722a544aa3b507147000f
         opacity: 30%;
       }
       .checked {
         color: $dark-red;
         opacity: 1;
+<<<<<<< HEAD
+=======
+
+>>>>>>> dee21561a5d9395a5ee722a544aa3b507147000f
       }
       p {
         margin-top: 5px;
@@ -684,7 +696,13 @@ h2 {
     }
     .input-container {
       input, textarea {
+<<<<<<< HEAD
         background: #fff8eb;
+=======
+
+        background: #fff8eb;
+
+>>>>>>> dee21561a5d9395a5ee722a544aa3b507147000f
         color: $dark-red;
         border: 1px solid $dark-red;
         margin: 10px;
