@@ -461,6 +461,7 @@ h2 {
   color: #892300;
   text-align: center;
   margin: 10px 20px;
+  padding: 10px 10px;
 }
 
 @media (min-width: 550px) {
@@ -519,10 +520,8 @@ h2 {
   .staff {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;

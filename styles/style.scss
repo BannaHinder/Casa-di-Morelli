@@ -340,6 +340,7 @@ h2 {
   color: $dark-red;
   text-align: center;
   margin: 10px 20px;
+  padding: 10px 10px;
   h3{
     @include for-desktop{
       font-family: "lobster";
@@ -367,8 +368,7 @@ h2 {
 .staff {
   @include flex-column-center;
   @include for-desktop{
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     justify-content: space-evenly;
   }
   .person {
