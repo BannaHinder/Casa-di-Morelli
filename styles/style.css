@@ -233,13 +233,19 @@ main {
   content: "";
   background-image: url("/src/wallpaper2.jpg");
   background-size: cover;
-  position: absolute;
+  position: fixed;
   top: 0px;
   right: 0px;
   bottom: 0px;
   left: 0px;
   opacity: 0.5;
   z-index: -5;
+}
+
+@media (min-width: 550px) {
+  .about-70s::before {
+    position: absolute;
+  }
 }
 
 @media (min-width: 550px) {
