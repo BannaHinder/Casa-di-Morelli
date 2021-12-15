@@ -602,7 +602,7 @@ h2 {
   align-items: center;
   height: 400px;
   padding: 30px 40px;
-  margin-top: 100px;
+  margin-top: 0;
 }
 
 @media (min-width: 550px) {
