@@ -606,10 +606,10 @@ margin-top: -3px;
 
 /*recensioner- */
 .wallpaper {
-  background-image: url("../src/wallpaper.jpg");
+  background-image: url(../src/wallpaper.jpg);
   background-size: cover;
   @include for-desktop{
-    background: url("../src/wallpaper.jpg") no-repeat fixed top;
+    background: url(../src/wallpaper.jpg) no-repeat fixed top;
   }
 }
 .recension-wrapper {
